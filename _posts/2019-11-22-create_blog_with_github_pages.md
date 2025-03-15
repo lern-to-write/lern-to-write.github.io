@@ -1,17 +1,11 @@
----
-layout: post
-title: "黄页"
-date:   2024-11-22
-tags: [geek]
-comments: true
-author: 
----
+
 ---
 title: 资料库
 date: 2024-04-27 23:16:47
 tags:
 categories: blog
 ---
+
 ## 计算机
 * [关于计算机的一切问题都可以参考这里](https://csdiy.wiki/)
 * [“365天加入玄武实验室学习计划”](https://github.com/Vancir/365-days-get-xuanwulab-job?tab=readme-ov-file)
