@@ -1,10 +1,11 @@
 
 ---
 layout: post
-title: Resource library
-date: 2024-04-27 23:16:47
-tags:
-categories: blog
+title: "Resource library"
+date:   2019-11-22
+tags: [geek]
+comments: False
+author: 
 ---
 <!-- more -->
 ## 计算机
