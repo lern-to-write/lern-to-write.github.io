@@ -2,11 +2,12 @@
 ---
 layout: post
 title: "Resource library"
-date:   2025-3-16
+date:   2019-11-22
 tags: [geek]
 comments: True
 author: otto
 ---
+Open
 <!-- more -->
 ## 计算机
 * [关于计算机的一切问题都可以参考这里](https://csdiy.wiki/)
