@@ -10,7 +10,9 @@ author: otto
 Open
 <!-- more -->
 ## 计算机
-* [关于计算机的一切问题都可以参考这里](https://csdiy.wiki/)
+* [CSdiy](https://csdiy.wiki/)关于计算机的一切问题都可以参考这里
+* [freecodecamp](https://www.freecodecamp.org/learn/python-for-everybody/) 我认为的学习写代码的最好的网站
+* [leetcode](https://leetcode.cn/studyplan/coding-interviews/)力扣
 * [365天加入玄武实验室学习计划](https://github.com/Vancir/365-days-get-xuanwulab-job?tab=readme-ov-file)
 * [某个网络攻防方向大佬的博客](https://lorexxar.cn/2014/12/29/bookshelf1/)
 * [信息竞赛学习资料](https://oi-wiki.org/)
