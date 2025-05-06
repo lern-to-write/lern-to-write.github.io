@@ -33,6 +33,7 @@ Open
 * [THU/CMU/OPENAI 申博科研经验](https://trinkle23897.github.io/posts/application)
 * [清华/MIT 申请经验](https://www.mit.edu/~baichuan/Baichuan/blogs/application_experience.html)
 * [一亩三分地](https://www.1point3acres.cn/)
+*  [美国本土申请PhD](https://www.thegradcafe.com/)
 
 ## 读书
 * [香港中文大学自学指南](https://www.ilc.cuhk.edu.hk/CH/ENResources/Reading.aspx)
@@ -42,15 +43,102 @@ Open
 * [根据意思找诗句](https://wantquotes.net/?source=shenyandayi)
 * [趣味可视化文章](https://pudding.cool/)
 
-## 科研
-* [THE USEFULNESS OF USELESSKNOWLEDGE](https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf)
-* [李笑来创业笔记](http://xiaolai.co/books/8327ac77840b8e66d8245eef28052099/index.html)
-* [博士生回忆录](https://ebin.pub/the-phd-grind-a-phd-student-memoir-3.html)
-* [写邮件指南](https://uvasrg.github.io/prospective/)
-* [科研学习资源](https://github.com/pengsida/learning_research)
-* [An Opinionated Guide to ML Research（Part 1）](http://joschu.net/blog/opinionated-guide-ml-research.html)
-* [An Opinionated Guide to ML Research（Part 2）](http://joschu.net/blog/opinionated-guide-ml-research.html)
-* [上海交通大学ROCH实验室手册](https://mvig-rhos.gitbook.io/rhos-ke-yan-shou-ce)
+
+当然可以！以下是您提供的科研相关网址，已整理成统一的格式，包含标题、作者（如有）、简要描述以及链接，方便您查阅：
+
+---
+
+## 📚 科研资源整理
+
+### 🧑‍🏫 研究方法与科研生活
+
+1. **《无用知识的有用性》**
+   普林斯顿高等研究院院长 Abraham Flexner 探讨基础研究的价值。
+   🔗 [阅读 PDF](https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf)
+
+2. **《李笑来创业笔记》**
+   李笑来记录的创业经验与思考。
+   🔗 [阅读原文](http://xiaolai.co/books/8327ac77840b8e66d8245eef28052099/index.html)
+
+3. **《博士生回忆录》**
+   Philip J. Guo 讲述其博士求学经历，分享科研生活的真实写照。
+   🔗 [阅读原文](https://ebin.pub/the-phd-grind-a-phd-student-memoir-3.html)
+
+4. **《写邮件指南》**
+   UVA 社会责任小组提供的邮件沟通指南，适合科研人员参考。
+   🔗 [阅读原文](https://uvasrg.github.io/prospective/)
+
+5. **科研学习资源合集**
+   GitHub 上整理的科研学习资源，涵盖多个领域。
+   🔗 [查看资源](https://github.com/pengsida/learning_research)
+
+6. **An Opinionated Guide to ML Research（Part 1 & 2）**
+   Joscha Bach 提供的机器学习研究指南，分为两部分。
+   🔗 [阅读 Part 1](http://joschu.net/blog/opinionated-guide-ml-research.html)
+   🔗 [阅读 Part 2](http://joschu.net/blog/opinionated-guide-ml-research.html)
+
+7. **上海交通大学 ROCH 实验室手册**
+   ROCH 实验室的科研手册，适合新入组成员参考。
+   🔗 [阅读手册](https://mvig-rhos.gitbook.io/rhos-ke-yan-shou-ce)
+
+8. **《选择博士导师指南》**
+   哥伦比亚大学计算机系提供的指南，帮助学生在选择博士导师时提出关键问题。
+   🔗 [阅读 PDF](https://www.cs.columbia.edu/wp-content/uploads/2019/03/Get-Advisor.pdf)
+
+9. **《你和你的研究》**
+   理查德·汉明在 1986 年的演讲，探讨科研成功的因素。
+   🔗 [阅读原文](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+
+10. **Favonia 的博士指导声明**
+    Favonia 教授分享其博士指导理念，强调心理韧性和技能培养。
+    🔗 [阅读原文](https://favonia.org/advising.html)
+
+---
+
+### 🎓 博士生经验与建议
+
+11. **《如何管理你的导师》**
+    Nick Feamster 分享与导师建立良好关系的建议。
+    🔗 [阅读原文](https://greatresearch.org/2013/08/14/managing-your-advisor/)
+
+12. **《要不要读博士？》**
+    Xiao Ma 探讨是否攻读博士学位的思考与建议。
+    🔗 [阅读原文](https://medium.com/open-sourced-thoughts/phd-or-no-phd-d3dc89bc8e57)
+
+13. **《非技术性演讲》**
+    David Patterson 提供的关于研究/学术生涯的非技术性建议。
+    🔗 [查看演讲](https://people.eecs.berkeley.edu/~pattrsn/talks/nontech.html)
+
+14. **《你开始读博士了吗？》**
+    Mike Rosulek 为新博士生提供的建议和指导。
+    🔗 [阅读原文](http://web.engr.oregonstate.edu/~rosulekm/advising.html)
+
+15. **《如何拥有糟糕的研究/学术生涯》**
+    David Patterson 的演讲幻灯片，探讨研究生涯中的常见问题。
+    🔗 [查看幻灯片](https://drive.google.com/file/d/0Bzis5MXW83vCdUdXYnFIVDVOSkE/view)
+
+16. **《适度的建议》**
+    Yale 大学 Stearns 实验室提供的科研建议。
+    🔗 [阅读原文](https://stearnslab.yale.edu/modest-advice)
+
+17. **《关于博士学位》**
+    David Andersen 分享的博士经验与建议。
+    🔗 [阅读原文](https://da-data.blogspot.com/2013/01/on-phd.html)
+
+18. **《反思计算机科学研究生招生》**
+    David Andersen 对计算机科学研究生招生的反思。
+    🔗 [阅读原文](https://da-data.blogspot.com/2015/03/reflecting-on-cs-graduate-admissions.html)
+
+19. **《博士建议》**
+    Harvard 大学 EECS 系提供的博士生建议。
+    🔗 [阅读原文](https://www.eecs.harvard.edu/htk/phdadvice/)
+
+20. **《如何选择一个正确的博士生导师？》**
+    知乎用户分享的在国内读博时选择导师的经验和建议。
+    🔗 [阅读原文](https://zhuanlan.zhihu.com/p/23148459)
+
+
+
 
 ## 创业
 * [AI和区块链研报](https://future.com/)
