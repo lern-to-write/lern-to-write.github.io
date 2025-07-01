@@ -6,17 +6,33 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
-# Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Homepage"
-title_separator          : "-"
-name                     : &name "lern-to-write"
-description              : &description "Interested in efficient multimodal video understanding"
-url                      : https://lern-to-write.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lern-to-write/lern-to-write.github.io"
 
+# 指定网站语言（ISO 639-1 标准代码）
+locale                   : "en-US"  # 示例：中文简体
+
+# 主题名称（对应 Jekyll 主题包）
+site_theme               : "minima"  # 示例：使用官方主题 'minima'default
+
+# 网站标题（显示在浏览器标签页）
+title                    : "Homepage"  # 示例：自定义标题
+
+# 标题分隔符（连接页面标题与主标题）
+title_separator          : " - "  # 示例：使用竖线分隔
+
+# 网站名称（全局引用变量）
+name                     : &name "lern-to-write"  # 示例：定义变量别名
+
+# 网站描述（SEO 关键词，用于搜索引擎优化）
+description              : &description ""  # 示例：自定义描述
+
+# 网站根地址（部署后的域名）
+url                      : https://lern-to-write.github.io  # 示例：GitHub Pages 地址
+
+# 子路径（如部署在子目录时填写）
+baseurl                  : "" #"/myblog"  # 示例：子目录路径
+
+# GitHub 仓库地址（用于生成 Atom Feed）
+repository               : "lern-to-write/lern-to-write.github.io"  # 示例：替换为你的仓库名
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -25,20 +41,26 @@ author:
   avatar           : "profile.png"
   name             : "Yiyu Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Interested in efficient multimodal video understanding"
   location         : "Earth"
   employer         : "USST"
+    # 个人主页链接
   uri              : # URL
   email            : "USTYWANG8@ljmu.ac.uk" 
 
   # Academic websites
+    # 学术网站（如学术主页）
   academia         : # URL
+  
+  # arXiv 论文主页
+
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+    # Google Scholar 链接
+  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  # orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -46,7 +68,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "lern-to-write" # Replace this with your GitHub username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -87,11 +109,11 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png" # 示例：首页横幅图片路径
+breadcrumbs              : false # true, false (default) # 示例：启用面包屑导航
+words_per_minute         : 160 # 示例：阅读速度估算（每分钟字数）
+future                   : true # 示例：启用未来日期发布功能
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts  # 示例：启用文章摘要“阅读更多”链接
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
