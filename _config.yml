@@ -38,7 +38,7 @@ repository               : "lern-to-write/lern-to-write.github.io"  # 示例：�
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "github_cat.png"
   name             : "Yiyu Wang"
   pronouns         : # example: "she/her"  
   bio              : "Interested in efficient multimodal video understanding"
