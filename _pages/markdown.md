@@ -9,448 +9,105 @@ redirect_from:
 
 {% include toc %}
 
-## Locations of key files/directories
-
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
-
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
-
-* While GitHub Pages prevents server side code from running, client-side scripts are supported.
-  * This means that Google Analytics is supported, and [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) should contain the most up-to-date information on getting it working.
-
-* Your CV can be written using either Markdown ([preview](https://academicpages.github.io/cv/)) or generated via JSON ([preview](https://academicpages.github.io/cv-json/)) and the layouts are slightly different. You can update the path to the one being used in `_data/navigation.yml` with the JSON formatted CV being hidden by default.
-
- * The [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) is a useful guide for those that want to add functionality to the template or to become contributors to the [template on GitHub](https://github.com/academicpages/academicpages.github.io).
-
-## MathJax 
-
-Support for MathJax (version 3.* via [jsDelivr](https://www.jsdelivr.com/), [documentation](https://docs.mathjax.org/en/latest/)) is included in the template:
-
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
-$$
-
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
-
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772). In some cases, such as when you are including MathJax in a `citation` field for publications, it may be necessary to use `\(...\)` for inline delineation.
-
-## Mermaid diagrams
-Academic Pages includes support for [Mermaid diagrams](https://mermaid.js.org/) (version 11.* via [jsDelivr](https://www.jsdelivr.com/)) and in addition to their [tutorials](https://mermaid.js.org/ecosystem/tutorials.html) and [GitHub documentation](https://github.com/mermaid-js/mermaid) the basic syntax is as follows:
-
-```markdown
-    ```mermaid
-    graph LR
-    A-->B
-    ```
-```
-
-Which produces the following plot with the [default theme](https://mermaid.js.org/config/theming.html) applied:
-
-```mermaid
-graph LR
-A-->B
-```
-
-While a more advanced plot with the `forest` theme applied looks like the following:
-
-```mermaid
----
-config:
-  theme: 'forest'
----
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-## Plotly
-Academic Pages includes support for Plotly diagrams via a hook in the Markdown code elements, although those that are comfortable with HTML and JavaScript can also access it [via those routes](https://plotly.com/javascript/getting-started/).
-
-In order to render a Plotly plot via Markdown the relevant plot data need to be added as follows:
-
-```markdown
-    ```plotly
-    {
-      "data": [
-        {
-          "x": [1, 2, 3, 4],
-          "y": [10, 15, 13, 17],
-          "type": "scatter"
-        },
-        {
-          "x": [1, 2, 3, 4],
-          "y": [16, 5, 11, 9],
-          "type": "scatter"
-        }
-      ]
-    }
-    ```
-```
-
-**Important!** Since the data is parsed as JSON *all* of the keys will need to be quoted for the plot to render. The use of a tool like [JSONLint](https://jsonlint.com/) to check syntax is highly recommended.
-{: .notice}
-
-Which produces the following:
-```plotly
-{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}
-```
-
-Essentially what is taking place is that the [Plotly attributes](https://plotly.com/javascript/reference/index/) are being taken from the code block as JSON data, parsed, and passed to Plotly along with a theme that matches the current site theme (i.e., a light theme, or a dark theme). This allows all plots that can be described via the `data` attribute to rendered with some limitations for the theme of the plot.
-
-```plotly
-{
-  "data": [
-    {
-      "x": [1, 2, 3, 4, 5],
-      "y": [1, 6, 3, 6, 1],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Team A",
-      "text": ["A-1", "A-2", "A-3", "A-4", "A-5"],
-      "marker": { "size": 12 }
-    },
-    {
-      "x": [1.5, 2.5, 3.5, 4.5, 5.5],
-      "y": [4, 1, 7, 1, 4],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Team B",
-      "text": ["B-a", "B-b", "B-c", "B-d", "B-e"],
-      "marker": { "size": 12 }
-    }    
-  ],
-  "layout": {
-    "xaxis": {
-      "range": [ 0.75, 5.25 ]
-    },
-    "yaxis": {
-      "range": [0, 8]
-    },
-    "title": {"text": "Data Labels Hover"}
-  }
-}
-```
-
-```plotly
-{
-  "data": [{
-      "x": [1, 2, 3],
-      "y": [4, 5, 6],
-      "type": "scatter"
-    },
-    {
-      "x": [20, 30, 40],
-      "y": [50, 60, 70],
-      "xaxis": "x2",
-      "yaxis": "y2",
-      "type": "scatter"
-  }],
-  "layout": {
-    "grid": {
-      "rows": 1,
-      "columns": 2,
-      "pattern": "independent"
-    },
-    "title": {
-      "text": "Simple Subplot"
-    }    
-  }
-}
-```
-
-```plotly
-{
-  "data": [{
-		"z": [[10, 10.625, 12.5, 15.625, 20],
-          [5.625, 6.25, 8.125, 11.25, 15.625],
-          [2.5, 3.125, 5.0, 8.125, 12.5],
-          [0.625, 1.25, 3.125, 6.25, 10.625],
-          [0, 0.625, 2.5, 5.625, 10]],
-		"type": "contour"
-	}],
-  "layout": {
-    "title": {
-      "text": "Basic Contour Plot"
-    }
-  }
-}
-```
-
-## Markdown guide
-
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
-
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-```
-
-which wil render as:
-
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
-```
-
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "GitHub").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
-
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>.
-
-***
-**Footnotes**
-
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+## 计算机
+* [CSdiy](https://csdiy.wiki/)关于计算机的一切问题都可以参考这里
+* [freecodecamp](https://www.freecodecamp.org/learn/python-for-everybody/) 我认为的学习写代码的最好的网站
+* [leetcode](https://leetcode.cn/studyplan/coding-interviews/)力扣
+* [365天加入玄武实验室学习计划](https://github.com/Vancir/365-days-get-xuanwulab-job?tab=readme-ov-file)
+* [某个网络攻防方向大佬的博客](https://lorexxar.cn/2014/12/29/bookshelf1/)
+* [信息竞赛学习资料](https://oi-wiki.org/)
+* [实用工具箱](https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/tools/)
+* [清华学习路线](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
+* [一生一芯](http://ysyx.oscc.cc)
+
+## 留学
+
+
+### **国内高校飞跃手册**
+
+这些手册由各校学生自发编写，包含了大量宝贵的校内资源信息和前辈的申请经验总结。
+
+*   [南方科技大学飞跃手册](https://sustech-application.com/#/grad-application/computer-science-and-engineering/README)：由南方科技大学学生维护的留学申请经验分享网站。
+*   [上海大学飞跃手册](https://shuosc.github.io/fly/posts/)：上海大学开源社区整理的面向本校学生的留学申请指南。
+*   [安徽大学飞跃手册](https://www.ahu.wiki/#/)：安徽大学学生创建的飞跃维基，分享出国留学与保研经验。
+*   [上海交通大学飞跃手册](https://survivesjtu.github.io/SJTU-Application/#/)：上海交通大学学生整理的涵盖本硕博申请经验的共享资源库。
+*   [浙江大学数院飞跃手册](http://www.math.zju.edu.cn/_upload/article/files/99/e1/32b8399349af89f05033bf19a32e/4fd486a5-8a4e-47f0-a9c1-9fdba8cae593.pdf)：由浙江大学数学科学学院官方发布的往届毕业生海内外深造经验汇编。
+*   [上海交大生存手册](https://survivesjtu.gitbook.io/survivesjtumanual)：一本全面的上海交通大学学生生活、学习和发展指南。
+*   [华中科技大学电气飞跃手册](https://github.com/LHYi/Feiyue_for_ECE/blob/master/%E5%8D%8E%E4%B8%AD%E5%A4%A7%E7%94%B5%E6%B0%94%E9%A3%9E%E8%B7%83%E6%89%8B%E5%86%8C.pdf)：华中科技大学电气学院学生的申请经验分享文档。
+
+### **海外院校排名与数据**
+
+这些网站提供不同维度的院校排名和教职变动信息，是选校时的重要参考。
+
+*   [csrankings.org](https://csrankings.org/#/index?all&us)：根据计算机科学领域顶级学术会议的论文发表数量，对全球（此链接专指美国）顶尖高校和研究机构进行量化排名的网站。
+*   [U.S. News Computer Science Rankings](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings)：《美国新闻与世界报道》发布的官方计算机科学研究生院排名，主要依据对学术界人士的声誉调查结果进行评定。
+*   [csopenrankings](https://drafty.cs.brown.edu/csopenrankings/)：一个创新的计算机科学排名网站，它通过分析教师招聘结果来评估各院系预测未来科研影响力的能力，并以此对它们进行排名。
+*   [csprofessors](https://drafty.cs.brown.edu/csprofessors)：这是一个由社区众包维护的数据库，用于追踪北美大学计算机科学（CS）教职人员的年度招聘和流动情况。
+
+### **申请经验与文书参考**
+
+过来人的申请总结和文书范例能提供宝贵的视角和启发。
+
+*   [openCS application](https://opencs.app/)：一个开源的计算机科学（CS）留学申请信息共享平台，通过社区贡献的方式，为申请者提供项目介绍、选校梯度和录取数据等关键信息。
+*   [CS PhD Statements of Purpose](https://cs-sop.notion.site/CS-PhD-Statements-of-Purpose-df39955313834889b7ac5411c37b958d)：一个在Notion上公开分享的页面，收集了大量往届计算机科学博士（CS PhD）申请者的个人陈述（Statement of Purpose）作为范例。
+*   [THU/CMU/OPENAI 申博科研经验](https://trinkle23897.github.io/posts/application)：这是一个详细记录作者从准备到申请美国计算机博士（PhD）项目全过程的个人博客，内容涵盖了从学术背景、标准化考试到科研经历、文书准备和选校策略的完整心路历程。
+*   [清华/MIT 申请经验](https://www.mit.edu/~baichuan/Baichuan/blogs/application_experience.html)：作者Baichuan Mo分享的美国交通方向PhD的申请经验总结，详细记录了他从决定出国、备考英语到最终获得MIT等顶尖学校录取的全过程。
+*   [Tim Dettmers's Blog on PhD Applications](https://timdettmers.com/2018/11/26/phd-applications/)：一篇由研究员Tim Dettmers撰写的详细博客文章，从博士生的视角为计算机科学博士申请者提供了全面的申请攻略和建议。
+*   [海外暑期科研申请经验 (GuangLun2000)](https://github.com/GuangLun2000/summer-research-app)：这是一个GitHub仓库，详细记录并分享了作者在申请海外暑期科研项目过程中的个人经验、申请材料（如套磁信和CV）模板以及实用资源。
+
+### **论坛与工具**
+
+在这些社区可以找到实时的申请动态、面试经验和广泛的讨论。
+
+*   [一亩三分地](https://www.1point3acres.cn/)：面向北美华人学生和职场人士的著名在线社区，提供丰富的留学申请、求职就业和生活信息。
+*   [The GradCafe](https://www.thegradcafe.com/)：一个英文研究生申请论坛，用户会实时分享自己收到的录取、拒绝和面试通知等信息。
+*   [Fiverr](https://www.fiverr.com/)：一个全球性的在线自由职业者服务市场，提供文书修改、翻译、设计等多种服务。
+
+## 读书
+* [香港中文大学自学指南](https://www.ilc.cuhk.edu.hk/CH/ENResources/Reading.aspx)
+* [香港中文大学月度资源](https://www.ilc.cuhk.edu.hk/CH/ResourceOfTheMonth/ResourceOfTheMonth.aspx)
+* [印度公开课 NPTEL](https://nptel.ac.in/courses/109104115)
+* [NPTEL 课程总览](https://nptel.ac.in/courses)
+* [根据意思找诗句](https://wantquotes.net/?source=shenyandayi)
+* [趣味可视化文章](https://pudding.cool/)
+
+
+
+### **研究方法与科研生活**
+这些资源涵盖了从论文写作、项目管理到科研思维的全方位指导。
+
+*   [如何写一篇顶会（系列文章）][1](https://zhuanlan.zhihu.com/p/593195527)[2](https://zhuanlan.zhihu.com/p/627032371)[3](https://zhuanlan.zhihu.com/p/639732057)：由多篇文章组成的系列指南，详细拆解了撰写一篇计算机顶会论文的全过程。
+*   [科研学习资源合集 (learning\_research)](https://github.com/pengsida/learning_research)：这是一个GitHub仓库，它系统地整理和分享了关于如何进行计算机科学研究的各类学习资料、指南和经验，涵盖了从读写论文到学术演讲等全方位的科研技能。
+*   [高水平科研工作者经验分享](https://github.com/pengsida/learning_research/blob/master/getting_advanced_in_research.md)：该页面是 "learning\_research" 仓库中的一份进阶指南，为博士生从初级研究者向高级研究者过渡提供了深入的建议和指导。
+*   [Research Project 指南](https://pengsida.notion.site/Research-Project-b43507ef26d044bd888ac29f4736e116)：一份详尽的Notion指南，剖析了博士生应具备的核心意识与能力，并提供了如何有效管理研究项目的实用框架。
+*   [无用知识的有用性](https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf)：普林斯顿高等研究院院长 Abraham Flexner 探讨基础研究的价值与意义。
+*   [李笑来创业笔记](http://xiaolai.co/books/8327ac77840b8e66d8245eef28052099/index.html)：李笑来记录的关于个人成长、学习方法和价值创造的思考。
+*   [博士生回忆录](https://ebin.pub/the-phd-grind-a-phd-student-memoir-3.html)：Philip J. Guo 讲述其博士求学经历，分享科研生活的真实写照。
+*   [写邮件指南](https://uvasrg.github.io/prospective/)：UVA 社会责任小组提供的邮件沟通指南，适合科研人员在学术交流中参考。
+*   [An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html)：Joscha Bach 提供的关于机器学习研究的深度见解与实用指南。
+*   [上海交通大学 ROCH 实验室手册](https://mvig-rhos.gitbook.io/rhos-ke-yan-shou-ce)：上海交通大学 ROCH 实验室的公开科研手册，为新生成员提供了详尽的入组引导和规范。
+*   [选择博士导师指南](https://www.cs.columbia.edu/wp-content/uploads/2019/03/Get-Advisor.pdf)：哥伦比亚大学计算机系提供的指南，帮助学生在选择博士导师时提出关键问题。
+*   [《你和你的研究》](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)：著名科学家理查德·汉明于1986年发表的经典演讲，探讨了如何做出卓越的科学研究。
+*   [Favonia 的博士指导声明](https://favonia.org/advising.html)：卡内基梅隆大学的 Favonia 教授分享其博士指导理念，强调心理韧性和技能培养。
+
+### **博士生经验与建议**
+来自教授、学者和博士生的宝贵经验，帮助你更好地规划和度过博士生涯。
+
+*   [《如何管理你的导师》](https://greatresearch.org/2013/08/14/managing-your-advisor/)：Nick Feamster 分享的关于如何与导师建立高效、良好合作关系的实用建议。
+*   [《要不要读博士？》](https://medium.com/open-sourced-thoughts/phd-or-no-phd-d3dc89bc8e57)：作者 Xiao Ma 结合个人经历，深入探讨了决定是否攻读博士学位前需要思考的关键问题。
+*   [《非技术性演讲》](https://people.eecs.berkeley.edu/~pattrsn/talks/nontech.html)：图灵奖得主 David Patterson 提供的关于研究与学术生涯的非技术性建议。
+*   [《你开始读博士了吗？》](http://web.engr.oregonstate.edu/~rosulekm/advising.html)：Mike Rosulek 为新晋博士生提供的一系列实用建议和指导。
+*   [《如何拥有糟糕的研究/学术生涯》](https://drive.google.com/file/d/0Bzis5MXW83vCdUdXYnFIVDVOSkE/view)：David Patterson 以反向思考的方式，探讨了研究生涯中应避免的常见陷阱和问题。
+*   [《适度的建议》](https://stearnslab.yale.edu/modest-advice)：耶鲁大学 Stearns 实验室为研究生提供的关于科研、写作和学术生活的建议清单。
+*   [《关于博士学位》](https://da-data.blogspot.com/2013/01/on-phd.html)：David Andersen 结合自身经历，分享了关于博士学习与研究的深度思考和宝贵建议。
+*   [《反思计算机科学研究生招生》](https://da-data.blogspot.com/2015/03/reflecting-on-cs-graduate-admissions.html)：David Andersen 对计算机科学研究生招生过程的观察与反思，为申请者提供了独特的视角。
+*   [《博士建议》](https://www.eecs.harvard.edu/htk/phdadvice/)：哈佛大学 EECS 系为博士生提供的涵盖研究、写作、演讲和职业规划的综合性建议。
+*   [《如何选择一个正确的博士生导师？》](https://zhuanlan.zhihu.com/p/23148459)：一位知乎用户分享的在国内读博时如何全面考察和选择导师的实用经验。
+
+
+
+## 创业
+* [AI和区块链研报](https://future.com/)
+* [浙大区块链社区](https://jike.city/ryaneth)
+* [YC创始人博客](https://paulgraham.com/index.html)（推荐《黑客与画家》）
+* [金融资料汇总](https://mp.weixin.qq.com/s/h-ccAymR2Karoxn9ZcZLnA)
