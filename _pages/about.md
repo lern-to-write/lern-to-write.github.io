@@ -28,38 +28,8 @@ Previously, I was a Research Intern at **Shanghai Jiao Tong University (SJTU)** 
 
 ---
 
-## 🔥 News & Updates
-
-<ul>
-  <li>
-    <span style="background-color: #db545a; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">2025.10</span> 
-    🏆 <strong>Paper Accepted!</strong> Our work <em>"Video Compression Commander"</em> is accepted to <strong>EMNLP 2025 Main Conference</strong>.
-  </li>
-  <li>
-    <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    🤝 Collaborated on <em>"Variation-aware Vision Token Dropping"</em>, submitted to <strong>CVPR 2026</strong>.
-  </li>
-  <li>
-    <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    🤝 Co-authored <em>"Are We Using the Right Benchmark for Visual Token Compression?"</em>, submitted to <strong>ACL 2025</strong>.
-  </li>
-  <li>
-    <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    📊 Collaborated on Data-Centric Compression research, submitted to <strong>ACL 2025</strong>.
-  </li>
-  <li>
-    <span style="background-color: #17a2b8; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Report</span> 
-    👓 Released Technical Report: <em>"AI for Service: Proactive Assistance with AI Glasses"</em>.
-  </li>
-</ul>
-
----
 
 ## 📝 Selected Publications
-
-<div style="margin-bottom: 10px; font-size: 0.9em; color: #666;">
-  <em>* denotes equal contribution. Full list available in <a href="files/cv.pdf">CV</a>.</em>
-</div>
 
 <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); transition: 0.3s; border-radius: 5px; padding: 20px; margin-bottom: 20px; border-left: 5px solid #db545a; background-color: #fff;">
   <h3 style="margin-top: 0; margin-bottom: 10px;">
