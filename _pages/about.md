@@ -14,7 +14,7 @@ redirect_from:
     I am a <strong>Ph.D. Student</strong> at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a>, advised by Prof. Linfeng Zhang and Prof. Xuming Hu.
   </p>
   <p>
-    My research aims to achieve <strong>Precise and Efficient Video Understanding</strong>. [cite_start]I currently focus on accelerating <strong>Video Large Language Models (VideoLLMs)</strong> via Token Compression and Data-Centric AI techniques[cite: 35, 37].
+    My research aims to achieve <strong>Precise and Efficient Video Understanding</strong>. I currently focus on accelerating <strong>Video Large Language Models (VideoLLMs)</strong> via Token Compression and Data-Centric AI techniques.
   </p>
   
   <div style="margin-top: 15px;">
@@ -24,7 +24,7 @@ redirect_from:
   </div>
 </div>
 
-[cite_start]Previously, I was a Research Intern at **Shanghai Jiao Tong University (SJTU)** (EPIC Lab)[cite: 8, 10].
+Previously, I was a Research Intern at **Shanghai Jiao Tong University (SJTU)** (EPIC Lab).
 
 ---
 
@@ -33,23 +33,23 @@ redirect_from:
 <ul>
   <li>
     <span style="background-color: #db545a; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">2025.10</span> 
-    [cite_start]🏆 <strong>Paper Accepted!</strong> Our work <em>"Video Compression Commander"</em> is accepted to <strong>EMNLP 2025 Main Conference</strong>[cite: 25, 26].
+    🏆 <strong>Paper Accepted!</strong> Our work <em>"Video Compression Commander"</em> is accepted to <strong>EMNLP 2025 Main Conference</strong>.
   </li>
   <li>
     <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    [cite_start]🤝 Collaborated on <em>"Variation-aware Vision Token Dropping"</em>, submitted to <strong>CVPR 2026</strong>[cite: 30].
+    🤝 Collaborated on <em>"Variation-aware Vision Token Dropping"</em>, submitted to <strong>CVPR 2026</strong>.
   </li>
   <li>
     <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    [cite_start]🤝 Co-authored <em>"Are We Using the Right Benchmark for Visual Token Compression?"</em>, submitted to <strong>ACL 2025</strong>[cite: 31].
+    🤝 Co-authored <em>"Are We Using the Right Benchmark for Visual Token Compression?"</em>, submitted to <strong>ACL 2025</strong>.
   </li>
   <li>
     <span style="background-color: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Submitted</span> 
-    [cite_start]📊 Collaborated on Data-Centric Compression research, submitted to <strong>ACL 2025</strong>[cite: 32].
+    📊 Collaborated on Data-Centric Compression research, submitted to <strong>ACL 2025</strong>.
   </li>
   <li>
     <span style="background-color: #17a2b8; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.85em;">Report</span> 
-    [cite_start]👓 Released Technical Report: <em>"AI for Service: Proactive Assistance with AI Glasses"</em>[cite: 27, 28].
+    👓 Released Technical Report: <em>"AI for Service: Proactive Assistance with AI Glasses"</em>.
   </li>
 </ul>
 
@@ -68,7 +68,7 @@ redirect_from:
     <span style="color: #db545a; font-weight: bold;">EMNLP 2025 Main Conference</span>
   </div>
   <p style="font-size: 0.95em; color: #555;">
-    Proposed <strong>VidCom²</strong>, a training-free framework that accelerates VideoLLMs by adaptively adjusting compression based on frame uniqueness. [cite_start]Achieved <strong>99.6% performance retention</strong> with only <strong>25% tokens</strong> and <strong>70.8% latency reduction</strong>[cite: 37, 39].
+    Proposed <strong>VidCom²</strong>, a training-free framework that accelerates VideoLLMs by adaptively adjusting compression based on frame uniqueness. Achieved <strong>99.6% performance retention</strong> with only <strong>25% tokens</strong> and <strong>70.8% latency reduction</strong>.
   </p>
   <div>
     <a href="LINK-TO-PAPER" style="text-decoration: none;"><img src="https://img.shields.io/badge/Paper-EMNLP'25-db545a?style=flat&logo=semanticscholar" alt="Paper"></a>
@@ -86,7 +86,7 @@ redirect_from:
     <span style="color: #007bff; font-weight: bold;">arXiv Preprint 2025</span>
   </div>
   <p style="font-size: 0.95em; color: #555;">
-    [cite_start]Addressing the challenge of processing infinite video streams by implementing hierarchical token compression, enabling efficient long-term video understanding[cite: 24].
+    Addressing the challenge of processing infinite video streams by implementing hierarchical token compression, enabling efficient long-term video understanding.
   </p>
   <div>
     <a href="LINK-TO-PDF" style="text-decoration: none;"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
@@ -97,8 +97,11 @@ redirect_from:
 ---
 
 
+
 ## 💻 Open Source
 
 I actively contribute to the community by maintaining resource lists:
-* [cite_start]⭐ **[Awesome Token-level Model Compression](https://github.com/your-username/repo1)** (173+ Stars) [cite: 42]
-* [cite_start]⭐ **[Awesome Generation Acceleration](https://github.com/your-username/repo2)** (353+ Stars) [cite: 43]
+
+* ⭐ **[Awesome Token-level Model Compression](https://github.com/your-username/repo1)** (173+ Stars)
+* ⭐ **[Awesome Generation Acceleration](https://github.com/your-username/repo2)** (353+ Stars)
+
