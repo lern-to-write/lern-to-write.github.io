@@ -57,9 +57,6 @@ redirect_from:
 
 ## 📝 Selected Publications
 
-<div style="margin-bottom: 10px; font-size: 0.9em; color: #666;">
-  <em>* denotes equal contribution. Full list available in <a href="files/cv.pdf">CV</a>.</em>
-</div>
 
 <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); transition: 0.3s; border-radius: 5px; padding: 20px; margin-bottom: 20px; border-left: 5px solid #db545a; background-color: #fff;">
   <h3 style="margin-top: 0; margin-bottom: 10px;">
