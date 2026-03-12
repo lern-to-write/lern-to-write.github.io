@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Hi, I'm Yiyu Wang (王一宇) 👋"
-excerpt: "Joint Ph.D. Student at HKUST(GZ) & SJTU · Streaming Video Understanding & Game Agent"
+excerpt: "Joint Ph.D. Student at HKUST(GZ) & SJTU · Streaming Video Understanding "
 author_profile: true
 redirect_from: 
   - /about/
@@ -226,19 +226,18 @@ redirect_from:
 
 <!-- ===== Bio Card ===== -->
 <div class="bio-card">
-  <h3>🎯 Building Real-Time Video Intelligence & Game Agents</h3>
+  <h3>🎯 Building Real-Time Video Intelligence </h3>
   <p>
     I am a <strong>joint Ph.D. student</strong> at <a href="https://www.hkust-gz.edu.cn/" style="color:#1a3a5c;">HKUST(GZ)</a> and <a href="https://www.sjtu.edu.cn/" style="color:#1a3a5c;">Shanghai Jiao Tong University (SJTU)</a>, advised by <strong><a href="https://xuminghu.github.io/" style="color:#1a3a5c;">Prof. Xuming Hu</a></strong> and <strong><a href="https://linfeng-zhang.github.io/" style="color:#1a3a5c;">Prof. Linfeng Zhang</a></strong>. I am currently a <strong>Research Intern at <a href="https://www.tencent.com/" style="color:#1a3a5c;">Tencent</a></strong>.
   </p>
   <p class="bio-detail">
-    My research focuses on <strong>Streaming Video Understanding</strong> and <strong>Game Agents</strong> — building systems that perceive, reason, and act under real-time constraints with tight token budgets, precise temporal grounding, and reliable interactive behavior. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
+    My research focuses on <strong>Streaming Video Understanding</strong>  — building systems that perceive, reason, and act under real-time constraints with tight token budgets, precise temporal grounding, and reliable interactive behavior. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
   </p>
   <div class="badge-row">
     <img src="https://img.shields.io/badge/HKUST(GZ)-1a3a5c?style=flat-square&logo=google-scholar&logoColor=white" alt="HKUST(GZ)">
     <img src="https://img.shields.io/badge/SJTU-0056a3?style=flat-square" alt="SJTU">
     <img src="https://img.shields.io/badge/Tencent_Intern-00a4ef?style=flat-square&logo=tencent-qq&logoColor=white" alt="Tencent">
     <img src="https://img.shields.io/badge/Streaming_Video-c62828?style=flat-square" alt="Streaming Video">
-    <img src="https://img.shields.io/badge/Game_Agent-6a1b9a?style=flat-square" alt="Game Agent">
     <img src="https://img.shields.io/badge/Efficient_VideoLLM-2e7d32?style=flat-square" alt="Efficiency">
   </div>
 </div>
