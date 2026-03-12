@@ -41,40 +41,32 @@ author:
   avatar           : "github_cat.png"
   name             : "Yiyu Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Interested in efficient multimodal video understanding"
-  location         : "Earth"
-  employer         : "USST"
-    # 个人主页链接
+  bio              : "Joint Ph.D. @ HKUST(GZ) & SJTU · Streaming Video Understanding & Game Agent · Intern @ Tencent"
+  location         : "Guangzhou, China"
+  employer         : "HKUST(GZ) & SJTU"
   uri              : # URL
   email            : "USTYWANG8@ljmu.ac.uk" 
 
   # Academic websites
-    # 学术网站（如学术主页）
   academia         : # URL
-  
-  # arXiv 论文主页
-
-  arxiv            : # URL - Update with the correct link to your profile
-    # Google Scholar 链接
-  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  arxiv            : # URL
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  # orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : "lern-to-write" # Replace this with your GitHub username
+  github           : "lern-to-write"
   kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  stackoverflow    : # User number
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
