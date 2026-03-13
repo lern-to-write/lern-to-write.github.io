@@ -474,12 +474,15 @@ redirect_from:
 }
 .venue-tag:hover { background: #1a3a5c; color: #fff; }
 
-/* --- Scroll Reveal --- */
+/* --- Scroll Reveal (safe: default visible, animation is progressive enhancement) --- */
 .reveal {
+  opacity: 1; transform: translateY(0);
+}
+.reveal.will-animate {
   opacity: 0; transform: translateY(24px);
   transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.will-animate.visible { opacity: 1; transform: translateY(0); }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
@@ -729,7 +732,10 @@ redirect_from:
 <!-- Scripts -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Scroll reveal with stagger
+  // Scroll reveal with stagger (progressive enhancement: content visible by default)
+  var reveals = document.querySelectorAll('.reveal');
+  // Only add animation class after JS confirms working
+  reveals.forEach(function(el) { el.classList.add('will-animate'); });
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
@@ -740,7 +746,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
-  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  reveals.forEach(function(el) { observer.observe(el); });
 
   // Counter animation for stats
   var statsBar = document.getElementById('stats-bar');
