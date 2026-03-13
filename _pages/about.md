@@ -433,12 +433,6 @@ redirect_from:
     <p>Plug-and-play inference acceleration for VideoLLMs via adaptive frame-uniqueness-based token compression.</p>
     <a href="https://github.com/xuyang-liu16/VidCom2" class="project-link">Open Project →</a>
   </div>
-  <div class="project-card">
-    <span class="project-tag" style="background:#c62828;">CVPR 2026</span>
-    <h4>V2Drop</h4>
-    <p>Variation-aware visual token dropping that exploits inherent sparsity signals for faster LVLMs.</p>
-    <a href="https://github.com/xuyang-liu16/V2Drop" class="project-link">View Code →</a>
-  </div>
 </div>
 
 ---
