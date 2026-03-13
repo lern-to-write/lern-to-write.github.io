@@ -106,6 +106,7 @@ redirect_from:
 .badge-eccv { background-color: #1565c0; }
 .badge-icml { background-color: #6a1b9a; }
 .badge-acl { background-color: #2e7d32; }
+.badge-arxiv { background-color: #b71c1c; }
 .badge-under-review { background-color: #ef6c00; }
 
 /* Paper Card */
@@ -226,12 +227,12 @@ redirect_from:
 
 <!-- ===== Bio Card ===== -->
 <div class="bio-card">
-  <h3>🎯 Building Real-Time Video Intelligence </h3>
+  <h3>🎯 Building Real-Time Video Intelligence</h3>
   <p>
     I am a <strong>joint Ph.D. student</strong> at <a href="https://www.hkust-gz.edu.cn/" style="color:#1a3a5c;">HKUST(GZ)</a> and <a href="https://www.sjtu.edu.cn/" style="color:#1a3a5c;">Shanghai Jiao Tong University (SJTU)</a>, advised by <strong><a href="https://xuminghu.github.io/" style="color:#1a3a5c;">Prof. Xuming Hu</a></strong> and <strong><a href="https://linfeng-zhang.github.io/" style="color:#1a3a5c;">Prof. Linfeng Zhang</a></strong>. I am currently a <strong>Research Intern at <a href="https://www.tencent.com/" style="color:#1a3a5c;">Tencent</a></strong>.
   </p>
   <p class="bio-detail">
-    My research focuses on <strong>Streaming Video Understanding</strong>  — building systems that perceive, reason, and act under real-time constraints with tight token budgets, precise temporal grounding, and reliable interactive behavior. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
+    My research focuses on <strong>Streaming Video Understanding</strong> — building systems that perceive, reason, and act under real-time constraints with tight token budgets, precise temporal grounding, and reliable interactive behavior. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
   </p>
   <div class="badge-row">
     <img src="https://img.shields.io/badge/HKUST(GZ)-1a3a5c?style=flat-square&logo=google-scholar&logoColor=white" alt="HKUST(GZ)">
@@ -245,7 +246,7 @@ redirect_from:
 <!-- ===== Research Overview Stats ===== -->
 <div class="stats-bar">
   <div class="stats-item">
-    <span class="stats-num">7</span>
+    <span class="stats-num">8</span>
     <span class="stats-label">Papers</span>
   </div>
   <div class="stats-item">
@@ -292,6 +293,10 @@ redirect_from:
     <span class="news-badge badge-emnlp">EMNLP 2025</span>
     🏆 <strong>Paper Accepted!</strong> Our work <em>"Video Compression Commander"</em> (<strong>VidCom²</strong>) is accepted to <strong>EMNLP 2025 Main Conference</strong>.
   </li>
+  <li>
+    <span class="news-badge badge-arxiv">arXiv 2025</span>
+    📄 <strong>Tech Report</strong> — <em>"AI for Service: Proactive Assistance with AI Glasses"</em> (<strong>Alpha-Service</strong>) released on <strong>arXiv</strong>.
+  </li>
 </ul>
 
 ---
@@ -301,7 +306,6 @@ redirect_from:
 
 <p style="font-size:0.88em; color:#888; margin-bottom:18px;">* denotes equal contribution, † denotes corresponding author.</p>
 
-<!-- ===== Accepted Papers ===== -->
 <h3 style="color:#1a3a5c; font-size:1.1em; margin-top:24px; margin-bottom:14px;">✅ Accepted</h3>
 
 <!-- STC - CVPR 2026 -->
