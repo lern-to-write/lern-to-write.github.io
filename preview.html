@@ -15,7 +15,7 @@
     .pub-links a { color: #52adc8; text-decoration: none; margin-right: 15px; }
     .pub-links a:hover { text-decoration: underline; }
     .pub-citation { font-size: 0.9em; margin-top: 0.8em; padding: 12px 16px; background: #f8f9fa; border-radius: 6px; border-left: 4px solid #52adc8; }
-    .pub-citation pre { margin: 0; font-size: 0.85em; color: #555; white-space: pre-wrap; word-break: break-word; background: transparent; padding: 0; border: none; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+    .pub-citation pre { margin: 0; font-size: 0.82em; color: #555; white-space: pre-wrap; word-break: break-word; background: transparent; padding: 0; border: none; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
     .copy-btn { margin-left: 10px; padding: 4px 12px; font-size: 0.85em; cursor: pointer; background: #fff; border: 1px solid #ddd; border-radius: 4px; white-space: nowrap; }
     .copy-btn:hover { background: #f0f0f0; }
     .copy-btn.copied { color: #28a745; border-color: #28a745; }
@@ -27,20 +27,18 @@
     .badge-eccv { background: #fce4ec; color: #c62828; }
     .badge-icml { background: #e0f7fa; color: #00695c; }
     .status-note { color: #888; font-size: 0.85em; font-style: italic; }
+    .bibtex-block { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #ccc; }
   </style>
 </head>
 <body>
   <h1>📚 Publications (Preview)</h1>
-  <p style="color: #666; margin-bottom: 2em;">This is a preview of your updated publications page. Each paper now has Paper link, Code link, Project Page (if any), and one-click copy for citation & BibTeX.</p>
+  <p style="color: #666; margin-bottom: 2em;">Each paper has Paper link, Code/Project link, and one-click copy for Citation & BibTeX.</p>
 
   <!-- Paper 1: STC -->
   <div class="pub-item">
-    <h2>
-      <a href="#">Accelerating Streaming Video Large Language Models via Hierarchical Token Compression</a>
-      <span class="badge badge-cvpr">CVPR 2026</span>
-    </h2>
+    <h2><a href="#">Accelerating Streaming Video Large Language Models via Hierarchical Token Compression</a> <span class="badge badge-cvpr">CVPR 2026</span></h2>
     <p style="margin: 0.3em 0; color: #666;">Published in <i>CVPR 2026</i>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose STC, the first plug-and-play hierarchical token compression framework for streaming VideoLLMs, optimizing both ViT encoding and LLM pre-filling stages to accelerate real-time video understanding.</p>
+    <p style="margin: 0.5em 0; color: #444;">We propose STC, the first plug-and-play hierarchical token compression framework for streaming VideoLLMs...</p>
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2512.00891" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       <a href="https://github.com/lern-to-write/STC" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -50,17 +48,25 @@
         <span><strong>Cite:</strong> Yiyu Wang, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang. (2026). "Accelerating Streaming Video Large Language Models via Hierarchical Token Compression." <i>CVPR</i>.</span>
         <button class="copy-btn" onclick="copyText(this, 'Yiyu Wang, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang. (2026). \"Accelerating Streaming Video Large Language Models via Hierarchical Token Compression.\" CVPR.')"><i class="fas fa-copy"></i> Copy</button>
       </div>
+      <div class="bibtex-block">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <pre>@inproceedings{wang2026stc,
+  title={Accelerating Streaming Video Large Language Models via Hierarchical Token Compression},
+  author={Wang, Yiyu and Liu, Xuyang and Gui, Xiyan and Lin, Xinying and Yang, Boxue and Liao, Chenfei and Chen, Tailai and Zhang, Linfeng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}</pre>
+          <button class="copy-btn" onclick="copyText(this, '@inproceedings{wang2026stc,\n  title={Accelerating Streaming Video Large Language Models via Hierarchical Token Compression},\n  author={Wang, Yiyu and Liu, Xuyang and Gui, Xiyan and Lin, Xinying and Yang, Boxue and Liao, Chenfei and Chen, Tailai and Zhang, Linfeng},\n  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n  year={2026}\n}')"><i class="fas fa-copy"></i> Copy BibTeX</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Paper 2: V2Drop -->
   <div class="pub-item">
-    <h2>
-      <a href="#">Variation-aware Vision Token Dropping for Faster Large Vision-Language Models</a>
-      <span class="badge badge-cvpr">CVPR 2026</span>
-    </h2>
+    <h2><a href="#">Variation-aware Vision Token Dropping for Faster Large Vision-Language Models</a> <span class="badge badge-cvpr">CVPR 2026</span></h2>
     <p style="margin: 0.3em 0; color: #666;">Published in <i>CVPR 2026</i>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose V2Drop, a variation-aware method that identifies and progressively drops lazy tokens based on their intrinsic behavioral patterns, eliminating positional bias while maintaining compatibility with efficient operators.</p>
+    <p style="margin: 0.5em 0; color: #444;">We propose V2Drop, a variation-aware method that identifies and progressively drops lazy tokens...</p>
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2509.01552" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       <a href="https://github.com/xuyang-liu16/V2Drop" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -70,124 +76,60 @@
         <span><strong>Cite:</strong> Junjie Chen, Xuyang Liu, Zichen Wen, Yiyu Wang, Siteng Huang, and Honggang Chen. (2026). "Variation-aware Vision Token Dropping for Faster Large Vision-Language Models." <i>CVPR</i>.</span>
         <button class="copy-btn" onclick="copyText(this, 'Junjie Chen, Xuyang Liu, Zichen Wen, Yiyu Wang, Siteng Huang, and Honggang Chen. (2026). \"Variation-aware Vision Token Dropping for Faster Large Vision-Language Models.\" CVPR.')"><i class="fas fa-copy"></i> Copy</button>
       </div>
+      <div class="bibtex-block">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <pre>@inproceedings{chen2026v2drop,
+  title={Variation-aware Vision Token Dropping for Faster Large Vision-Language Models},
+  author={Chen, Junjie and Liu, Xuyang and Wen, Zichen and Wang, Yiyu and Huang, Siteng and Chen, Honggang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}</pre>
+          <button class="copy-btn" onclick="copyText(this, '@inproceedings{chen2026v2drop,\n  title={Variation-aware Vision Token Dropping for Faster Large Vision-Language Models},\n  author={Chen, Junjie and Liu, Xuyang and Wen, Zichen and Wang, Yiyu and Huang, Siteng and Chen, Honggang},\n  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n  year={2026}\n}')"><i class="fas fa-copy"></i> Copy BibTeX</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Paper 3: VidCom2 -->
   <div class="pub-item">
-    <h2>
-      <a href="#">Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models</a>
-      <span class="badge badge-emnlp">EMNLP 2025</span>
-    </h2>
+    <h2><a href="#">Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models</a> <span class="badge badge-emnlp">EMNLP 2025</span></h2>
     <p style="margin: 0.3em 0; color: #666;">Published in <i>EMNLP 2025 Main Conference</i>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose VidCom2, a plug-and-play inference acceleration framework for VideoLLMs that adaptively adjusts compression intensity across frames.</p>
+    <p style="margin: 0.5em 0; color: #444;">We propose VidCom2, a plug-and-play inference acceleration framework for VideoLLMs...</p>
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2505.14454" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       <a href="https://github.com/xuyang-liu16/VidCom2" target="_blank"><i class="fab fa-github"></i> Code</a>
     </div>
     <div class="pub-citation">
       <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models." <i>EMNLP</i>.</span>
+        <span><strong>Cite:</strong> Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). "Video Compression Commander..." <i>EMNLP</i>.</span>
         <button class="copy-btn" onclick="copyText(this, 'Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). \"Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models.\" EMNLP.')"><i class="fas fa-copy"></i> Copy</button>
+      </div>
+      <div class="bibtex-block">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <pre>@inproceedings{liu2025vidcom2,
+  title={Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models},
+  author={Liu, Xuyang and Wang, Yiyu and Ma, Junpeng and Zhang, Linfeng},
+  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+  year={2025}
+}</pre>
+          <button class="copy-btn" onclick="copyText(this, '@inproceedings{liu2025vidcom2,\n  title={Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models},\n  author={Liu, Xuyang and Wang, Yiyu and Ma, Junpeng and Zhang, Linfeng},\n  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing},\n  year={2025}\n}')"><i class="fas fa-copy"></i> Copy BibTeX</button>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Paper 4: VTC-Bench -->
   <div class="pub-item">
-    <h2>
-      <a href="#">VTC-Bench: Are We Using the Right Benchmark? An Evaluation Framework for Visual Token Compression Methods</a>
-      <span class="badge badge-acl">ACL 2026</span>
-    </h2>
+    <h2><a href="#">VTC-Bench: Are We Using the Right Benchmark?</a> <span class="badge badge-acl">ACL 2026</span></h2>
     <p style="margin: 0.3em 0; color: #666;">Published in <i>ACL 2026 Main Track</i> <span class="status-note">(Under Review)</span>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose VTC-Bench, the first comprehensive evaluation framework for visual token compression methods across image and video understanding tasks.</p>
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2510.07143" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       <a href="https://github.com/Chenfei-Liao/VTC-Bench" target="_blank"><i class="fab fa-github"></i> Code</a>
     </div>
     <div class="pub-citation">
       <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Chenfei Liao et al. (2026). "Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods." <i>ACL</i>.</span>
+        <span><strong>Cite:</strong> Chenfei Liao et al. (2026). "Are We Using the Right Benchmark..." <i>ACL</i>.</span>
         <button class="copy-btn" onclick="copyText(this, 'Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, Yiyu Wang, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, and Xuming Hu. (2026). \"Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods.\" ACL.')"><i class="fas fa-copy"></i> Copy</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Paper 5: V-CAST -->
-  <div class="pub-item">
-    <h2>
-      <a href="#">V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models</a>
-      <span class="badge badge-eccv">ECCV 2026</span>
-    </h2>
-    <p style="margin: 0.3em 0; color: #666;">Published in <i>ECCV 2026</i> <span class="status-note">(Under Review)</span>, 2026</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose V-CAST, a training-free plug-and-play pruning policy for long-context video inference that casts token compression as a trajectory approximation problem.</p>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2603.27650" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-      <a href="https://xinyouu.github.io/V-CAST/" target="_blank"><i class="fas fa-globe"></i> Project</a>
-    </div>
-    <div class="pub-citation">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Xinying Lin, Xuyang Liu, Yiyu Wang, Teng Ma, and Wenqi Ren. (2026). "V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models." <i>ECCV</i>.</span>
-        <button class="copy-btn" onclick="copyText(this, 'Xinying Lin, Xuyang Liu, Yiyu Wang, Teng Ma, and Wenqi Ren. (2026). \"V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models.\" ECCV.')"><i class="fas fa-copy"></i> Copy</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Paper 6: KAWHI -->
-  <div class="pub-item">
-    <h2>
-      <a href="#">Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models</a>
-      <span class="badge badge-eccv">ECCV 2026</span>
-    </h2>
-    <p style="margin: 0.3em 0; color: #666;">Published in <i>ECCV 2026</i> <span class="status-note">(Under Review)</span>, 2026</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose KAWHI, a plug-and-play reward reweighting mechanism that explicitly incorporates structured visual information into uniform reward policy optimization methods for LVLMs.</p>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2603.27375" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-      <a href="https://kawhiiiileo.github.io/KAWHI_PAGE/" target="_blank"><i class="fas fa-globe"></i> Project</a>
-    </div>
-    <div class="pub-citation">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Yuhang Han, Yuyang Wu, Zhengbo Jiao, Yiyu Wang, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang. (2026). "Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models." <i>ECCV</i>.</span>
-        <button class="copy-btn" onclick="copyText(this, 'Yuhang Han, Yuyang Wu, Zhengbo Jiao, Yiyu Wang, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang. (2026). \"Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models.\" ECCV.')"><i class="fas fa-copy"></i> Copy</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Paper 7: Shifting AI Efficiency -->
-  <div class="pub-item">
-    <h2>
-      <a href="#">Position: Shifting AI Efficiency From Model-Centric to Data-Centric Compression</a>
-      <span class="badge badge-icml">ICML 2026</span>
-    </h2>
-    <p style="margin: 0.3em 0; color: #666;">Published in <i>ICML 2026 Position Track</i> <span class="status-note">(Under Review)</span>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">A position paper arguing that the focus of efficient AI research is shifting from model-centric compression to data-centric compression, with a systematic review of token compression methods.</p>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2505.19147" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-      <a href="https://github.com/xuyang-liu16/Awesome-Token-level-Model-Compression" target="_blank"><i class="fab fa-github"></i> Code</a>
-    </div>
-    <div class="pub-citation">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Xuyang Liu et al. (2026). "Shifting AI Efficiency From Model-Centric to Data-Centric Compression." <i>ICML Position Track</i>.</span>
-        <button class="copy-btn" onclick="copyText(this, 'Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Xiangqi Jin, Chang Zou, Yiyu Wang, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, and Linfeng Zhang. (2026). \"Shifting AI Efficiency From Model-Centric to Data-Centric Compression.\" ICML Position Track.')"><i class="fas fa-copy"></i> Copy</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Paper 8: AI for Service -->
-  <div class="pub-item">
-    <h2>
-      <a href="#">AI for Service: Proactive Assistance with AI Glasses</a>
-      <span class="badge badge-arxiv">arXiv 2025</span>
-    </h2>
-    <p style="margin: 0.3em 0; color: #666;">Published in <i>arXiv Technical Report</i>, 2025</p>
-    <p style="margin: 0.5em 0; color: #444;">We propose Alpha-Service, a proactive assistance system with AI glasses that enables real-time, context-aware service through multimodal perception and agentic decision making.</p>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2510.14359" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-    </div>
-    <div class="pub-citation">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <span><strong>Cite:</strong> Zichen Wen, Yiyu Wang, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, et al. (2025). "AI for Service: Proactive Assistance with AI Glasses." <i>arXiv preprint arXiv:2510.14359</i>.</span>
-        <button class="copy-btn" onclick="copyText(this, 'Zichen Wen, Yiyu Wang, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, et al. (2025). \"AI for Service: Proactive Assistance with AI Glasses.\" arXiv preprint arXiv:2510.14359.')"><i class="fas fa-copy"></i> Copy</button>
       </div>
     </div>
   </div>
@@ -207,7 +149,7 @@
   </script>
 
   <p style="margin-top: 3em; padding-top: 1em; border-top: 2px solid #eee; color: #999; font-size: 0.85em; text-align: center;">
-    Preview generated for lern-to-write.github.io — 8 papers total
+    Preview for lern-to-write.github.io — 8 papers total
   </p>
 </body>
 </html>
