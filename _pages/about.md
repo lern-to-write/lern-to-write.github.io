@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 <style>
-/* ===== Enhanced Academic Design System v5 — Restored Palette ===== */
+/* ===== Homepage Optimization v6 ===== */
 
-/* --- Glass Effect --- */
+/* --- Base --- */
 .glass-card {
   background: rgba(255,255,255,0.65);
   backdrop-filter: blur(20px) saturate(1.3);
@@ -19,7 +19,7 @@ redirect_from:
   border: 1px solid rgba(255,255,255,0.55);
 }
 
-/* --- Hero Section --- */
+/* --- Hero --- */
 .hero {
   position: relative; overflow: hidden;
   border-radius: 18px;
@@ -65,18 +65,28 @@ redirect_from:
   transition: background-size 0.3s, color 0.2s;
 }
 .hero-bio a:hover { color: #2c6faa; background-image: linear-gradient(transparent 82%, rgba(44,111,170,0.18) 82%); }
-.hero-badges {
-  margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px;
-  position: relative; z-index: 1;
+
+/* Hero Pills */
+.hero-pills {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 18px; position: relative; z-index: 1;
 }
-.hero-badges a img {
-  height: 22px; border-radius: 4px;
-  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 14px; border-radius: 20px;
+  font-size: 0.8em; font-weight: 600; color: #fff;
+  background: linear-gradient(135deg, #1a3a5c, #3a7bc8);
+  box-shadow: 0 3px 10px rgba(26,58,92,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.hero-badges a img:hover {
-  transform: translateY(-3px) scale(1.08);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+.hero-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26,58,92,0.3);
 }
+.hero-pill.hp-sjtu { background: linear-gradient(135deg, #0056a3, #1976d2); }
+.hero-pill.hp-tencent { background: linear-gradient(135deg, #00a4ef, #0288d1); }
+.hero-pill.hp-streaming { background: linear-gradient(135deg, #c62828, #ef5350); }
+.hero-pill.hp-efficiency { background: linear-gradient(135deg, #2e7d32, #43a047); }
 
 /* --- Research Highlights --- */
 .research-viz {
@@ -158,6 +168,13 @@ redirect_from:
 .stats-item:nth-child(2)::after, .stats-item:nth-child(2)::before { background: linear-gradient(90deg, #2e7d32, #43a047); }
 .stats-item:nth-child(3)::after, .stats-item:nth-child(3)::before { background: linear-gradient(90deg, #ef6c00, #ffa726); }
 
+.stats-icon {
+  font-size: 1.5em; margin-bottom: 6px; display: block;
+}
+.stats-item:nth-child(1) .stats-icon { filter: drop-shadow(0 2px 4px rgba(26,58,92,0.2)); }
+.stats-item:nth-child(2) .stats-icon { filter: drop-shadow(0 2px 4px rgba(46,125,50,0.2)); }
+.stats-item:nth-child(3) .stats-icon { filter: drop-shadow(0 2px 4px rgba(239,108,0,0.2)); }
+
 .stats-num {
   font-size: 2.6em; font-weight: 900; color: #1a3a5c;
   display: block; letter-spacing: -0.04em; line-height: 1.1;
@@ -188,7 +205,7 @@ redirect_from:
   border-radius: 1px;
 }
 
-/* --- Section Divider --- */
+/* --- Divider --- */
 .section-divider {
   height: 1px; border: none; margin: 44px 0;
   background: linear-gradient(90deg, transparent, rgba(26,58,92,0.08) 20%, rgba(26,58,92,0.08) 80%, transparent);
@@ -247,6 +264,13 @@ redirect_from:
   background: #1a3a5c; border-color: #1a3a5c;
   box-shadow: 0 0 0 6px rgba(26,58,92,0.12);
   transform: scale(1.3);
+}
+.news-timeline li.visible::before {
+  animation: dotGlow 0.8s ease-out;
+}
+@keyframes dotGlow {
+  0% { box-shadow: 0 0 0 0px rgba(58,123,200,0.4); }
+  100% { box-shadow: 0 0 0 10px rgba(58,123,200,0); }
 }
 .news-timeline li.accepted::before { border-color: #2e7d32; background: #e8f5e9; }
 .news-timeline li.accepted:hover::before { background: #2e7d32; border-color: #2e7d32; box-shadow: 0 0 0 6px rgba(46,125,50,0.15); }
@@ -331,8 +355,30 @@ redirect_from:
   transform: translateY(-4px);
   border-left-width: 6px;
 }
+
+/* First Author Highlight */
+.paper-card.first-author {
+  border-left-color: #f59e0b;
+}
+.paper-card.first-author::after {
+  content: '⭐ First Author';
+  position: absolute;
+  top: 14px; right: 16px;
+  font-size: 0.64em;
+  font-weight: 700;
+  color: #f59e0b;
+  background: rgba(245,158,11,0.1);
+  padding: 3px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+.paper-card.first-author:hover {
+  box-shadow: 0 12px 48px rgba(245,158,11,0.12);
+}
+
 .paper-card.accent-red { border-left-color: #c62828; }
 .paper-card.accent-red:hover { box-shadow: 0 12px 48px rgba(198,40,40,0.1); }
+.paper-card.first-author.accent-red:hover { box-shadow: 0 12px 48px rgba(245,158,11,0.15); }
 .paper-card.accent-blue { border-left-color: #1565c0; }
 .paper-card.accent-blue:hover { box-shadow: 0 12px 48px rgba(21,101,192,0.1); }
 .paper-card.accent-purple { border-left-color: #6a1b9a; }
@@ -341,6 +387,7 @@ redirect_from:
 .paper-card.accent-green:hover { box-shadow: 0 12px 48px rgba(46,125,50,0.1); }
 .paper-card.accent-orange { border-left-color: #e65100; }
 .paper-card.accent-orange:hover { box-shadow: 0 12px 48px rgba(230,81,0,0.1); }
+.paper-card.first-author.accent-orange:hover { box-shadow: 0 12px 48px rgba(245,158,11,0.15); }
 .paper-card.accent-deeporange { border-left-color: #bf360c; }
 .paper-card.accent-deeporange:hover { box-shadow: 0 12px 48px rgba(191,54,12,0.1); }
 
@@ -359,7 +406,7 @@ redirect_from:
 .paper-desc { font-size: 0.87em; color: #64748b; line-height: 1.7; margin-bottom: 14px; }
 .paper-desc strong { color: #374151; font-weight: 600; }
 
-.paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.paper-links { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .paper-links a { text-decoration: none; margin-right: 0; border-bottom: none; display: inline-block; }
 .paper-links img {
   height: 24px; border-radius: 5px;
@@ -367,106 +414,90 @@ redirect_from:
 }
 .paper-links img:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
 
-/* Citation block */
-.cite-block {
-  background: rgba(26,58,92,0.03);
-  border-radius: 10px;
-  padding: 12px 16px;
-  margin-top: 10px;
-  font-size: 0.82em;
-  color: #4a5568;
-  line-height: 1.6;
-  position: relative;
-}
-.cite-block .cite-label {
-  font-size: 0.7em; font-weight: 700; color: #1a3a5c;
-  text-transform: uppercase; letter-spacing: 0.08em;
-  margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
-}
-.cite-block pre {
-  background: transparent; margin: 0; padding: 0;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.78em; line-height: 1.5;
-  color: #4a5568; white-space: pre-wrap; word-break: break-word;
-}
-.cite-block .cite-text {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.78em; line-height: 1.5;
-}
-.copy-btn {
-  position: absolute; top: 10px; right: 10px;
-  background: rgba(255,255,255,0.8);
+/* Cite Toggle */
+.cite-toggle {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 5px 12px; border-radius: 6px;
+  font-size: 0.78em; font-weight: 600;
+  color: #1a3a5c; background: rgba(26,58,92,0.06);
   border: 1px solid rgba(26,58,92,0.1);
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-size: 0.72em; font-weight: 600; color: #1a3a5c;
-  cursor: pointer;
-  transition: all 0.2s;
-  display: flex; align-items: center; gap: 4px;
+  cursor: pointer; transition: all 0.2s;
+  margin-left: 4px;
 }
-.copy-btn:hover {
+.cite-toggle:hover {
   background: #1a3a5c; color: #fff;
   border-color: #1a3a5c;
 }
-.copy-btn.copied {
-  background: #2e7d32; color: #fff; border-color: #2e7d32;
+.cite-toggle.active {
+  background: #1a3a5c; color: #fff;
+}
+
+/* Cite Panel (collapsible) */
+.cite-panel {
+  max-height: 0; overflow: hidden; opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+  margin-top: 0;
+}
+.cite-panel.open {
+  max-height: 500px; opacity: 1; margin-top: 14px;
+}
+.cite-panel-inner {
+  background: rgba(26,58,92,0.03);
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+.cite-row {
+  margin-bottom: 12px;
+}
+.cite-row:last-child { margin-bottom: 0; }
+.cite-row-label {
+  font-size: 0.7em; font-weight: 700; color: #1a3a5c;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
+  justify-content: space-between;
+}
+.cite-row-label button {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(26,58,92,0.1);
+  border-radius: 5px; padding: 3px 10px;
+  font-size: 0.85em; font-weight: 600; color: #1a3a5c;
+  cursor: pointer; transition: all 0.2s;
+}
+.cite-row-label button:hover { background: #1a3a5c; color: #fff; }
+.cite-row-label button.copied { background: #2e7d32; color: #fff; border-color: #2e7d32; }
+.cite-text {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78em; line-height: 1.5; color: #4a5568;
+}
+.cite-pre {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.76em; line-height: 1.5;
+  color: #4a5568; white-space: pre-wrap; word-break: break-word;
+  margin: 0;
 }
 
 .note-text { font-size: 0.82em; color: #a0aec0; margin-bottom: 18px; font-style: italic; }
 
-/* --- Project Grid --- */
-.project-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 18px; margin-top: 10px;
+/* View All Button */
+.view-all-box {
+  text-align: center; margin: 28px 0 8px;
 }
-.project-card {
-  background: rgba(255,255,255,0.65);
-  backdrop-filter: blur(20px) saturate(1.3);
-  -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid rgba(255,255,255,0.55);
-  border-radius: 16px;
-  padding: 26px 28px;
-  box-shadow: 0 4px 24px rgba(26,58,92,0.05), 0 1px 2px rgba(0,0,0,0.02);
-  transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
-  display: flex; flex-direction: column;
-  position: relative; overflow: hidden;
+.view-all-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px; border-radius: 14px;
+  font-size: 0.95em; font-weight: 700;
+  color: #1a3a5c; background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(26,58,92,0.15);
+  box-shadow: 0 4px 20px rgba(26,58,92,0.08);
+  text-decoration: none; transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
 }
-.project-card::before {
-  content: ''; position: absolute;
-  top: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg, var(--accent, #1a3a5c), transparent);
-  opacity: 0; transition: opacity 0.3s, height 0.3s;
+.view-all-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(26,58,92,0.15);
+  background: #1a3a5c; color: #fff;
+  border-color: #1a3a5c;
 }
-.project-card:hover {
-  box-shadow: 0 12px 48px rgba(26,58,92,0.1);
-  transform: translateY(-6px);
-}
-.project-card:hover::before { opacity: 1; height: 4px; }
-
-.project-tag {
-  display: inline-block; font-size: 0.68em;
-  padding: 4px 12px; border-radius: 8px;
-  font-weight: 700; color: #fff;
-  margin-bottom: 14px; width: fit-content;
-  letter-spacing: 0.05em;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-.project-card h4 {
-  margin: 0 0 10px; font-size: 1.12em; font-weight: 700;
-  color: #1a3a5c; letter-spacing: -0.01em;
-}
-.project-card p {
-  font-size: 0.85em; color: #64748b;
-  margin-bottom: 18px; line-height: 1.65; flex: 1;
-}
-.project-card a.project-link {
-  font-size: 0.84em; color: #1a3a5c; font-weight: 600;
-  text-decoration: none; display: inline-flex;
-  align-items: center; gap: 6px;
-  transition: gap 0.3s cubic-bezier(0.34,1.56,0.64,1); border-bottom: none;
-  padding: 6px 0;
-}
-.project-card a.project-link:hover { gap: 12px; text-decoration: none; }
 
 /* --- Service Card --- */
 .service-card {
@@ -516,13 +547,13 @@ redirect_from:
   .stats-bar { gap: 10px; }
   .stats-item { padding: 18px 10px; }
   .stats-num { font-size: 1.8em; }
-  .project-grid { grid-template-columns: 1fr; }
   .research-viz { gap: 10px; }
   .rh-pill { padding: 12px 16px; min-width: 150px; }
   .news-timeline { padding-left: 28px; }
   .paper-card { padding: 20px 22px; }
   .hero { padding: 32px 24px 28px; }
   .hero-name { font-size: 1.8em; }
+  .paper-card.first-author::after { display: none; }
 }
 @media (max-width: 480px) {
   .research-viz { flex-direction: column; }
@@ -539,12 +570,12 @@ redirect_from:
     <br><br>
     My research focuses on <strong>Streaming Video Understanding</strong> — building systems that perceive, reason, and act under real-time constraints with tight token budgets and precise temporal grounding. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
   </div>
-  <div class="hero-badges">
-    <a href="#"><img src="https://img.shields.io/badge/HKUST(GZ)-1a3a5c?style=flat-square&logo=google-scholar&logoColor=white" alt="HKUST(GZ)"></a>
-    <a href="#"><img src="https://img.shields.io/badge/SJTU-0056a3?style=flat-square" alt="SJTU"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Tencent_Intern-00a4ef?style=flat-square&logo=tencent-qq&logoColor=white" alt="Tencent"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Streaming_Video-c62828?style=flat-square" alt="Streaming Video"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Efficient_VideoLLM-2e7d32?style=flat-square" alt="Efficiency"></a>
+  <div class="hero-pills">
+    <span class="hero-pill">🏫 HKUST(GZ)</span>
+    <span class="hero-pill hp-sjtu">🏫 SJTU</span>
+    <span class="hero-pill hp-tencent">💼 Tencent Intern</span>
+    <span class="hero-pill hp-streaming">🎥 Streaming Video</span>
+    <span class="hero-pill hp-efficiency">⚡ Efficient VideoLLM</span>
   </div>
 </div>
 
@@ -576,14 +607,17 @@ redirect_from:
 <!-- ===== Stats ===== -->
 <div class="stats-bar reveal" id="stats-bar">
   <div class="stats-item">
+    <span class="stats-icon">📄</span>
     <span class="stats-num" data-target="8">8</span>
     <span class="stats-label">Papers</span>
   </div>
   <div class="stats-item">
+    <span class="stats-icon">✅</span>
     <span class="stats-num" data-target="3">3</span>
     <span class="stats-label">Accepted</span>
   </div>
   <div class="stats-item">
+    <span class="stats-icon">📝</span>
     <span class="stats-num" data-target="4">4</span>
     <span class="stats-label">Under Review</span>
   </div>
@@ -603,29 +637,13 @@ redirect_from:
     <span class="news-badge badge-eccv">ECCV 2026</span>
     📝 <strong>Under Review</strong> — <em>"V-CAST: Video Curvature-Aware Spatio-Temporal Pruning"</em> submitted to <strong>ECCV 2026</strong>.
   </li>
-  <li class="reveal">
-    <span class="news-badge badge-eccv">ECCV 2026</span>
-    📝 <strong>Under Review</strong> — <em>"Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in LVLMs"</em> (KAWHI) submitted to <strong>ECCV 2026</strong>.
-  </li>
-  <li class="reveal">
-    <span class="news-badge badge-icml">ICML 2026</span>
-    📝 <strong>Under Review</strong> — <em>"Position: Shifting AI Efficiency from Model-Centric to Data-Centric Compression"</em> submitted to <strong>ICML 2026 Position Track</strong>.
-  </li>
   <li class="reveal accepted">
     <span class="news-badge badge-cvpr">CVPR 2026</span>
     🏆 <strong>Paper Accepted!</strong> <em>"Accelerating Streaming Video Large Language Models via Hierarchical Token Compression"</em> (<strong>STC</strong>) accepted to <strong>CVPR 2026</strong>.
   </li>
   <li class="reveal accepted">
-    <span class="news-badge badge-cvpr">CVPR 2026</span>
-    🏆 <strong>Paper Accepted!</strong> <em>"Variation-aware Vision Token Dropping for Faster LVLMs"</em> (<strong>V2Drop</strong>) accepted to <strong>CVPR 2026</strong>.
-  </li>
-  <li class="reveal accepted">
     <span class="news-badge badge-emnlp">EMNLP 2025</span>
     🏆 <strong>Paper Accepted!</strong> <em>"Video Compression Commander"</em> (<strong>VidCom²</strong>) accepted to <strong>EMNLP 2025 Main Conference</strong>.
-  </li>
-  <li class="reveal">
-    <span class="news-badge badge-arxiv">arXiv 2025</span>
-    📄 <strong>Tech Report</strong> — <em>"AI for Service: Proactive Assistance with AI Glasses"</em> (<strong>Alpha-Service</strong>) released on <strong>arXiv</strong>.
   </li>
 </ul>
 
@@ -634,32 +652,37 @@ redirect_from:
 <!-- ===== Publications ===== -->
 <h2 class="section-title reveal"><span class="title-icon">📝</span> Publications</h2>
 
-<p class="note-text">* denotes equal contribution, † denotes corresponding author.</p>
+<p class="note-text">* denotes equal contribution, † denotes corresponding author. <a href="/publications/" style="color:#3a7bc8;font-weight:600;">View full list →</a></p>
 
 <h3 class="sub-heading reveal"><span class="dot" style="background:#2e7d32; color:#2e7d32;"></span> Accepted <span class="count-badge" style="background: linear-gradient(135deg, #2e7d32, #43a047);">3</span></h3>
 
 <!-- STC -->
-<div class="paper-card accent-red reveal">
+<div class="paper-card accent-red first-author reveal">
   <h4><a href="https://arxiv.org/abs/2512.00891">Accelerating Streaming Video Large Language Models via Hierarchical Token Compression</a></h4>
   <div class="paper-authors"><strong>Yiyu Wang</strong>, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang.</div>
   <div class="paper-venue-chip" style="color:#c62828; background: rgba(198,40,40,0.08);">CVPR 2026</div>
-  <div class="paper-desc">We propose <strong>Streaming Token Compression (STC)</strong>, the first plug-and-play hierarchical token compression framework for streaming VideoLLMs. STC introduces two token-level accelerators: <strong>STC-Cacher</strong>, which reduces ViT encoding overhead by caching and reusing features from temporally similar frames, and <strong>STC-Pruner</strong>, which compresses the visual token sequence before it enters the LLM. Retains up to <strong>99%</strong> of accuracy while reducing ViT encoding latency and LLM pre-filling latency by <strong>24.5%</strong> and <strong>45.3%</strong>.</div>
+  <div class="paper-desc">We propose <strong>Streaming Token Compression (STC)</strong>, the first plug-and-play hierarchical token compression framework for streaming VideoLLMs. STC introduces two token-level accelerators: <strong>STC-Cacher</strong> and <strong>STC-Pruner</strong>. Retains up to <strong>99%</strong> of accuracy while reducing ViT encoding latency and LLM pre-filling latency by <strong>24.5%</strong> and <strong>45.3%</strong>.</div>
   <div class="paper-links">
     <a href="https://arxiv.org/abs/2512.00891"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/lern-to-write/STC"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+    <button class="cite-toggle" onclick="toggleCite('cite-stc',this)">📋 Cite</button>
   </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-stc',this)">📋 Copy</button></div>
-    <span id="cite-stc" class="cite-text">Yiyu Wang, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang. (2026). "Accelerating Streaming Video Large Language Models via Hierarchical Token Compression." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-stc',this)">📋 Copy</button></div>
-    <pre id="bib-stc">@inproceedings{wang2026stc,
+  <div class="cite-panel" id="panel-cite-stc">
+    <div class="cite-panel-inner">
+      <div class="cite-row">
+        <div class="cite-row-label">📋 Citation <button onclick="copyCite('cite-stc',this)">Copy</button></div>
+        <span id="cite-stc" class="cite-text">Yiyu Wang, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang. (2026). "Accelerating Streaming Video Large Language Models via Hierarchical Token Compression." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
+      </div>
+      <div class="cite-row">
+        <div class="cite-row-label">📝 BibTeX <button onclick="copyBib('bib-stc',this)">Copy</button></div>
+        <pre id="bib-stc" class="cite-pre">@inproceedings{wang2026stc,
   title={Accelerating Streaming Video Large Language Models via Hierarchical Token Compression},
   author={Wang, Yiyu and Liu, Xuyang and Gui, Xiyan and Lin, Xinying and Yang, Boxue and Liao, Chenfei and Chen, Tailai and Zhang, Linfeng},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2026}
 }</pre>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -672,24 +695,29 @@ redirect_from:
   <div class="paper-links">
     <a href="https://arxiv.org/abs/2509.01552"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/xuyang-liu16/V2Drop"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+    <button class="cite-toggle" onclick="toggleCite('cite-v2drop',this)">📋 Cite</button>
   </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-v2drop',this)">📋 Copy</button></div>
-    <span id="cite-v2drop" class="cite-text">Junjie Chen, Xuyang Liu, Zichen Wen, Yiyu Wang, Siteng Huang, and Honggang Chen. (2026). "Variation-aware Vision Token Dropping for Faster Large Vision-Language Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-v2drop',this)">📋 Copy</button></div>
-    <pre id="bib-v2drop">@inproceedings{chen2026v2drop,
+  <div class="cite-panel" id="panel-cite-v2drop">
+    <div class="cite-panel-inner">
+      <div class="cite-row">
+        <div class="cite-row-label">📋 Citation <button onclick="copyCite('cite-v2drop',this)">Copy</button></div>
+        <span id="cite-v2drop" class="cite-text">Junjie Chen, Xuyang Liu, Zichen Wen, Yiyu Wang, Siteng Huang, and Honggang Chen. (2026). "Variation-aware Vision Token Dropping for Faster Large Vision-Language Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
+      </div>
+      <div class="cite-row">
+        <div class="cite-row-label">📝 BibTeX <button onclick="copyBib('bib-v2drop',this)">Copy</button></div>
+        <pre id="bib-v2drop" class="cite-pre">@inproceedings{chen2026v2drop,
   title={Variation-aware Vision Token Dropping for Faster Large Vision-Language Models},
   author={Chen, Junjie and Liu, Xuyang and Wen, Zichen and Wang, Yiyu and Huang, Siteng and Chen, Honggang},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2026}
 }</pre>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- VidCom2 -->
-<div class="paper-card accent-orange reveal">
+<div class="paper-card accent-orange first-author reveal">
   <h4><a href="https://arxiv.org/abs/2505.14454">Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models</a></h4>
   <div class="paper-authors">Xuyang Liu*, <strong>Yiyu Wang*</strong>, Junpeng Ma, and Linfeng Zhang.</div>
   <div class="paper-venue-chip" style="color:#e65100; background: rgba(230,81,0,0.08);">EMNLP 2025 Main</div>
@@ -697,19 +725,24 @@ redirect_from:
   <div class="paper-links">
     <a href="https://arxiv.org/abs/2505.14454"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/xuyang-liu16/VidCom2"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+    <button class="cite-toggle" onclick="toggleCite('cite-vidcom2',this)">📋 Cite</button>
   </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vidcom2',this)">📋 Copy</button></div>
-    <span id="cite-vidcom2" class="cite-text">Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models." Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP).</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vidcom2',this)">📋 Copy</button></div>
-    <pre id="bib-vidcom2">@inproceedings{liu2025vidcom2,
+  <div class="cite-panel" id="panel-cite-vidcom2">
+    <div class="cite-panel-inner">
+      <div class="cite-row">
+        <div class="cite-row-label">📋 Citation <button onclick="copyCite('cite-vidcom2',this)">Copy</button></div>
+        <span id="cite-vidcom2" class="cite-text">Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models." Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP).</span>
+      </div>
+      <div class="cite-row">
+        <div class="cite-row-label">📝 BibTeX <button onclick="copyBib('bib-vidcom2',this)">Copy</button></div>
+        <pre id="bib-vidcom2" class="cite-pre">@inproceedings{liu2025vidcom2,
   title={Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models},
   author={Liu, Xuyang and Wang, Yiyu and Ma, Junpeng and Zhang, Linfeng},
   booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing},
   year={2025}
 }</pre>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -724,139 +757,29 @@ redirect_from:
   <div class="paper-links">
     <a href="https://arxiv.org/abs/2510.07143"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/Chenfei-Liao/VTC-Bench"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+    <button class="cite-toggle" onclick="toggleCite('cite-vtc',this)">📋 Cite</button>
   </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vtc',this)">📋 Copy</button></div>
-    <span id="cite-vtc" class="cite-text">Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, Yiyu Wang, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, and Xuming Hu. (2026). "Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods." Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL).</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vtc',this)">📋 Copy</button></div>
-    <pre id="bib-vtc">@inproceedings{liao2026vtc,
+  <div class="cite-panel" id="panel-cite-vtc">
+    <div class="cite-panel-inner">
+      <div class="cite-row">
+        <div class="cite-row-label">📋 Citation <button onclick="copyCite('cite-vtc',this)">Copy</button></div>
+        <span id="cite-vtc" class="cite-text">Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, Yiyu Wang, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, and Xuming Hu. (2026). "Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods." Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL).</span>
+      </div>
+      <div class="cite-row">
+        <div class="cite-row-label">📝 BibTeX <button onclick="copyBib('bib-vtc',this)">Copy</button></div>
+        <pre id="bib-vtc" class="cite-pre">@inproceedings{liao2026vtc,
   title={Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods},
   author={Liao, Chenfei and Wang, Wensong and Wen, Zichen and Zheng, Xu and Wang, Yiyu and He, Haocong and Lyu, Yuanhuiyi and Jiang, Lutao and Zou, Xin and Fu, Yuqian and Ren, Bin and Zhang, Linfeng and Hu, Xuming},
   booktitle={Proceedings of the Annual Meeting of the Association for Computational Linguistics},
   year={2026}
 }</pre>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- V-CAST -->
-<div class="paper-card accent-blue reveal">
-  <h4><a href="https://arxiv.org/abs/2603.27650">V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models</a></h4>
-  <div class="paper-authors">Xinying Lin, Xuyang Liu, <strong>Yiyu Wang</strong>, Teng Ma, and Wenqi Ren.</div>
-  <div class="paper-venue-chip" style="color:#1565c0; background: rgba(21,101,192,0.08);">ECCV 2026 (Under Review)</div>
-  <div class="paper-desc">We propose <strong>V-CAST</strong> (Video Curvature-Aware Spatio-Temporal Pruning), a training-free, plug-and-play pruning policy for long-context video inference. Casts token compression as a trajectory approximation problem with curvature-guided temporal allocation. Achieves <strong>98.6%</strong> of original performance and reduces peak memory and total latency to <strong>86.7%</strong> and <strong>86.4%</strong>.</div>
-  <div class="paper-links">
-    <a href="https://arxiv.org/abs/2603.27650"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
-    <a href="https://xinyouu.github.io/V-CAST/"><img src="https://img.shields.io/badge/Project-Page-4285F4?style=flat&logo=google-chrome" alt="Project"></a>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vcast',this)">📋 Copy</button></div>
-    <span id="cite-vcast" class="cite-text">Xinying Lin, Xuyang Liu, Yiyu Wang, Teng Ma, and Wenqi Ren. (2026). "V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models." arXiv preprint arXiv:2603.27650.</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vcast',this)">📋 Copy</button></div>
-    <pre id="bib-vcast">@article{lin2026vcast,
-  title={V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models},
-  author={Lin, Xinying and Liu, Xuyang and Wang, Yiyu and Ma, Teng and Ren, Wenqi},
-  journal={arXiv preprint arXiv:2603.27650},
-  year={2026}
-}</pre>
-  </div>
-</div>
-
-<!-- KAWHI -->
-<div class="paper-card accent-blue reveal">
-  <h4><a href="https://arxiv.org/abs/2603.27375">Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models</a></h4>
-  <div class="paper-authors">Yuhang Han, Yuyang Wu, Zhengbo Jiao, <strong>Yiyu Wang</strong>, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang.</div>
-  <div class="paper-venue-chip" style="color:#1565c0; background: rgba(21,101,192,0.08);">ECCV 2026 (Under Review)</div>
-  <div class="paper-desc">We propose <strong>KAWHI</strong> (Key-Region Aligned Weighted Harmonic Incentive), a plug-and-play reward reweighting mechanism that explicitly incorporates structured visual information into uniform reward policy optimization methods for LVLMs.</div>
-  <div class="paper-links">
-    <a href="https://arxiv.org/abs/2603.27375"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
-    <a href="https://kawhiiiileo.github.io/KAWHI_PAGE/"><img src="https://img.shields.io/badge/Project-Page-4285F4?style=flat&logo=google-chrome" alt="Project"></a>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-kawhi',this)">📋 Copy</button></div>
-    <span id="cite-kawhi" class="cite-text">Yuhang Han, Yuyang Wu, Zhengbo Jiao, Yiyu Wang, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang. (2026). "Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models." arXiv preprint arXiv:2603.27375.</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-kawhi',this)">📋 Copy</button></div>
-    <pre id="bib-kawhi">@article{han2026kawhi,
-  title={Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models},
-  author={Han, Yuhang and Wu, Yuyang and Jiao, Zhengbo and Wang, Yiyu and Liu, Xuyang and Wang, Shaobo and Xu, Hanlin and Hu, Xuming and Zhang, Linfeng},
-  journal={arXiv preprint arXiv:2603.27375},
-  year={2026}
-}</pre>
-  </div>
-</div>
-
-<!-- Shifting AI Efficiency -->
-<div class="paper-card accent-purple reveal">
-  <h4><a href="https://arxiv.org/abs/2505.19147">Position: Shifting AI Efficiency From Model-Centric to Data-Centric Compression</a></h4>
-  <div class="paper-authors">Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Xiangqi Jin, Chang Zou, <strong>Yiyu Wang</strong>, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, and Linfeng Zhang.</div>
-  <div class="paper-venue-chip" style="color:#6a1b9a; background: rgba(106,27,154,0.08);">ICML 2026 Position Track (Under Review)</div>
-  <div class="paper-desc">A position paper arguing that AI efficiency research should shift focus from model-centric compression to data-centric compression, establishing a unified framework for existing efficiency strategies.</div>
-  <div class="paper-links">
-    <a href="https://arxiv.org/abs/2505.19147"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
-    <a href="https://github.com/xuyang-liu16/Awesome-Token-level-Model-Compression"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-shift',this)">📋 Copy</button></div>
-    <span id="cite-shift" class="cite-text">Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Xiangqi Jin, Chang Zou, Yiyu Wang, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, and Linfeng Zhang. (2026). "Shifting AI Efficiency From Model-Centric to Data-Centric Compression." arXiv preprint arXiv:2505.19147.</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-shift',this)">📋 Copy</button></div>
-    <pre id="bib-shift">@article{liu2026shifting,
-  title={Shifting AI Efficiency From Model-Centric to Data-Centric Compression},
-  author={Liu, Xuyang and Wen, Zichen and Wang, Shaobo and Chen, Junjie and Tao, Zhishan and Wang, Yubo and Jin, Xiangqi and Zou, Chang and Wang, Yiyu and Liao, Chenfei and Zheng, Xu and Chen, Honggang and Li, Weijia and Hu, Xuming and He, Conghui and Zhang, Linfeng},
-  journal={arXiv preprint arXiv:2505.19147},
-  year={2026}
-}</pre>
-  </div>
-</div>
-
-<h3 class="sub-heading reveal"><span class="dot" style="background:#bf360c; color:#bf360c;"></span> Technical Report <span class="count-badge" style="background: linear-gradient(135deg, #bf360c, #ff6e40);">1</span></h3>
-
-<!-- AI for Service -->
-<div class="paper-card accent-deeporange reveal">
-  <h4><a href="https://arxiv.org/abs/2510.14359">AI for Service: Proactive Assistance with AI Glasses</a></h4>
-  <div class="paper-authors">Zichen Wen, <strong>Yiyu Wang</strong>, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, and Linfeng Zhang.</div>
-  <div class="paper-venue-chip" style="color:#bf360c; background: rgba(191,54,12,0.08);">arXiv 2025 (Tech Report)</div>
-  <div class="paper-desc">We propose <strong>Alpha-Service</strong>, a proactive assistance system with AI glasses. Integrates multimodal perception with agentic decision-making, delivering real-time, context-aware assistance through continuous visual and auditory sensing.</div>
-  <div class="paper-links"><a href="https://arxiv.org/abs/2510.14359"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
-  <div class="cite-block">
-    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-ais',this)">📋 Copy</button></div>
-    <span id="cite-ais" class="cite-text">Zichen Wen, Yiyu Wang, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, and Linfeng Zhang. (2025). "AI for Service: Proactive Assistance with AI Glasses." arXiv preprint arXiv:2510.14359.</span>
-  </div>
-  <div class="cite-block">
-    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-ais',this)">📋 Copy</button></div>
-    <pre id="bib-ais">@article{wen2025aiforservice,
-  title={AI for Service: Proactive Assistance with AI Glasses},
-  author={Wen, Zichen and Wang, Yiyu and Liao, Chenfei and Yang, Boxue and Li, Junxian and Liu, Weifeng and He, Haocong and Feng, Bolong and Liu, Xuyang and Lyu, Yuanhuiyi and others},
-  journal={arXiv preprint arXiv:2510.14359},
-  year={2025}
-}</pre>
-  </div>
-</div>
-
-<hr class="section-divider">
-
-<!-- ===== Projects ===== -->
-<h2 class="section-title reveal"><span class="title-icon">💻</span> Selected Projects</h2>
-
-<div class="project-grid">
-  <div class="project-card reveal" style="--accent: #c62828;">
-    <span class="project-tag" style="background: linear-gradient(135deg, #c62828, #ef5350);">CVPR 2026</span>
-    <h4>STC</h4>
-    <p>A streaming-first token compression framework with caching and pruning for real-time video understanding.</p>
-    <a href="https://github.com/lern-to-write/STC" class="project-link">Open Project <span class="arrow">&rarr;</span></a>
-  </div>
-  <div class="project-card reveal" style="--accent: #e65100;">
-    <span class="project-tag" style="background: linear-gradient(135deg, #e65100, #ff8f00);">EMNLP 2025</span>
-    <h4>VidCom²</h4>
-    <p>Plug-and-play inference acceleration for VideoLLMs via adaptive frame-uniqueness-based token compression.</p>
-    <a href="https://github.com/xuyang-liu16/VidCom2" class="project-link">Open Project <span class="arrow">&rarr;</span></a>
-  </div>
+<div class="view-all-box reveal">
+  <a href="/publications/" class="view-all-btn">📚 View All 8 Publications <span style="font-size:1.2em;">→</span></a>
 </div>
 
 <hr class="section-divider">
@@ -878,15 +801,32 @@ redirect_from:
 </div>
 
 <script>
+function toggleCite(id, btn) {
+  var panel = document.getElementById('panel-' + id);
+  if (panel.classList.contains('open')) {
+    panel.classList.remove('open');
+    btn.classList.remove('active');
+    btn.innerHTML = '📋 Cite';
+  } else {
+    // close others
+    document.querySelectorAll('.cite-panel.open').forEach(function(p) {
+      p.classList.remove('open');
+    });
+    document.querySelectorAll('.cite-toggle.active').forEach(function(b) {
+      b.classList.remove('active');
+      b.innerHTML = '📋 Cite';
+    });
+    panel.classList.add('open');
+    btn.classList.add('active');
+    btn.innerHTML = '📋 Close';
+  }
+}
 function copyCite(id, btn) {
   var text = document.getElementById(id).textContent;
   navigator.clipboard.writeText(text).then(function() {
     btn.textContent = '✓ Copied';
     btn.classList.add('copied');
-    setTimeout(function() {
-      btn.textContent = '📋 Copy';
-      btn.classList.remove('copied');
-    }, 2000);
+    setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
   });
 }
 function copyBib(id, btn) {
@@ -894,10 +834,7 @@ function copyBib(id, btn) {
   navigator.clipboard.writeText(text).then(function() {
     btn.textContent = '✓ Copied';
     btn.classList.add('copied');
-    setTimeout(function() {
-      btn.textContent = '📋 Copy';
-      btn.classList.remove('copied');
-    }, 2000);
+    setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
   });
 }
 
