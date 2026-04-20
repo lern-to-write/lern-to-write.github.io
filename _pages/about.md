@@ -280,7 +280,7 @@ redirect_from:
   background: var(--accent, #1a3a5c);
   border-radius: 20px 20px 0 0;
 }
-.paper-card h4 { margin: 0 0 10px; font-size: 1.08em; line-height: 1.45; font-weight: 700; color: #0f172a; }
+.paper-card h4 { margin: 0 0 10px; font-size: 1.08em; line-height: 1.45; font-weight: 700; color: #0f172a; padding-right: 110px; }
 .paper-card h4 a { color: inherit; text-decoration: none; border-bottom: none; transition: color 0.2s; }
 .paper-card h4 a:hover { color: #2563eb; }
 
