@@ -60,7 +60,7 @@ redirect_from:
   border-radius: 50%; pointer-events: none;
 }
 .hero-name {
-  font-size: 2.8em; font-weight: 900; color: #0f172a;
+  font-size: 2.2em; font-weight: 900; color: #0f172a;
   letter-spacing: -0.04em; line-height: 1.1; margin: 0 0 10px;
   position: relative; z-index: 1;
 }
@@ -149,7 +149,7 @@ redirect_from:
 .stat-card:nth-child(3) .stat-icon-wrap { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
 
 .stat-num {
-  font-size: 2.8em; font-weight: 900; color: #0f172a;
+  font-size: 2.2em; font-weight: 900; color: #0f172a;
   display: block; letter-spacing: -0.04em; line-height: 1;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
 }
