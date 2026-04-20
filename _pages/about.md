@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yiyu Wang (王一宇)"
+title: "Hi, I'm Yiyu Wang (王一宇) 👋"
 excerpt: "Joint Ph.D. Student at HKUST(GZ) & SJTU · Streaming Video Understanding"
 author_profile: true
 redirect_from: 
@@ -9,489 +9,564 @@ redirect_from:
 ---
 
 <style>
-/* ===== Refined Glassmorphism Design System v4 ===== */
+/* ===== Enhanced Academic Design System v5 — Restored Palette ===== */
 
-:root {
-  --p1: #6366f1;   --p2: #818cf8;
-  --a1: #8b5cf6;   --a2: #a78bfa;
-  --h1: #ec4899;   --h2: #f472b6;
-  --bg: #f8fafc;
-  --card: rgba(255,255,255,0.75);
-  --card-b: rgba(255,255,255,0.55);
-  --text: #0f172a;
-  --text2: #475569;
-  --muted: #94a3b8;
-  --shadow: 0 8px 32px rgba(99,102,241,0.07);
-  --shadow-h: 0 20px 60px rgba(99,102,241,0.14);
-  --radius: 20px;
-  --grad: linear-gradient(135deg, var(--p1), var(--a1), var(--h1));
-  --grad-soft: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.06), rgba(236,72,153,0.04));
+/* --- Glass Effect --- */
+.glass-card {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid rgba(255,255,255,0.55);
 }
 
-/* --- Hero --- */
+/* --- Hero Section --- */
 .hero {
   position: relative; overflow: hidden;
-  border-radius: var(--radius);
-  padding: 56px 44px 48px;
-  margin-bottom: 36px;
-  background: var(--grad-soft);
-  border: 1px solid var(--card-b);
+  border-radius: 18px;
+  padding: 50px 40px 42px;
+  margin-bottom: 30px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid rgba(255,255,255,0.55);
+  border-left: 5px solid;
+  border-image: linear-gradient(180deg, #1a3a5c 0%, #3a7bc8 100%) 1;
+  box-shadow: 0 4px 30px rgba(26,58,92,0.07), 0 1px 3px rgba(0,0,0,0.03);
 }
 .hero::before {
-  content: ''; position: absolute;
-  top: -50%; right: -30%; width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(99,102,241,0.12), transparent 70%);
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(26,58,92,0.05) 0%, transparent 70%);
   border-radius: 50%; pointer-events: none;
-  animation: heroGlow 8s ease-in-out infinite alternate;
 }
 .hero::after {
-  content: ''; position: absolute;
-  bottom: -40%; left: -20%; width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(236,72,153,0.08), transparent 70%);
+  content: ''; position: absolute; bottom: -80px; left: -60px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(46,125,50,0.03) 0%, transparent 70%);
   border-radius: 50%; pointer-events: none;
-  animation: heroGlow2 10s ease-in-out infinite alternate;
-}
-@keyframes heroGlow {
-  0% { transform: translate(0,0) scale(1); opacity: 0.6; }
-  100% { transform: translate(-30px,20px) scale(1.1); opacity: 1; }
-}
-@keyframes heroGlow2 {
-  0% { transform: translate(0,0) scale(1); opacity: 0.5; }
-  100% { transform: translate(20px,-20px) scale(1.15); opacity: 0.9; }
 }
 .hero-name {
-  font-size: 2.6em; font-weight: 900; letter-spacing: -0.03em;
-  line-height: 1.15; margin: 0 0 8px;
-  background: var(--grad); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; background-clip: text;
+  font-size: 2.4em; font-weight: 900; color: #1a3a5c;
+  letter-spacing: -0.03em; line-height: 1.15; margin: 0 0 8px;
   position: relative; z-index: 1;
 }
 .hero-tagline {
-  font-size: 1.15em; color: var(--text2); font-weight: 500;
+  font-size: 1.1em; color: #3a7bc8; font-weight: 600;
   margin: 0 0 16px; position: relative; z-index: 1;
 }
 .hero-bio {
-  font-size: 0.95em; color: var(--text2); line-height: 1.85;
+  font-size: 0.95em; color: #374151; line-height: 1.85;
   max-width: 720px; position: relative; z-index: 1;
 }
 .hero-bio a {
-  color: var(--p1); text-decoration: none; font-weight: 600;
-  border-bottom: 1.5px solid rgba(99,102,241,0.25);
-  transition: border-color 0.25s, color 0.25s;
+  color: #1a3a5c; text-decoration: none; font-weight: 500;
+  background-image: linear-gradient(transparent 85%, rgba(26,58,92,0.12) 85%);
+  background-repeat: no-repeat; background-size: 100% 100%;
+  transition: background-size 0.3s, color 0.2s;
 }
-.hero-bio a:hover { border-color: var(--p1); color: var(--a1); }
+.hero-bio a:hover { color: #2c6faa; background-image: linear-gradient(transparent 82%, rgba(44,111,170,0.18) 82%); }
 .hero-badges {
-  margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px;
   position: relative; z-index: 1;
 }
 .hero-badges a img {
-  height: 24px; border-radius: 6px;
-  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.2s;
+  height: 22px; border-radius: 4px;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
 }
 .hero-badges a img:hover {
-  transform: translateY(-3px) scale(1.06);
-  box-shadow: 0 6px 18px rgba(99,102,241,0.2);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* --- Research Pills --- */
-.research-row {
+/* --- Research Highlights --- */
+.research-viz {
   display: flex; flex-wrap: wrap; gap: 14px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
-.r-pill {
+.rh-pill {
   flex: 1; min-width: 180px;
-  display: flex; align-items: center; gap: 14px;
-  padding: 18px 22px; border-radius: var(--radius);
-  background: var(--card);
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 16px 20px; border-radius: 14px;
+  font-size: 0.84em; font-weight: 600;
+  color: #1a3a5c; transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  cursor: default;
+  background: rgba(255,255,255,0.65);
   backdrop-filter: blur(20px) saturate(1.3);
   -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid var(--card-b);
-  box-shadow: var(--shadow);
-  transition: all 0.4s cubic-bezier(.34,1.56,.64,1);
-  cursor: default; position: relative; overflow: hidden;
-}
-.r-pill::before {
-  content: ''; position: absolute; inset: 0;
-  background: var(--grad-soft); opacity: 0;
-  transition: opacity 0.4s;
-}
-.r-pill:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: var(--shadow-h);
-}
-.r-pill:hover::before { opacity: 1; }
-.r-pill .r-icon {
-  width: 44px; height: 44px; border-radius: 14px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.3em; flex-shrink: 0; position: relative; z-index: 1;
-  background: var(--grad); color: #fff;
-  box-shadow: 0 6px 16px rgba(99,102,241,0.3);
-  transition: transform 0.3s;
-}
-.r-pill:hover .r-icon { transform: scale(1.15) rotate(-6deg); }
-.r-pill .r-text { flex: 1; position: relative; z-index: 1; }
-.r-pill .r-text strong { display: block; font-size: 0.96em; margin-bottom: 3px; color: var(--text); }
-.r-pill .r-text span { font-size: 0.78em; color: var(--text2); font-weight: 400; }
-
-/* --- Stats --- */
-.stats-row {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 20px; margin-bottom: 40px;
-}
-.stat-box {
-  text-align: center; padding: 32px 20px 26px;
-  background: var(--card);
-  backdrop-filter: blur(20px) saturate(1.3);
-  -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid var(--card-b);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: all 0.4s cubic-bezier(.34,1.56,.64,1);
+  border: 1px solid rgba(255,255,255,0.55);
   position: relative; overflow: hidden;
 }
-.stat-box::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-  height: 3px; background: var(--grad);
-  opacity: 0.5; transition: height 0.3s, opacity 0.3s;
+.rh-pill:hover { transform: translateY(-4px) scale(1.01); }
+.rh-pill .rh-icon {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2em; flex-shrink: 0;
+  transition: transform 0.3s;
 }
-.stat-box:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-h);
+.rh-pill:hover .rh-icon { transform: scale(1.15) rotate(-5deg); }
+.rh-pill .rh-text { flex: 1; }
+.rh-pill .rh-text strong { display: block; font-size: 0.95em; margin-bottom: 2px; }
+.rh-pill .rh-text span { font-size: 0.78em; font-weight: 400; opacity: 0.65; }
+
+.rh-streaming { border-color: rgba(198,40,40,0.1); background: rgba(198,40,40,0.04); }
+.rh-streaming .rh-icon { background: rgba(198,40,40,0.08); color: #c62828; }
+.rh-streaming:hover { box-shadow: 0 8px 30px rgba(198,40,40,0.1); }
+
+.rh-compression { border-color: rgba(21,101,192,0.1); background: rgba(21,101,192,0.04); }
+.rh-compression .rh-icon { background: rgba(21,101,192,0.08); color: #1565c0; }
+.rh-compression:hover { box-shadow: 0 8px 30px rgba(21,101,192,0.1); }
+
+.rh-datacentric { border-color: rgba(46,125,50,0.1); background: rgba(46,125,50,0.04); }
+.rh-datacentric .rh-icon { background: rgba(46,125,50,0.08); color: #2e7d32; }
+.rh-datacentric:hover { box-shadow: 0 8px 30px rgba(46,125,50,0.1); }
+
+/* --- Stats Bar --- */
+.stats-bar {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin: 0 0 28px;
 }
-.stat-box:hover::after { height: 5px; opacity: 1; }
-.stat-num {
-  font-size: 3em; font-weight: 900; letter-spacing: -0.04em;
-  line-height: 1; display: block;
-  background: var(--grad); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; background-clip: text;
+.stats-item {
+  text-align: center; padding: 24px 16px 20px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26,58,92,0.06), 0 1px 2px rgba(0,0,0,0.03);
+  transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  position: relative; overflow: hidden;
+}
+.stats-item::before {
+  content: ''; position: absolute;
+  top: 0; left: 50%; transform: translateX(-50%);
+  width: 40px; height: 3px; border-radius: 0 0 3px 3px;
+  opacity: 0.5; transition: width 0.3s, opacity 0.3s;
+}
+.stats-item:hover::before { width: 70%; opacity: 1; }
+.stats-item::after {
+  content: ''; position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px; border-radius: 0 0 16px 16px;
+  transition: height 0.3s;
+}
+.stats-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26,58,92,0.12);
+}
+.stats-item:hover::after { height: 4px; }
+.stats-item:nth-child(1)::after, .stats-item:nth-child(1)::before { background: linear-gradient(90deg, #1a3a5c, #2c6faa); }
+.stats-item:nth-child(2)::after, .stats-item:nth-child(2)::before { background: linear-gradient(90deg, #2e7d32, #43a047); }
+.stats-item:nth-child(3)::after, .stats-item:nth-child(3)::before { background: linear-gradient(90deg, #ef6c00, #ffa726); }
+
+.stats-num {
+  font-size: 2.6em; font-weight: 900; color: #1a3a5c;
+  display: block; letter-spacing: -0.04em; line-height: 1.1;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
 }
-.stat-label {
-  font-size: 0.72em; color: var(--muted); text-transform: uppercase;
-  letter-spacing: 0.16em; font-weight: 700; margin-top: 12px; display: block;
+.stats-label {
+  font-size: 0.68em; color: #a0aec0; text-transform: uppercase;
+  letter-spacing: 0.14em; font-weight: 600; margin-top: 8px; display: block;
 }
 
 /* --- Section Title --- */
-.sec-title {
-  font-size: 1.35em; font-weight: 800; color: var(--text);
-  padding-bottom: 14px; margin-top: 40px; margin-bottom: 24px;
+.section-title {
+  font-size: 1.4em; font-weight: 800; color: #1a3a5c;
+  padding-bottom: 14px; margin-top: 32px; margin-bottom: 24px;
   letter-spacing: -0.02em;
   display: flex; align-items: center; gap: 14px;
+  border-bottom: none;
 }
-.sec-title .s-icon {
-  width: 38px; height: 38px; border-radius: 12px;
-  background: var(--grad); color: #fff;
+.section-title .title-icon {
+  font-size: 1em;
   display: inline-flex; align-items: center; justify-content: center;
-  font-size: 1em; box-shadow: 0 6px 16px rgba(99,102,241,0.25);
+  width: 36px; height: 36px; border-radius: 10px;
+  background: linear-gradient(135deg, rgba(26,58,92,0.06), rgba(26,58,92,0.02));
 }
-.sec-title::after {
+.section-title::after {
   content: ''; flex: 1; height: 2px;
-  background: linear-gradient(90deg, rgba(99,102,241,0.15), transparent);
+  background: linear-gradient(90deg, rgba(26,58,92,0.12) 0%, transparent 100%);
   border-radius: 1px;
 }
 
-/* --- Divider --- */
-.divider {
+/* --- Section Divider --- */
+.section-divider {
   height: 1px; border: none; margin: 44px 0;
-  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.1) 20%, rgba(99,102,241,0.1) 80%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(26,58,92,0.08) 20%, rgba(26,58,92,0.08) 80%, transparent);
   position: relative;
 }
-.divider::before, .divider::after {
-  content: ''; position: absolute; top: -3px;
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--grad);
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: calc(50% - 16px);
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #cbd5e0;
 }
-.divider::before { left: calc(50% - 14px); opacity: 0.5; }
-.divider::after { left: calc(50% + 7px); opacity: 0.25; }
+.section-divider::after {
+  content: '';
+  position: absolute;
+  top: -2px; left: calc(50% + 10px);
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #e2e8f0;
+}
 
-/* --- News Timeline --- */
-.timeline {
-  position: relative; padding-left: 36px; list-style: none; margin: 0;
+/* --- Timeline News --- */
+.news-timeline {
+  position: relative; padding-left: 32px; list-style: none; margin: 0;
 }
-.timeline::before {
+.news-timeline::before {
   content: ''; position: absolute;
-  top: 6px; bottom: 6px; left: 10px; width: 2.5px;
-  background: linear-gradient(180deg, var(--p1) 0%, var(--a1) 50%, rgba(99,102,241,0.08) 100%);
+  top: 4px; bottom: 4px; left: 9px;
+  width: 2.5px;
+  background: linear-gradient(180deg, #1a3a5c 0%, #3a7bc8 40%, rgba(26,58,92,0.08) 100%);
   border-radius: 2px;
 }
-.timeline li {
+.news-timeline li {
   position: relative;
-  padding: 14px 18px 14px 14px;
-  margin-bottom: 10px; border-radius: 14px;
-  font-size: 0.9em; color: var(--text2);
-  line-height: 1.7; transition: all 0.35s cubic-bezier(.34,1.56,.64,1);
+  padding: 14px 18px 14px 12px;
+  margin-bottom: 8px;
+  border-radius: 12px; border-bottom: none;
+  font-size: 0.9em; color: #4a5568;
+  line-height: 1.65;
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-.timeline li:hover {
-  background: rgba(99,102,241,0.03);
-  transform: translateX(8px);
-  box-shadow: 0 4px 16px rgba(99,102,241,0.06);
+.news-timeline li:hover {
+  background: rgba(26,58,92,0.025);
+  transform: translateX(6px);
+  box-shadow: 0 2px 12px rgba(26,58,92,0.04);
 }
-.timeline li::before {
+.news-timeline li:last-child { border-bottom: none; }
+.news-timeline li::before {
   content: ''; position: absolute;
-  left: -31px; top: 21px;
-  width: 14px; height: 14px; border-radius: 50%;
-  background: #fff; border: 2.5px solid var(--p1);
-  box-shadow: 0 0 0 5px rgba(99,102,241,0.08);
-  z-index: 1; transition: all 0.3s cubic-bezier(.34,1.56,.64,1);
+  left: -27px; top: 20px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; border: 2.5px solid #3a7bc8;
+  box-shadow: 0 0 0 4px rgba(26,58,92,0.06);
+  z-index: 1; transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-.timeline li:hover::before {
-  background: var(--p1); border-color: var(--p1);
-  box-shadow: 0 0 0 7px rgba(99,102,241,0.15);
+.news-timeline li:hover::before {
+  background: #1a3a5c; border-color: #1a3a5c;
+  box-shadow: 0 0 0 6px rgba(26,58,92,0.12);
   transform: scale(1.3);
 }
-.timeline li.done::before { border-color: #10b981; background: #ecfdf5; }
-.timeline li.done:hover::before { background: #10b981; border-color: #10b981; box-shadow: 0 0 0 7px rgba(16,185,129,0.15); }
-.timeline li em { color: var(--text); font-style: normal; font-weight: 600; }
-.timeline li strong { color: var(--text); }
+.news-timeline li.accepted::before { border-color: #2e7d32; background: #e8f5e9; }
+.news-timeline li.accepted:hover::before { background: #2e7d32; border-color: #2e7d32; box-shadow: 0 0 0 6px rgba(46,125,50,0.15); }
+.news-timeline li em { color: #2d3748; font-style: normal; font-weight: 500; }
+.news-timeline li strong { color: #1a3a5c; }
 
-.t-badge {
-  display: inline-block; padding: 4px 12px; border-radius: 8px;
-  font-weight: 700; font-size: 0.72em; color: #fff;
-  margin-right: 8px; vertical-align: middle; letter-spacing: 0.04em;
-  background: var(--grad);
-  box-shadow: 0 3px 10px rgba(99,102,241,0.25);
+.news-badge {
+  display: inline-block; padding: 3px 11px; border-radius: 6px;
+  font-weight: 700; font-size: 0.73em; color: #fff;
+  margin-right: 8px; vertical-align: middle;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   position: relative; overflow: hidden;
 }
-.t-badge::after {
-  content: ''; position: absolute; top: 0; left: -100%;
+.news-badge::after {
+  content: '';
+  position: absolute; top: 0; left: -100%;
   width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-  animation: shimmer 3.5s ease-in-out infinite;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: badge-shimmer 3s ease-in-out infinite;
 }
-@keyframes shimmer { 0% { left: -100%; } 100% { left: 200%; } }
+@keyframes badge-shimmer { 0% { left: -100%; } 100% { left: 200%; } }
+.badge-cvpr { background: linear-gradient(135deg, #c62828, #ef5350); }
+.badge-emnlp { background: linear-gradient(135deg, #c2185b, #e91e63); }
+.badge-eccv { background: linear-gradient(135deg, #1565c0, #42a5f5); }
+.badge-icml { background: linear-gradient(135deg, #6a1b9a, #ab47bc); }
+.badge-acl { background: linear-gradient(135deg, #2e7d32, #66bb6a); }
+.badge-arxiv { background: linear-gradient(135deg, #bf360c, #ff6e40); }
 
 /* --- Sub Heading --- */
-.sub-h {
-  font-size: 1.05em; font-weight: 700; color: var(--text);
+.sub-heading {
+  font-size: 1.08em; font-weight: 700; color: #1a3a5c;
   margin: 32px 0 18px; display: flex; align-items: center; gap: 12px;
 }
-.sub-h .dot {
+.sub-heading .dot {
   width: 10px; height: 10px; border-radius: 50%;
-  flex-shrink: 0; position: relative;
+  flex-shrink: 0; display: inline-block; position: relative;
 }
-.sub-h .dot::after {
-  content: ''; position: absolute; inset: -5px;
-  border-radius: 50%; border: 1.5px solid currentColor;
-  opacity: 0.3; animation: pulseRing 2.5s ease-in-out infinite;
+.sub-heading .dot::after {
+  content: '';
+  position: absolute; inset: -4px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  opacity: 0.3;
+  animation: dot-ring-pulse 2.5s ease-in-out infinite;
 }
-@keyframes pulseRing {
-  0%,100% { transform: scale(1); opacity: 0.3; }
-  50% { transform: scale(1.5); opacity: 0; }
+@keyframes dot-ring-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.4); opacity: 0; }
 }
-.sub-h .count {
-  font-size: 0.72em; font-weight: 700; color: #fff;
-  padding: 3px 10px; border-radius: 10px;
+.sub-heading .count-badge {
+  font-size: 0.72em; font-weight: 600; color: #fff;
+  padding: 2px 10px; border-radius: 10px;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  letter-spacing: 0.03em; background: var(--grad);
+  letter-spacing: 0.03em;
 }
 
 /* --- Paper Card --- */
-.p-card {
-  background: var(--card);
+.paper-card {
+  background: rgba(255,255,255,0.65);
   backdrop-filter: blur(20px) saturate(1.3);
   -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid var(--card-b);
-  border-radius: var(--radius);
-  padding: 28px 32px;
-  margin-bottom: 18px;
-  box-shadow: var(--shadow);
-  border-left: 4px solid var(--p1);
-  transition: all 0.4s cubic-bezier(.34,1.56,.64,1);
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 16px;
+  padding: 26px 30px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 24px rgba(26,58,92,0.05), 0 1px 2px rgba(0,0,0,0.02);
+  border-left: 5px solid #1a3a5c;
+  transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
   position: relative; overflow: hidden;
 }
-.p-card::before {
+.paper-card::before {
   content: ''; position: absolute;
-  top: 0; right: 0; width: 60px; height: 60px;
-  background: linear-gradient(225deg, rgba(99,102,241,0.06) 50%, transparent 50%);
-  pointer-events: none; transition: width 0.3s, height 0.3s;
+  top: 0; right: 0; width: 40px; height: 40px;
+  background: linear-gradient(225deg, rgba(26,58,92,0.04) 50%, transparent 50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s;
 }
-.p-card:hover::before { width: 80px; height: 80px; }
-.p-card:hover {
-  box-shadow: var(--shadow-h);
-  transform: translateY(-5px);
+.paper-card:hover::before { width: 50px; height: 50px; }
+.paper-card:hover {
+  box-shadow: 0 12px 48px rgba(26,58,92,0.1), 0 2px 4px rgba(0,0,0,0.03);
+  transform: translateY(-4px);
   border-left-width: 6px;
 }
-.p-card h4 { margin: 0 0 10px; font-size: 1.05em; line-height: 1.5; font-weight: 700; }
-.p-card h4 a { color: var(--text); text-decoration: none; border-bottom: none; transition: color 0.2s; }
-.p-card h4 a:hover { color: var(--p1); }
+.paper-card.accent-red { border-left-color: #c62828; }
+.paper-card.accent-red:hover { box-shadow: 0 12px 48px rgba(198,40,40,0.1); }
+.paper-card.accent-blue { border-left-color: #1565c0; }
+.paper-card.accent-blue:hover { box-shadow: 0 12px 48px rgba(21,101,192,0.1); }
+.paper-card.accent-purple { border-left-color: #6a1b9a; }
+.paper-card.accent-purple:hover { box-shadow: 0 12px 48px rgba(106,27,154,0.1); }
+.paper-card.accent-green { border-left-color: #2e7d32; }
+.paper-card.accent-green:hover { box-shadow: 0 12px 48px rgba(46,125,50,0.1); }
+.paper-card.accent-orange { border-left-color: #e65100; }
+.paper-card.accent-orange:hover { box-shadow: 0 12px 48px rgba(230,81,0,0.1); }
+.paper-card.accent-deeporange { border-left-color: #bf360c; }
+.paper-card.accent-deeporange:hover { box-shadow: 0 12px 48px rgba(191,54,12,0.1); }
 
-.p-authors { font-size: 0.84em; color: var(--text2); margin-bottom: 8px; line-height: 1.6; }
-.p-authors strong { color: var(--text); font-weight: 600; }
-.p-chip {
-  display: inline-block; padding: 4px 14px;
-  border-radius: 8px; font-weight: 700;
-  font-size: 0.74em; letter-spacing: 0.03em;
-  margin-bottom: 12px; color: var(--p1);
-  background: rgba(99,102,241,0.08);
+.paper-venue-chip {
+  display: inline-block; padding: 3px 12px;
+  border-radius: 6px; font-weight: 700;
+  font-size: 0.76em; letter-spacing: 0.04em;
+  margin-bottom: 10px;
 }
-.p-desc { font-size: 0.87em; color: var(--text2); line-height: 1.7; margin-bottom: 16px; }
-.p-desc strong { color: var(--text); font-weight: 600; }
+.paper-card h4 { margin: 0 0 10px; font-size: 1.02em; line-height: 1.5; font-weight: 700; }
+.paper-card h4 a { color: #1e293b; text-decoration: none; border-bottom: none; transition: color 0.2s; }
+.paper-card h4 a:hover { color: #1a3a5c; }
 
-.p-links { display: flex; flex-wrap: wrap; gap: 8px; }
-.p-links a { text-decoration: none; margin-right: 0; border-bottom: none; display: inline-block; }
-.p-links img {
+.paper-authors { font-size: 0.84em; color: #64748b; margin-bottom: 8px; line-height: 1.6; }
+.paper-authors strong { color: #1a3a5c; font-weight: 600; }
+.paper-desc { font-size: 0.87em; color: #64748b; line-height: 1.7; margin-bottom: 14px; }
+.paper-desc strong { color: #374151; font-weight: 600; }
+
+.paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.paper-links a { text-decoration: none; margin-right: 0; border-bottom: none; display: inline-block; }
+.paper-links img {
   height: 24px; border-radius: 5px;
-  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.2s;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
 }
-.p-links img:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 16px rgba(99,102,241,0.2); }
+.paper-links img:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
 
-.note { font-size: 0.82em; color: var(--muted); margin-bottom: 18px; font-style: italic; }
+/* Citation block */
+.cite-block {
+  background: rgba(26,58,92,0.03);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 10px;
+  font-size: 0.82em;
+  color: #4a5568;
+  line-height: 1.6;
+  position: relative;
+}
+.cite-block .cite-label {
+  font-size: 0.7em; font-weight: 700; color: #1a3a5c;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
+}
+.cite-block pre {
+  background: transparent; margin: 0; padding: 0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78em; line-height: 1.5;
+  color: #4a5568; white-space: pre-wrap; word-break: break-word;
+}
+.cite-block .cite-text {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78em; line-height: 1.5;
+}
+.copy-btn {
+  position: absolute; top: 10px; right: 10px;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(26,58,92,0.1);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.72em; font-weight: 600; color: #1a3a5c;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 4px;
+}
+.copy-btn:hover {
+  background: #1a3a5c; color: #fff;
+  border-color: #1a3a5c;
+}
+.copy-btn.copied {
+  background: #2e7d32; color: #fff; border-color: #2e7d32;
+}
+
+.note-text { font-size: 0.82em; color: #a0aec0; margin-bottom: 18px; font-style: italic; }
 
 /* --- Project Grid --- */
-.proj-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px; margin-top: 10px;
+.project-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px; margin-top: 10px;
 }
-.proj-card {
-  background: var(--card);
+.project-card {
+  background: rgba(255,255,255,0.65);
   backdrop-filter: blur(20px) saturate(1.3);
   -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid var(--card-b);
-  border-radius: var(--radius);
-  padding: 28px 28px;
-  box-shadow: var(--shadow);
-  transition: all 0.4s cubic-bezier(.34,1.56,.64,1);
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 16px;
+  padding: 26px 28px;
+  box-shadow: 0 4px 24px rgba(26,58,92,0.05), 0 1px 2px rgba(0,0,0,0.02);
+  transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
   display: flex; flex-direction: column;
   position: relative; overflow: hidden;
 }
-.proj-card::before {
+.project-card::before {
   content: ''; position: absolute;
   top: 0; left: 0; right: 0; height: 3px;
-  background: var(--grad); opacity: 0;
-  transition: opacity 0.3s, height 0.3s;
+  background: linear-gradient(90deg, var(--accent, #1a3a5c), transparent);
+  opacity: 0; transition: opacity 0.3s, height 0.3s;
 }
-.proj-card:hover {
-  box-shadow: var(--shadow-h);
-  transform: translateY(-7px);
+.project-card:hover {
+  box-shadow: 0 12px 48px rgba(26,58,92,0.1);
+  transform: translateY(-6px);
 }
-.proj-card:hover::before { opacity: 1; height: 4px; }
+.project-card:hover::before { opacity: 1; height: 4px; }
 
-.proj-tag {
+.project-tag {
   display: inline-block; font-size: 0.68em;
-  padding: 5px 12px; border-radius: 10px;
+  padding: 4px 12px; border-radius: 8px;
   font-weight: 700; color: #fff;
-  margin-bottom: 16px; width: fit-content;
+  margin-bottom: 14px; width: fit-content;
   letter-spacing: 0.05em;
-  background: var(--grad);
-  box-shadow: 0 3px 10px rgba(99,102,241,0.25);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
-.proj-card h4 {
-  margin: 0 0 10px; font-size: 1.15em; font-weight: 700;
-  color: var(--text); letter-spacing: -0.01em;
+.project-card h4 {
+  margin: 0 0 10px; font-size: 1.12em; font-weight: 700;
+  color: #1a3a5c; letter-spacing: -0.01em;
 }
-.proj-card p {
-  font-size: 0.85em; color: var(--text2);
+.project-card p {
+  font-size: 0.85em; color: #64748b;
   margin-bottom: 18px; line-height: 1.65; flex: 1;
 }
-.proj-card a.plink {
-  font-size: 0.84em; color: var(--p1); font-weight: 600;
+.project-card a.project-link {
+  font-size: 0.84em; color: #1a3a5c; font-weight: 600;
   text-decoration: none; display: inline-flex;
   align-items: center; gap: 6px;
-  transition: gap 0.3s cubic-bezier(.34,1.56,.64,1); border-bottom: none;
+  transition: gap 0.3s cubic-bezier(0.34,1.56,0.64,1); border-bottom: none;
   padding: 6px 0;
 }
-.proj-card a.plink:hover { gap: 12px; text-decoration: none; }
+.project-card a.project-link:hover { gap: 12px; text-decoration: none; }
 
 /* --- Service Card --- */
-.svc-card {
-  padding: 24px 28px; border-radius: var(--radius);
-  background: var(--card);
+.service-card {
+  padding: 22px 26px; border-radius: 16px;
+  background: rgba(255,255,255,0.65);
   backdrop-filter: blur(20px) saturate(1.3);
   -webkit-backdrop-filter: blur(20px) saturate(1.3);
-  border: 1px solid var(--card-b);
-  box-shadow: var(--shadow);
-  font-size: 0.93em; color: var(--text2); line-height: 1.7;
-  display: flex; align-items: center; gap: 18px;
-  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.55);
+  box-shadow: 0 4px 24px rgba(26,58,92,0.05), 0 1px 2px rgba(0,0,0,0.02);
+  font-size: 0.93em; color: #4a5568; line-height: 1.7;
+  display: flex; align-items: center; gap: 16px;
+  transition: all 0.3s ease;
 }
-.svc-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-h);
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(26,58,92,0.08);
 }
-.svc-card .svc-icon {
-  width: 48px; height: 48px; border-radius: 14px;
-  background: var(--grad);
+.service-card .service-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(135deg, #1a3a5c, #2c6faa);
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.3em; flex-shrink: 0;
-  box-shadow: 0 6px 18px rgba(99,102,241,0.3);
-  color: #fff;
+  font-size: 1.2em; flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(26,58,92,0.25);
 }
-.svc-card strong { color: var(--text); }
-.v-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.v-tag {
-  font-size: 0.74em; padding: 3px 12px; border-radius: 6px;
+.service-card strong { color: #1a3a5c; }
+.venue-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.venue-tag {
+  font-size: 0.72em; padding: 2px 10px; border-radius: 5px;
   font-weight: 600; letter-spacing: 0.03em;
-  background: rgba(99,102,241,0.07); color: var(--p1);
-  transition: all 0.25s;
+  background: rgba(26,58,92,0.06); color: #1a3a5c;
+  transition: all 0.2s;
 }
-.v-tag:hover { background: var(--p1); color: #fff; }
+.venue-tag:hover { background: #1a3a5c; color: #fff; }
 
 /* --- Scroll Reveal --- */
 .reveal {
   opacity: 1; transform: translateY(0);
 }
-.reveal.will-anim {
-  opacity: 0; transform: translateY(30px) scale(0.98);
-  transition: opacity 0.9s cubic-bezier(.16,1,.3,1), transform 0.9s cubic-bezier(.16,1,.3,1);
+.reveal.will-animate {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
 }
-.reveal.will-anim.visible { opacity: 1; transform: translateY(0) scale(1); }
+.reveal.will-animate.visible { opacity: 1; transform: translateY(0); }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .hero { padding: 36px 24px 32px; }
-  .hero-name { font-size: 2em; }
-  .stats-row { gap: 12px; }
-  .stat-box { padding: 24px 14px 20px; }
-  .stat-num { font-size: 2.2em; }
-  .proj-grid { grid-template-columns: 1fr; }
-  .research-row { gap: 10px; }
-  .r-pill { padding: 14px 16px; min-width: 140px; }
-  .timeline { padding-left: 30px; }
-  .p-card { padding: 22px 24px; }
+  .stats-bar { gap: 10px; }
+  .stats-item { padding: 18px 10px; }
+  .stats-num { font-size: 1.8em; }
+  .project-grid { grid-template-columns: 1fr; }
+  .research-viz { gap: 10px; }
+  .rh-pill { padding: 12px 16px; min-width: 150px; }
+  .news-timeline { padding-left: 28px; }
+  .paper-card { padding: 20px 22px; }
+  .hero { padding: 32px 24px 28px; }
+  .hero-name { font-size: 1.8em; }
 }
 @media (max-width: 480px) {
-  .research-row { flex-direction: column; }
-  .r-pill { min-width: 100%; }
-  .stats-row { grid-template-columns: 1fr; }
+  .research-viz { flex-direction: column; }
+  .rh-pill { min-width: 100%; }
 }
 </style>
 
 <!-- ===== Hero ===== -->
 <div class="hero reveal">
-  <div class="hero-name">Yiyu Wang</div>
-  <div class="hero-tagline">王一宇 · Joint Ph.D. @ HKUST(GZ) &amp; SJTU</div>
+  <div class="hero-name">Hi, I'm Yiyu Wang (王一宇) 👋</div>
+  <div class="hero-tagline">Joint Ph.D. @ HKUST(GZ) &amp; SJTU · Streaming Video Understanding</div>
   <div class="hero-bio">
-    I am a <strong>joint Ph.D. student</strong> at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a> and <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, advised by <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a> and <a href="https://linfeng-zhang.github.io/">Prof. Linfeng Zhang</a>. Currently a <strong>Research Intern at Tencent</strong>.<br><br>
+    I am a <strong>joint Ph.D. student</strong> at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a> and <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, advised by <strong><a href="https://xuminghu.github.io/">Prof. Xuming Hu</a></strong> and <strong><a href="https://linfeng-zhang.github.io/">Prof. Linfeng Zhang</a></strong>. I am currently a <strong>Research Intern at <a href="https://www.tencent.com/">Tencent</a></strong>.
+    <br><br>
     My research focuses on <strong>Streaming Video Understanding</strong> — building systems that perceive, reason, and act under real-time constraints with tight token budgets and precise temporal grounding. I am also interested in <strong>efficient VideoLLMs</strong> via token compression and data-centric AI.
   </div>
   <div class="hero-badges">
-    <a href="#"><img src="https://img.shields.io/badge/HKUST(GZ)-6366f1?style=flat-square&logo=google-scholar&logoColor=white" alt="HKUST(GZ)"></a>
+    <a href="#"><img src="https://img.shields.io/badge/HKUST(GZ)-1a3a5c?style=flat-square&logo=google-scholar&logoColor=white" alt="HKUST(GZ)"></a>
     <a href="#"><img src="https://img.shields.io/badge/SJTU-0056a3?style=flat-square" alt="SJTU"></a>
     <a href="#"><img src="https://img.shields.io/badge/Tencent_Intern-00a4ef?style=flat-square&logo=tencent-qq&logoColor=white" alt="Tencent"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Streaming_Video-ec4899?style=flat-square" alt="Streaming Video"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Efficient_VideoLLM-8b5cf6?style=flat-square" alt="Efficiency"></a>
+    <a href="#"><img src="https://img.shields.io/badge/Streaming_Video-c62828?style=flat-square" alt="Streaming Video"></a>
+    <a href="#"><img src="https://img.shields.io/badge/Efficient_VideoLLM-2e7d32?style=flat-square" alt="Efficiency"></a>
   </div>
 </div>
 
 <!-- ===== Research Highlights ===== -->
-<div class="research-row reveal">
-  <div class="r-pill">
-    <div class="r-icon">📡</div>
-    <div class="r-text">
+<div class="research-viz reveal">
+  <div class="rh-pill rh-streaming">
+    <div class="rh-icon">📡</div>
+    <div class="rh-text">
       <strong>Streaming Video</strong>
       <span>Real-time perception &amp; reasoning</span>
     </div>
   </div>
-  <div class="r-pill">
-    <div class="r-icon">⚡</div>
-    <div class="r-text">
+  <div class="rh-pill rh-compression">
+    <div class="rh-icon">⚡</div>
+    <div class="rh-text">
       <strong>Token Compression</strong>
       <span>Efficient visual encoding</span>
     </div>
   </div>
-  <div class="r-pill">
-    <div class="r-icon">📊</div>
-    <div class="r-text">
+  <div class="rh-pill rh-datacentric">
+    <div class="rh-icon">📊</div>
+    <div class="rh-text">
       <strong>Data-Centric AI</strong>
       <span>Quality over quantity</span>
     </div>
@@ -499,214 +574,361 @@ redirect_from:
 </div>
 
 <!-- ===== Stats ===== -->
-<div class="stats-row reveal" id="stats-row">
-  <div class="stat-box">
-    <span class="stat-num" data-target="8">0</span>
-    <span class="stat-label">Papers</span>
+<div class="stats-bar reveal" id="stats-bar">
+  <div class="stats-item">
+    <span class="stats-num" data-target="8">8</span>
+    <span class="stats-label">Papers</span>
   </div>
-  <div class="stat-box">
-    <span class="stat-num" data-target="3">0</span>
-    <span class="stat-label">Accepted</span>
+  <div class="stats-item">
+    <span class="stats-num" data-target="3">3</span>
+    <span class="stats-label">Accepted</span>
   </div>
-  <div class="stat-box">
-    <span class="stat-num" data-target="4">0</span>
-    <span class="stat-label">Under Review</span>
+  <div class="stats-item">
+    <span class="stats-num" data-target="4">4</span>
+    <span class="stats-label">Under Review</span>
   </div>
 </div>
 
-<div class="divider"></div>
+<hr class="section-divider">
 
 <!-- ===== News ===== -->
-<h2 class="sec-title reveal"><span class="s-icon">🔥</span> News &amp; Updates</h2>
+<h2 class="section-title reveal"><span class="title-icon">🔥</span> News &amp; Updates</h2>
 
-<ul class="timeline">
+<ul class="news-timeline">
   <li class="reveal">
-    <span class="t-badge">ACL 2026</span>
-    📝 <strong>Under Review</strong> — <em>"Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods"</em> submitted to <strong>ACL 2026</strong>.
+    <span class="news-badge badge-acl">ACL 2026</span>
+    📝 <strong>Under Review</strong> — <em>"VTC-Bench: Are We Using the Right Benchmark? An Evaluation Framework for Visual Token Compression Methods"</em> submitted to <strong>ACL 2026</strong>.
   </li>
   <li class="reveal">
-    <span class="t-badge">ECCV 2026</span>
+    <span class="news-badge badge-eccv">ECCV 2026</span>
     📝 <strong>Under Review</strong> — <em>"V-CAST: Video Curvature-Aware Spatio-Temporal Pruning"</em> submitted to <strong>ECCV 2026</strong>.
   </li>
   <li class="reveal">
-    <span class="t-badge">ECCV 2026</span>
-    📝 <strong>Under Review</strong> — <em>"Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in LVLMs"</em> submitted to <strong>ECCV 2026</strong>.
+    <span class="news-badge badge-eccv">ECCV 2026</span>
+    📝 <strong>Under Review</strong> — <em>"Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in LVLMs"</em> (KAWHI) submitted to <strong>ECCV 2026</strong>.
   </li>
   <li class="reveal">
-    <span class="t-badge">ICML 2026</span>
+    <span class="news-badge badge-icml">ICML 2026</span>
     📝 <strong>Under Review</strong> — <em>"Position: Shifting AI Efficiency from Model-Centric to Data-Centric Compression"</em> submitted to <strong>ICML 2026 Position Track</strong>.
   </li>
-  <li class="reveal done">
-    <span class="t-badge">CVPR 2026</span>
-    🏆 <strong>Paper Accepted!</strong> <em>"Accelerating Streaming Video Understanding via Hierarchical Token Compression"</em> (<strong>STC</strong>) accepted to <strong>CVPR 2026</strong>.
+  <li class="reveal accepted">
+    <span class="news-badge badge-cvpr">CVPR 2026</span>
+    🏆 <strong>Paper Accepted!</strong> <em>"Accelerating Streaming Video Large Language Models via Hierarchical Token Compression"</em> (<strong>STC</strong>) accepted to <strong>CVPR 2026</strong>.
   </li>
-  <li class="reveal done">
-    <span class="t-badge">CVPR 2026</span>
+  <li class="reveal accepted">
+    <span class="news-badge badge-cvpr">CVPR 2026</span>
     🏆 <strong>Paper Accepted!</strong> <em>"Variation-aware Vision Token Dropping for Faster LVLMs"</em> (<strong>V2Drop</strong>) accepted to <strong>CVPR 2026</strong>.
   </li>
-  <li class="reveal done">
-    <span class="t-badge">EMNLP 2025</span>
+  <li class="reveal accepted">
+    <span class="news-badge badge-emnlp">EMNLP 2025</span>
     🏆 <strong>Paper Accepted!</strong> <em>"Video Compression Commander"</em> (<strong>VidCom²</strong>) accepted to <strong>EMNLP 2025 Main Conference</strong>.
   </li>
   <li class="reveal">
-    <span class="t-badge">arXiv 2025</span>
+    <span class="news-badge badge-arxiv">arXiv 2025</span>
     📄 <strong>Tech Report</strong> — <em>"AI for Service: Proactive Assistance with AI Glasses"</em> (<strong>Alpha-Service</strong>) released on <strong>arXiv</strong>.
   </li>
 </ul>
 
-<div class="divider"></div>
+<hr class="section-divider">
 
 <!-- ===== Publications ===== -->
-<h2 class="sec-title reveal"><span class="s-icon">📝</span> Publications</h2>
+<h2 class="section-title reveal"><span class="title-icon">📝</span> Publications</h2>
 
-<p class="note">* denotes equal contribution, † denotes corresponding author.</p>
+<p class="note-text">* denotes equal contribution, † denotes corresponding author.</p>
 
-<h3 class="sub-h reveal"><span class="dot" style="background:#10b981; color:#10b981;"></span> Accepted <span class="count">3</span></h3>
+<h3 class="sub-heading reveal"><span class="dot" style="background:#2e7d32; color:#2e7d32;"></span> Accepted <span class="count-badge" style="background: linear-gradient(135deg, #2e7d32, #43a047);">3</span></h3>
 
-<div class="p-card reveal">
-  <h4><a href="#">Accelerating Streaming Video Understanding via Hierarchical Token Compression</a></h4>
-  <div class="p-authors"><strong>Yiyu Wang*</strong>, Xuyang Liu*†, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, Linfeng Zhang.</div>
-  <div class="p-chip">CVPR 2026</div>
-  <div class="p-desc">Proposed <strong>STC-Cacher</strong> and <strong>STC-Pruner</strong>, the first plug-and-play token compression framework specifically designed for real-time streaming video understanding, enabling efficient infinite-length video stream processing.</div>
-  <div class="p-links">
-    <a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
-    <a href="#"><img src="https://img.shields.io/badge/Code-Coming_Soon-181717?style=flat&logo=github" alt="Code"></a>
+<!-- STC -->
+<div class="paper-card accent-red reveal">
+  <h4><a href="https://arxiv.org/abs/2512.00891">Accelerating Streaming Video Large Language Models via Hierarchical Token Compression</a></h4>
+  <div class="paper-authors"><strong>Yiyu Wang</strong>, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang.</div>
+  <div class="paper-venue-chip" style="color:#c62828; background: rgba(198,40,40,0.08);">CVPR 2026</div>
+  <div class="paper-desc">We propose <strong>Streaming Token Compression (STC)</strong>, the first plug-and-play hierarchical token compression framework for streaming VideoLLMs. STC introduces two token-level accelerators: <strong>STC-Cacher</strong>, which reduces ViT encoding overhead by caching and reusing features from temporally similar frames, and <strong>STC-Pruner</strong>, which compresses the visual token sequence before it enters the LLM. Retains up to <strong>99%</strong> of accuracy while reducing ViT encoding latency and LLM pre-filling latency by <strong>24.5%</strong> and <strong>45.3%</strong>.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2512.00891"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
+    <a href="https://github.com/lern-to-write/STC"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-stc',this)">📋 Copy</button></div>
+    <span id="cite-stc" class="cite-text">Yiyu Wang, Xuyang Liu, Xiyan Gui, Xinying Lin, Boxue Yang, Chenfei Liao, Tailai Chen, and Linfeng Zhang. (2026). "Accelerating Streaming Video Large Language Models via Hierarchical Token Compression." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-stc',this)">📋 Copy</button></div>
+    <pre id="bib-stc">@inproceedings{wang2026stc,
+  title={Accelerating Streaming Video Large Language Models via Hierarchical Token Compression},
+  author={Wang, Yiyu and Liu, Xuyang and Gui, Xiyan and Lin, Xinying and Yang, Boxue and Liao, Chenfei and Chen, Tailai and Zhang, Linfeng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}</pre>
   </div>
 </div>
 
-<div class="p-card reveal">
+<!-- V2Drop -->
+<div class="paper-card accent-red reveal">
   <h4><a href="https://arxiv.org/abs/2509.01552">Variation-aware Vision Token Dropping for Faster Large Vision-Language Models</a></h4>
-  <div class="p-authors">Junjie Chen, Xuyang Liu, Zichen Wen, <strong>Yiyu Wang</strong>, Siteng Huang, Honggang Chen.</div>
-  <div class="p-chip">CVPR 2026</div>
-  <div class="p-desc">Leveraged variation-aware token dropping to exploit inherent visual sparsity, accelerating large vision-language models with minimal quality degradation.</div>
-  <div class="p-links">
+  <div class="paper-authors">Junjie Chen, Xuyang Liu, Zichen Wen, <strong>Yiyu Wang</strong>, Siteng Huang, and Honggang Chen.</div>
+  <div class="paper-venue-chip" style="color:#c62828; background: rgba(198,40,40,0.08);">CVPR 2026</div>
+  <div class="paper-desc">We propose <strong>V2Drop</strong>, which progressively removes visual tokens with minimal variation during LVLM inference, maintaining <strong>94.0%</strong> and <strong>98.6%</strong> of the original performance for image and video understanding tasks respectively, while reducing LLM generation latency by <strong>31.5%</strong> and <strong>74.2%</strong>.</div>
+  <div class="paper-links">
     <a href="https://arxiv.org/abs/2509.01552"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/xuyang-liu16/V2Drop"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
   </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-v2drop',this)">📋 Copy</button></div>
+    <span id="cite-v2drop" class="cite-text">Junjie Chen, Xuyang Liu, Zichen Wen, Yiyu Wang, Siteng Huang, and Honggang Chen. (2026). "Variation-aware Vision Token Dropping for Faster Large Vision-Language Models." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-v2drop',this)">📋 Copy</button></div>
+    <pre id="bib-v2drop">@inproceedings{chen2026v2drop,
+  title={Variation-aware Vision Token Dropping for Faster Large Vision-Language Models},
+  author={Chen, Junjie and Liu, Xuyang and Wen, Zichen and Wang, Yiyu and Huang, Siteng and Chen, Honggang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}</pre>
+  </div>
 </div>
 
-<div class="p-card reveal">
-  <h4><a href="https://aclanthology.org/2025.emnlp-main.98/">Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models</a></h4>
-  <div class="p-authors">Xuyang Liu*, <strong>Yiyu Wang*</strong>, Junpeng Ma, Linfeng Zhang.</div>
-  <div class="p-chip">EMNLP 2025 Main</div>
-  <div class="p-desc">Proposed <strong>VidCom²</strong>, a training-free framework that adaptively compresses video tokens based on frame uniqueness. Achieved <strong>99.6%</strong> performance retention with only <strong>25% tokens</strong> and <strong>70.8%</strong> latency reduction.</div>
-  <div class="p-links">
-    <a href="https://aclanthology.org/2025.emnlp-main.98/"><img src="https://img.shields.io/badge/Paper-EMNLP'25-db545a?style=flat&logo=semanticscholar" alt="Paper"></a>
+<!-- VidCom2 -->
+<div class="paper-card accent-orange reveal">
+  <h4><a href="https://arxiv.org/abs/2505.14454">Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models</a></h4>
+  <div class="paper-authors">Xuyang Liu*, <strong>Yiyu Wang*</strong>, Junpeng Ma, and Linfeng Zhang.</div>
+  <div class="paper-venue-chip" style="color:#e65100; background: rgba(230,81,0,0.08);">EMNLP 2025 Main</div>
+  <div class="paper-desc">We propose <strong>VidCom²</strong>, a plug-and-play inference acceleration framework for VideoLLMs that adaptively adjusts compression intensity across frames. Achieved <strong>99.6%</strong> performance retention with only <strong>25% tokens</strong> and <strong>70.8%</strong> latency reduction.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2505.14454"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
     <a href="https://github.com/xuyang-liu16/VidCom2"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
   </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vidcom2',this)">📋 Copy</button></div>
+    <span id="cite-vidcom2" class="cite-text">Xuyang Liu, Yiyu Wang, Junpeng Ma, and Linfeng Zhang. (2025). "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models." Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP).</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vidcom2',this)">📋 Copy</button></div>
+    <pre id="bib-vidcom2">@inproceedings{liu2025vidcom2,
+  title={Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models},
+  author={Liu, Xuyang and Wang, Yiyu and Ma, Junpeng and Zhang, Linfeng},
+  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+  year={2025}
+}</pre>
+  </div>
 </div>
 
-<h3 class="sub-h reveal"><span class="dot" style="background:#f59e0b; color:#f59e0b;"></span> Under Review <span class="count">4</span></h3>
+<h3 class="sub-heading reveal"><span class="dot" style="background:#ef6c00; color:#ef6c00;"></span> Under Review <span class="count-badge" style="background: linear-gradient(135deg, #ef6c00, #ffa726);">4</span></h3>
 
-<div class="p-card reveal">
-  <h4><a href="#">Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods</a></h4>
-  <div class="p-authors">Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, <strong>Yiyu Wang</strong>, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, Xuming Hu.</div>
-  <div class="p-chip">ACL 2026 (Under Review)</div>
-  <div class="p-desc">Built a more revealing evaluation framework for visual token compression methods and investigated whether current benchmarks truly measure the efficiency-quality trade-off.</div>
-  <div class="p-links"><a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+<!-- VTC-Bench -->
+<div class="paper-card accent-green reveal">
+  <h4><a href="https://arxiv.org/abs/2510.07143">VTC-Bench: Are We Using the Right Benchmark? An Evaluation Framework for Visual Token Compression Methods</a></h4>
+  <div class="paper-authors">Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, <strong>Yiyu Wang</strong>, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, and Xuming Hu.</div>
+  <div class="paper-venue-chip" style="color:#2e7d32; background: rgba(46,125,50,0.08);">ACL 2026 (Under Review)</div>
+  <div class="paper-desc">We propose <strong>VTC-Bench</strong>, the first comprehensive evaluation framework for visual token compression methods across image and video understanding tasks, revealing critical insights about current benchmarks.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2510.07143"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
+    <a href="https://github.com/Chenfei-Liao/VTC-Bench"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vtc',this)">📋 Copy</button></div>
+    <span id="cite-vtc" class="cite-text">Chenfei Liao, Wensong Wang, Zichen Wen, Xu Zheng, Yiyu Wang, Haocong He, Yuanhuiyi Lyu, Lutao Jiang, Xin Zou, Yuqian Fu, Bin Ren, Linfeng Zhang, and Xuming Hu. (2026). "Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods." Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL).</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vtc',this)">📋 Copy</button></div>
+    <pre id="bib-vtc">@inproceedings{liao2026vtc,
+  title={Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods},
+  author={Liao, Chenfei and Wang, Wensong and Wen, Zichen and Zheng, Xu and Wang, Yiyu and He, Haocong and Lyu, Yuanhuiyi and Jiang, Lutao and Zou, Xin and Fu, Yuqian and Ren, Bin and Zhang, Linfeng and Hu, Xuming},
+  booktitle={Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+  year={2026}
+}</pre>
+  </div>
 </div>
 
-<div class="p-card reveal">
-  <h4><a href="#">V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models</a></h4>
-  <div class="p-authors">Xinying Lin, Xuyang Liu, <strong>Yiyu Wang</strong>, Teng Ma, Wenqi Ren.</div>
-  <div class="p-chip">ECCV 2026 (Under Review)</div>
-  <div class="p-desc">Proposed curvature-aware spatio-temporal pruning for efficient video LLMs, exploiting geometric curvature signals to selectively prune redundant video tokens in both spatial and temporal dimensions.</div>
-  <div class="p-links"><a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+<!-- V-CAST -->
+<div class="paper-card accent-blue reveal">
+  <h4><a href="https://arxiv.org/abs/2603.27650">V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models</a></h4>
+  <div class="paper-authors">Xinying Lin, Xuyang Liu, <strong>Yiyu Wang</strong>, Teng Ma, and Wenqi Ren.</div>
+  <div class="paper-venue-chip" style="color:#1565c0; background: rgba(21,101,192,0.08);">ECCV 2026 (Under Review)</div>
+  <div class="paper-desc">We propose <strong>V-CAST</strong> (Video Curvature-Aware Spatio-Temporal Pruning), a training-free, plug-and-play pruning policy for long-context video inference. Casts token compression as a trajectory approximation problem with curvature-guided temporal allocation. Achieves <strong>98.6%</strong> of original performance and reduces peak memory and total latency to <strong>86.7%</strong> and <strong>86.4%</strong>.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2603.27650"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
+    <a href="https://xinyouu.github.io/V-CAST/"><img src="https://img.shields.io/badge/Project-Page-4285F4?style=flat&logo=google-chrome" alt="Project"></a>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-vcast',this)">📋 Copy</button></div>
+    <span id="cite-vcast" class="cite-text">Xinying Lin, Xuyang Liu, Yiyu Wang, Teng Ma, and Wenqi Ren. (2026). "V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models." arXiv preprint arXiv:2603.27650.</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-vcast',this)">📋 Copy</button></div>
+    <pre id="bib-vcast">@article{lin2026vcast,
+  title={V-CAST: Video Curvature-Aware Spatio-Temporal Pruning for Efficient Video Large Language Models},
+  author={Lin, Xinying and Liu, Xuyang and Wang, Yiyu and Ma, Teng and Ren, Wenqi},
+  journal={arXiv preprint arXiv:2603.27650},
+  year={2026}
+}</pre>
+  </div>
 </div>
 
-<div class="p-card reveal">
-  <h4><a href="#">Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models</a></h4>
-  <div class="p-authors">Yuhang Han, Yuyang Wu, Zhengbo Jiao, <strong>Yiyu Wang</strong>, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, Linfeng Zhang.</div>
-  <div class="p-chip">ECCV 2026 (Under Review)</div>
-  <div class="p-desc">Bridged visual representation learning with reinforcement learning from verifiable rewards (RLVR) in large vision-language models, enabling more grounded visual understanding through reward-driven optimization.</div>
-  <div class="p-links"><a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+<!-- KAWHI -->
+<div class="paper-card accent-blue reveal">
+  <h4><a href="https://arxiv.org/abs/2603.27375">Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models</a></h4>
+  <div class="paper-authors">Yuhang Han, Yuyang Wu, Zhengbo Jiao, <strong>Yiyu Wang</strong>, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang.</div>
+  <div class="paper-venue-chip" style="color:#1565c0; background: rgba(21,101,192,0.08);">ECCV 2026 (Under Review)</div>
+  <div class="paper-desc">We propose <strong>KAWHI</strong> (Key-Region Aligned Weighted Harmonic Incentive), a plug-and-play reward reweighting mechanism that explicitly incorporates structured visual information into uniform reward policy optimization methods for LVLMs.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2603.27375"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
+    <a href="https://kawhiiiileo.github.io/KAWHI_PAGE/"><img src="https://img.shields.io/badge/Project-Page-4285F4?style=flat&logo=google-chrome" alt="Project"></a>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-kawhi',this)">📋 Copy</button></div>
+    <span id="cite-kawhi" class="cite-text">Yuhang Han, Yuyang Wu, Zhengbo Jiao, Yiyu Wang, Xuyang Liu, Shaobo Wang, Hanlin Xu, Xuming Hu, and Linfeng Zhang. (2026). "Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models." arXiv preprint arXiv:2603.27375.</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-kawhi',this)">📋 Copy</button></div>
+    <pre id="bib-kawhi">@article{han2026kawhi,
+  title={Bridging Visual Representation and Reinforcement Learning from Verifiable Rewards in Large Vision-Language Models},
+  author={Han, Yuhang and Wu, Yuyang and Jiao, Zhengbo and Wang, Yiyu and Liu, Xuyang and Wang, Shaobo and Xu, Hanlin and Hu, Xuming and Zhang, Linfeng},
+  journal={arXiv preprint arXiv:2603.27375},
+  year={2026}
+}</pre>
+  </div>
 </div>
 
-<div class="p-card reveal">
-  <h4><a href="https://arxiv.org/abs/2505.19147">Position: Shifting AI Efficiency from Model-Centric to Data-Centric Compression</a></h4>
-  <div class="p-authors">Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Tailai Chen, Xiangqi Jin, Chang Zou, <strong>Yiyu Wang</strong>, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, Linfeng Zhang.</div>
-  <div class="p-chip">ICML 2026 Position Track (Under Review)</div>
-  <div class="p-desc">A position paper arguing that AI efficiency research should shift focus from model-centric compression to data-centric compression, establishing a unified framework for existing efficiency strategies.</div>
-  <div class="p-links"><a href="https://arxiv.org/abs/2505.19147"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+<!-- Shifting AI Efficiency -->
+<div class="paper-card accent-purple reveal">
+  <h4><a href="https://arxiv.org/abs/2505.19147">Position: Shifting AI Efficiency From Model-Centric to Data-Centric Compression</a></h4>
+  <div class="paper-authors">Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Xiangqi Jin, Chang Zou, <strong>Yiyu Wang</strong>, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, and Linfeng Zhang.</div>
+  <div class="paper-venue-chip" style="color:#6a1b9a; background: rgba(106,27,154,0.08);">ICML 2026 Position Track (Under Review)</div>
+  <div class="paper-desc">A position paper arguing that AI efficiency research should shift focus from model-centric compression to data-centric compression, establishing a unified framework for existing efficiency strategies.</div>
+  <div class="paper-links">
+    <a href="https://arxiv.org/abs/2505.19147"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a>
+    <a href="https://github.com/xuyang-liu16/Awesome-Token-level-Model-Compression"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github" alt="Code"></a>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-shift',this)">📋 Copy</button></div>
+    <span id="cite-shift" class="cite-text">Xuyang Liu, Zichen Wen, Shaobo Wang, Junjie Chen, Zhishan Tao, Yubo Wang, Xiangqi Jin, Chang Zou, Yiyu Wang, Chenfei Liao, Xu Zheng, Honggang Chen, Weijia Li, Xuming Hu, Conghui He, and Linfeng Zhang. (2026). "Shifting AI Efficiency From Model-Centric to Data-Centric Compression." arXiv preprint arXiv:2505.19147.</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-shift',this)">📋 Copy</button></div>
+    <pre id="bib-shift">@article{liu2026shifting,
+  title={Shifting AI Efficiency From Model-Centric to Data-Centric Compression},
+  author={Liu, Xuyang and Wen, Zichen and Wang, Shaobo and Chen, Junjie and Tao, Zhishan and Wang, Yubo and Jin, Xiangqi and Zou, Chang and Wang, Yiyu and Liao, Chenfei and Zheng, Xu and Chen, Honggang and Li, Weijia and Hu, Xuming and He, Conghui and Zhang, Linfeng},
+  journal={arXiv preprint arXiv:2505.19147},
+  year={2026}
+}</pre>
+  </div>
 </div>
 
-<h3 class="sub-h reveal"><span class="dot" style="background:#ef4444; color:#ef4444;"></span> Technical Report <span class="count">1</span></h3>
+<h3 class="sub-heading reveal"><span class="dot" style="background:#bf360c; color:#bf360c;"></span> Technical Report <span class="count-badge" style="background: linear-gradient(135deg, #bf360c, #ff6e40);">1</span></h3>
 
-<div class="p-card reveal">
+<!-- AI for Service -->
+<div class="paper-card accent-deeporange reveal">
   <h4><a href="https://arxiv.org/abs/2510.14359">AI for Service: Proactive Assistance with AI Glasses</a></h4>
-  <div class="p-authors">Zichen Wen, <strong>Yiyu Wang</strong>, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, Linfeng Zhang.</div>
-  <div class="p-chip">arXiv 2025 (Tech Report)</div>
-  <div class="p-desc">Proposed <strong>Alpha-Service</strong>, a unified framework for proactive AI assistance via AI glasses. Inspired by von Neumann architecture, it addresses "when to help" and "how to help" through five functional units — perception, scheduling, tool utilization, long-term memory, and natural interaction.</div>
-  <div class="p-links"><a href="https://arxiv.org/abs/2510.14359"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+  <div class="paper-authors">Zichen Wen, <strong>Yiyu Wang</strong>, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, and Linfeng Zhang.</div>
+  <div class="paper-venue-chip" style="color:#bf360c; background: rgba(191,54,12,0.08);">arXiv 2025 (Tech Report)</div>
+  <div class="paper-desc">We propose <strong>Alpha-Service</strong>, a proactive assistance system with AI glasses. Integrates multimodal perception with agentic decision-making, delivering real-time, context-aware assistance through continuous visual and auditory sensing.</div>
+  <div class="paper-links"><a href="https://arxiv.org/abs/2510.14359"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arxiv" alt="Paper"></a></div>
+  <div class="cite-block">
+    <div class="cite-label">📋 Citation <button class="copy-btn" onclick="copyCite('cite-ais',this)">📋 Copy</button></div>
+    <span id="cite-ais" class="cite-text">Zichen Wen, Yiyu Wang, Chenfei Liao, Boxue Yang, Junxian Li, Weifeng Liu, Haocong He, Bolong Feng, Xuyang Liu, Yuanhuiyi Lyu, Xu Zheng, Xuming Hu, and Linfeng Zhang. (2025). "AI for Service: Proactive Assistance with AI Glasses." arXiv preprint arXiv:2510.14359.</span>
+  </div>
+  <div class="cite-block">
+    <div class="cite-label">📝 BibTeX <button class="copy-btn" onclick="copyBib('bib-ais',this)">📋 Copy</button></div>
+    <pre id="bib-ais">@article{wen2025aiforservice,
+  title={AI for Service: Proactive Assistance with AI Glasses},
+  author={Wen, Zichen and Wang, Yiyu and Liao, Chenfei and Yang, Boxue and Li, Junxian and Liu, Weifeng and He, Haocong and Feng, Bolong and Liu, Xuyang and Lyu, Yuanhuiyi and others},
+  journal={arXiv preprint arXiv:2510.14359},
+  year={2025}
+}</pre>
+  </div>
 </div>
 
-<div class="divider"></div>
+<hr class="section-divider">
 
 <!-- ===== Projects ===== -->
-<h2 class="sec-title reveal"><span class="s-icon">💻</span> Selected Projects</h2>
+<h2 class="section-title reveal"><span class="title-icon">💻</span> Selected Projects</h2>
 
-<div class="proj-grid">
-  <div class="proj-card reveal">
-    <span class="proj-tag">CVPR 2026</span>
+<div class="project-grid">
+  <div class="project-card reveal" style="--accent: #c62828;">
+    <span class="project-tag" style="background: linear-gradient(135deg, #c62828, #ef5350);">CVPR 2026</span>
     <h4>STC</h4>
     <p>A streaming-first token compression framework with caching and pruning for real-time video understanding.</p>
-    <a href="#" class="plink">Code Coming Soon <span class="arrow">&rarr;</span></a>
+    <a href="https://github.com/lern-to-write/STC" class="project-link">Open Project <span class="arrow">&rarr;</span></a>
   </div>
-  <div class="proj-card reveal">
-    <span class="proj-tag">EMNLP 2025</span>
+  <div class="project-card reveal" style="--accent: #e65100;">
+    <span class="project-tag" style="background: linear-gradient(135deg, #e65100, #ff8f00);">EMNLP 2025</span>
     <h4>VidCom²</h4>
     <p>Plug-and-play inference acceleration for VideoLLMs via adaptive frame-uniqueness-based token compression.</p>
-    <a href="https://github.com/xuyang-liu16/VidCom2" class="plink">Open Project <span class="arrow">&rarr;</span></a>
+    <a href="https://github.com/xuyang-liu16/VidCom2" class="project-link">Open Project <span class="arrow">&rarr;</span></a>
   </div>
 </div>
 
-<div class="divider"></div>
+<hr class="section-divider">
 
 <!-- ===== Academic Service ===== -->
-<h2 class="sec-title reveal"><span class="s-icon">🎓</span> Academic Service</h2>
+<h2 class="section-title reveal"><span class="title-icon">🎓</span> Academic Service</h2>
 
-<div class="svc-card reveal">
-  <div class="svc-icon">✍️</div>
+<div class="service-card reveal">
+  <div class="service-icon">✍️</div>
   <div>
     <strong>Conference Reviewer</strong>
-    <div class="v-tags">
-      <span class="v-tag">CVPR</span>
-      <span class="v-tag">ECCV</span>
-      <span class="v-tag">ACM MM</span>
-      <span class="v-tag">EMNLP</span>
+    <div class="venue-tags">
+      <span class="venue-tag">CVPR</span>
+      <span class="venue-tag">ECCV</span>
+      <span class="venue-tag">ACM MM</span>
+      <span class="venue-tag">EMNLP</span>
     </div>
   </div>
 </div>
 
 <script>
+function copyCite(id, btn) {
+  var text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = '📋 Copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+function copyBib(id, btn) {
+  var text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = '📋 Copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Scroll reveal
+  // Scroll reveal with stagger
   var reveals = document.querySelectorAll('.reveal');
-  reveals.forEach(function(el) { el.classList.add('will-anim'); });
+  reveals.forEach(function(el) { el.classList.add('will-animate'); });
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         var siblings = entry.target.parentElement.querySelectorAll('.reveal');
         var idx = Array.from(siblings).indexOf(entry.target);
-        entry.target.style.transitionDelay = Math.min(idx * 0.08, 0.4) + 's';
+        entry.target.style.transitionDelay = Math.min(idx * 0.07, 0.35) + 's';
         entry.target.classList.add('visible');
       }
     });
   }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
   reveals.forEach(function(el) { observer.observe(el); });
 
-  // Counter animation
-  var statsRow = document.getElementById('stats-row');
-  if (statsRow) {
-    var co = new IntersectionObserver(function(entries) {
+  // Counter animation for stats
+  var statsBar = document.getElementById('stats-bar');
+  if (statsBar) {
+    var counterObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
-          var counters = entry.target.querySelectorAll('.stat-num[data-target]');
+          var counters = entry.target.querySelectorAll('.stats-num[data-target]');
           counters.forEach(function(el) {
             if (el.dataset.animated) return;
             el.dataset.animated = 'true';
             var target = parseInt(el.dataset.target);
-            var duration = 1600;
+            var duration = 1400;
             var start = performance.now();
             function step(now) {
               var progress = Math.min((now - start) / duration, 1);
@@ -719,7 +941,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }, { threshold: 0.3 });
-    co.observe(statsRow);
+    counterObserver.observe(statsBar);
   }
 });
 </script>
