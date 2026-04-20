@@ -38,46 +38,63 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% elsif post.citation and post.slidesurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl and post.bibtexurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl and post.bibtexurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.bibtexurl %}
-      <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    <!-- Publication Links -->
+    {% if post.collection == 'publications' %}
+      <p class="pub-links" style="font-size: 0.9em; margin-top: 0.5em;">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank" style="margin-right: 12px;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a>
+        {% endif %}
+        {% if post.githuburl %}
+          <a href="{{ post.githuburl }}" target="_blank" style="margin-right: 12px;"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
+        {% endif %}
+        {% if post.projecturl %}
+          <a href="{{ post.projecturl }}" target="_blank" style="margin-right: 12px;"><i class="fa fa-globe" aria-hidden="true"></i> Project</a>
+        {% endif %}
+        {% if post.slidesurl %}
+          <a href="{{ post.slidesurl }}" target="_blank" style="margin-right: 12px;"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Slides</a>
+        {% endif %}
+      </p>
+    {% endif %}
+
+    <!-- Citation & BibTeX -->
+    {% if post.collection == 'publications' and post.citation %}
+      <div class="pub-citation" style="font-size: 0.85em; margin-top: 0.5em; padding: 8px 12px; background: #f8f9fa; border-radius: 4px; border-left: 3px solid #52adc8;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="color: #555;"><strong>Cite:</strong> {{ post.citation }}</span>
+          <button id="copy-cite-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}" 
+                  onclick="copyToClipboard('{{ post.citation | strip_html | replace: "'", "\\'" }}', 'copy-cite-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}')"
+                  style="margin-left: 10px; padding: 2px 8px; font-size: 0.85em; cursor: pointer; background: #fff; border: 1px solid #ddd; border-radius: 3px; white-space: nowrap;">
+            <i class="fa fa-copy" aria-hidden="true"></i> Copy
+          </button>
+        </div>
+        {% if post.bibtex %}
+          <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed #ddd;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <pre style="margin: 0; font-size: 0.8em; color: #666; white-space: pre-wrap; word-break: break-word; background: transparent; padding: 0; border: none;">{{ post.bibtex | strip }}</pre>
+              <button id="copy-bib-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}" 
+                      onclick="copyToClipboard(document.getElementById('bibtex-text-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}').innerText, 'copy-bib-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}')"
+                      style="margin-left: 10px; padding: 2px 8px; font-size: 0.85em; cursor: pointer; background: #fff; border: 1px solid #ddd; border-radius: 3px; white-space: nowrap;">
+                <i class="fa fa-copy" aria-hidden="true"></i> Copy BibTeX
+              </button>
+            </div>
+            <span id="bibtex-text-{{ post.date | default: '1900-01-01' | date: '%s' }}-{{ post.title | slugify }}" style="display: none;">{{ post.bibtex | strip }}</span>
+          </div>
+        {% endif %}
+      </div>
     {% endif %}
 
   </article>
