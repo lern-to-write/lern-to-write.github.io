@@ -12,11 +12,11 @@ redirect_from:
 /* ===== Premium Academic Design v7 ===== */
 
 /* Hide duplicate Jekyll page title */
-.page__title { display: none !important; }
+.page__title, h1.page__title, #main h1.page__title, article h1.page__title { display: none !important; }
 
 /* Premium page background */
-#main {
-  background: linear-gradient(180deg, #eef1f5 0%, #f5f7fa 25%, #f8f9fb 75%, #eef1f5 100%) !important;
+#main, .page, .page__inner-wrap {
+  background: linear-gradient(180deg, #e8ecf1 0%, #f0f3f7 25%, #f5f7fa 75%, #e8ecf1 100%) !important;
 }
 
 /* --- Base Card (Apple-style multi-layer shadow) --- */
@@ -276,6 +276,7 @@ redirect_from:
 .paper-card::before {
   content: ''; position: absolute;
   top: 0; left: 0; right: 0; height: 4px;
+  width: 100% !important;
   background: var(--accent, #1a3a5c);
   border-radius: 20px 20px 0 0;
 }
