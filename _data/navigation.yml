@@ -3,5 +3,17 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Resource Library"
+    url: /resource-library/
+
+  - title: "Games"
+    url: /games/
+
+  - title: "Books"
+    url: /books/
+
+  - title: "Daily AI"
+    url: /daily-papers/
+
   - title: "CV"
     url: /cv/

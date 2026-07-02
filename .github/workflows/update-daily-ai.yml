@@ -1,0 +1,53 @@
+name: Update Daily AI
+
+on:
+  schedule:
+    # 09:15 and 14:15 Asia/Shanghai. If today's feed is late, the script falls back to the latest available day.
+    - cron: "15 1 * * *"
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Optional feed date, e.g. 20260702 or 2026-07-02"
+        required: false
+        type: string
+      max_items:
+        description: "Number of feed items to publish"
+        required: false
+        default: "12"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Daily AI page
+        env:
+          DAILY_AI_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
+          DAILY_AI_MAX_ITEMS: ${{ github.event_name == 'workflow_dispatch' && inputs.max_items || '12' }}
+        run: python scripts/update_daily_ai.py
+
+      - name: Commit updated digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _pages/daily-papers.md
+          if git diff --cached --quiet; then
+            echo "Daily AI is already up to date."
+          else
+            git commit -m "Update Daily AI digest"
+            git push
+          fi

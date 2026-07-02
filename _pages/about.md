@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: "Yiyu Wang"
-excerpt: "Joint Ph.D. Student at HKUST(GZ) & SJTU · Streaming Video Understanding"
-author_profile: true
+excerpt: "Joint Ph.D. Student at HKUST(GZ) & SJTU · Efficient Multimodal Intelligence"
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -10,66 +10,79 @@ redirect_from:
 
 <div class="home-page">
   <section class="hero-card p-card reveal" aria-labelledby="home-title">
-    <p class="eyebrow">Streaming Video Understanding / Efficient VideoLLMs / VLM Game Agents</p>
-    <h1 id="home-title" class="hero-name">Yiyu Wang</h1>
-    <p class="hero-tagline">王一宇 · Joint Ph.D. Student at HKUST(GZ) &amp; SJTU</p>
+    <div class="hero-copy">
+      <h1 id="home-title" class="hero-name">Yiyu Wang <span>王一宇</span></h1>
+      <p class="hero-tagline">Joint Ph.D. Student at HKUST(GZ) &amp; SJTU</p>
 
-    <p class="hero-bio">
-      I am a joint Ph.D. student at
-      <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a><img class="inline-logo" src="https://material.hkust-gz.edu.cn/wp-content/uploads/2023/04/cropped-favicon-1-1-192x192.png" alt="" aria-hidden="true"> and
-      <a href="https://www.sjtu.edu.cn/">SJTU</a><img class="inline-logo" src="https://www.sjtu.edu.cn/resource/assets/img/ico/favicon.png" alt="" aria-hidden="true">, advised by
-      <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a> and
-      <a href="https://linfeng-zhang.github.io/">Prof. Linfeng Zhang</a>.
-      I am currently a Research Intern at <a href="https://www.tencent.com/">Tencent</a><img class="inline-logo inline-logo-wide" src="https://www.tencent.com/img/index/tencent_logo.png" alt="" aria-hidden="true">.
-      My research builds efficient multimodal systems for real-time video understanding,
-      visual token compression, and interactive VLM game agents.
-    </p>
+      <p class="hero-bio">
+        I am a joint Ph.D. student at
+        <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a><img class="inline-logo" src="https://material.hkust-gz.edu.cn/wp-content/uploads/2023/04/cropped-favicon-1-1-192x192.png" alt="" aria-hidden="true"> and
+        <a href="https://www.sjtu.edu.cn/">SJTU</a><img class="inline-logo" src="https://www.sjtu.edu.cn/resource/assets/img/ico/favicon.png" alt="" aria-hidden="true">, advised by
+        <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a> and
+        <a href="https://linfeng-zhang.github.io/">Prof. Linfeng Zhang</a>.
+        I am currently a Research Intern at <a href="https://www.tencent.com/">Tencent</a><img class="inline-logo inline-logo-wide" src="https://www.tencent.com/img/index/tencent_logo.png" alt="" aria-hidden="true">.
+      </p>
 
-    <div class="hero-pills" aria-label="Research identity">
-      <span class="hero-pill">HKUST(GZ)<img class="pill-logo" src="https://material.hkust-gz.edu.cn/wp-content/uploads/2023/04/cropped-favicon-1-1-192x192.png" alt="" aria-hidden="true"></span>
-      <span class="hero-pill">SJTU<img class="pill-logo" src="https://www.sjtu.edu.cn/resource/assets/img/ico/favicon.png" alt="" aria-hidden="true"></span>
-      <span class="hero-pill">Tencent<img class="pill-logo pill-logo-wide" src="https://www.tencent.com/img/index/tencent_logo.png" alt="" aria-hidden="true"></span>
-      <span class="hero-pill hero-pill-accent">Streaming Video</span>
-      <span class="hero-pill hero-pill-accent">Efficient VideoLLM</span>
-      <span class="hero-pill hero-pill-blue">VLM Game Agents</span>
+      <p class="hero-bio">
+        I work on efficient multimodal intelligence for long-context, streaming,
+        and interactive visual environments. My research develops visual token
+        compression, pruning, and evaluation methods for VideoLLMs/LVLMs, and
+        extends them toward real-time assistance and VLM agents.
+      </p>
+
+      <div class="hero-pills" aria-label="Research identity">
+        <a class="hero-pill" href="#publications-title">Visual Token Efficiency</a>
+        <a class="hero-pill" href="#publications-title">Streaming Video</a>
+        <a class="hero-pill" href="#lab-title">Interactive Agents</a>
+      </div>
+
+      <p class="hero-contact">
+        ✉️ <a href="mailto:USTYWANG8@ljmu.ac.uk">Email</a>
+        · 💻 <a href="https://github.com/lern-to-write">GitHub</a>
+      </p>
+    </div>
+
+    <div class="hero-portrait">
+      <img src="https://avatars.githubusercontent.com/u/129721363?v=4" alt="Yiyu Wang profile photo">
+      <p>Efficient multimodal intelligence for streaming and interactive worlds.</p>
     </div>
   </section>
 
   <section class="research-row reveal" aria-label="Research highlights">
     <article class="r-pill p-card">
-      <div class="r-icon-wrap" aria-hidden="true">SV</div>
+      <div class="r-icon-wrap" aria-hidden="true">01</div>
       <div class="r-text">
-        <h2>Streaming Video</h2>
-        <p>Real-time perception and temporal reasoning for long-horizon video streams.</p>
+        <h2>Efficient Visual Token Processing</h2>
+        <p>Compression, pruning, and evaluation methods for scalable LVLMs and VideoLLMs.</p>
       </div>
     </article>
     <article class="r-pill p-card">
-      <div class="r-icon-wrap" aria-hidden="true">TC</div>
+      <div class="r-icon-wrap" aria-hidden="true">02</div>
       <div class="r-text">
-        <h2>Token Compression</h2>
-        <p>Efficient visual encoding for VideoLLMs under latency and memory budgets.</p>
+        <h2>Streaming Video Understanding</h2>
+        <p>Real-time perception over long, continuous visual streams under latency and memory budgets.</p>
       </div>
     </article>
     <article class="r-pill p-card">
-      <div class="r-icon-wrap" aria-hidden="true">GA</div>
+      <div class="r-icon-wrap" aria-hidden="true">03</div>
       <div class="r-text">
-        <h2>VLM Game Agents</h2>
-        <p>UE5 benchmarks and improvement dynamics for interactive decision making.</p>
+        <h2>Interactive Multimodal Agents</h2>
+        <p>VLMs that perceive, reason, and act in service, game, and embodied environments.</p>
       </div>
     </article>
   </section>
 
   <section class="stats-row reveal" id="stats-row" aria-label="Publication statistics">
     <div class="stat-card p-card">
-      <span class="stat-num" data-target="9">0</span>
+      <span class="stat-num">9</span>
       <span class="stat-label">Papers</span>
     </div>
     <div class="stat-card p-card">
-      <span class="stat-num" data-target="4">0</span>
+      <span class="stat-num">4</span>
       <span class="stat-label">Accepted</span>
     </div>
     <div class="stat-card p-card">
-      <span class="stat-num" data-target="4">0</span>
+      <span class="stat-num">4</span>
       <span class="stat-label">Under Review</span>
     </div>
   </section>
@@ -281,6 +294,38 @@ redirect_from:
           <span class="v-tag">EMNLP</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="home-section reveal" aria-labelledby="lab-title">
+    <h2 id="lab-title" class="sec-title"><span>Personal Lab</span></h2>
+    <div class="home-lab-grid">
+      <a class="home-lab-card p-card" href="/games/">
+        <span class="home-lab-mark" aria-hidden="true">01</span>
+        <span class="home-lab-kicker">Play</span>
+        <strong>Games</strong>
+        <p>A small Snake game in the page, plus a doorway to Daoyou for longer breaks.</p>
+      </a>
+      <a class="home-lab-card p-card" href="/books/">
+        <span class="home-lab-mark" aria-hidden="true">02</span>
+        <span class="home-lab-kicker">Read</span>
+        <strong>Books</strong>
+        <p>A small reading room for philosophy, research craft, mathematics, and Ph.D. life.</p>
+      </a>
+      <a class="home-lab-card p-card" href="/daily-papers/">
+        <span class="home-lab-mark" aria-hidden="true">03</span>
+        <span class="home-lab-kicker">Track</span>
+        <strong>Daily AI</strong>
+        <p>AI/ML papers and technical updates worth scanning, grouped like a daily research radar.</p>
+      </a>
+      <a class="home-lab-card p-card" href="/resource-library/">
+        <span class="home-lab-mark" aria-hidden="true">04</span>
+        <span class="home-lab-kicker">Collect</span>
+        <strong>Resource Library</strong>
+        <p>The recovered link library for CS learning, applications, research methods, and startups.</p>
+      </a>
     </div>
   </section>
 </div>
