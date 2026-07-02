@@ -7,8 +7,8 @@ author_profile: true
 <div class="lab-page games-page" data-games-page>
   <section class="lab-hero p-card">
     <p class="lab-kicker">Game Lab</p>
-    <h2>Snake, plus one doorway to Daoyou.</h2>
-    <p>A small in-page game for quick breaks, with a link to the Chinese AIGC cultivation world.</p>
+    <h2>Snake, plus one doorway to a text cultivation game.</h2>
+    <p>A small in-page game for quick breaks, with a link to the xiuxian text world.</p>
   </section>
 
   <div class="games-grid">
@@ -34,12 +34,12 @@ author_profile: true
       <canvas class="snake-canvas" width="480" height="384" data-snake-canvas aria-label="Snake game canvas"></canvas>
     </section>
 
-    <a class="game-link-card p-card" href="https://hk.daoyou.org/" target="_blank" rel="noopener noreferrer">
+    <a class="game-link-card p-card" href="https://xiuxian.wenzi.games/#/home" target="_blank" rel="noopener noreferrer">
       <span class="home-lab-mark" aria-hidden="true">道</span>
       <span class="home-lab-kicker">External game</span>
-      <strong>万界道友</strong>
-      <p>一个中文 AIGC 文字修仙世界。打开官方入口，去“进入道界”。</p>
-      <span class="game-link-cta">Open Daoyou</span>
+      <strong>文字修仙</strong>
+      <p>一个中文文字修仙游戏入口。打开新页面后从主页进入即可。</p>
+      <span class="game-link-cta">Open Xiuxian</span>
     </a>
   </div>
 </div>

@@ -310,7 +310,7 @@ redirect_from:
         <span class="home-lab-mark" aria-hidden="true">01</span>
         <span class="home-lab-kicker">Play</span>
         <strong>Games</strong>
-        <p>A small Snake game in the page, plus a doorway to Daoyou for longer breaks.</p>
+        <p>A small Snake game in the page, plus a doorway to a text xiuxian game for longer breaks.</p>
       </a>
       <a class="home-lab-card p-card" href="/books/">
         <span class="home-lab-mark" aria-hidden="true">02</span>
