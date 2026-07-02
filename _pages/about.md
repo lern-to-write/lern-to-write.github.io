@@ -78,11 +78,11 @@ redirect_from:
       <span class="stat-label">Papers</span>
     </div>
     <div class="stat-card p-card">
-      <span class="stat-num">4</span>
+      <span class="stat-num">5</span>
       <span class="stat-label">Accepted</span>
     </div>
     <div class="stat-card p-card">
-      <span class="stat-num">4</span>
+      <span class="stat-num">3</span>
       <span class="stat-label">Under Review</span>
     </div>
   </section>
@@ -92,6 +92,10 @@ redirect_from:
   <section class="home-section reveal" aria-labelledby="news-title">
     <h2 id="news-title" class="sec-title"><span>News &amp; Updates</span></h2>
     <div class="timeline-wrap">
+      <article class="tl-item p-card accepted">
+        <span class="tl-badge tl-eccv">ECCV 2026</span>
+        <strong>Accepted</strong> — <em>KAWHI</em> accepted to <strong>ECCV 2026</strong>.
+      </article>
       <article class="tl-item p-card accepted">
         <span class="tl-badge tl-acl">ACL 2026</span>
         <strong>Accepted</strong> — <em>VTC-Bench</em> accepted to <strong>ACL 2026</strong>.
