@@ -8,20 +8,53 @@ author_profile: true
   <article class="daily-digest p-card" aria-label="Daily AI/ML digest">
     <header class="daily-digest-header">
       <p class="lab-kicker">AI_ML</p>
-      <h1>2026-07-12</h1>
+      <h1>2026-07-13</h1>
       <blockquote>
-        今日 AI/ML 热点快读：推理优化、大模型、AI安全、模型发布、智能体、公司动态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
+        今日 AI/ML 热点快读：公司动态、AI安全、大模型、智能体、政策监管、开源生态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
       </blockquote>
       <p class="digest-source-note">
-        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260712">Develata AI_ML 2026-07-12</a>. Each item links back to its original source. This page updates automatically.
+        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260713">Develata AI_ML 2026-07-13</a>. Each item links back to its original source. This page updates automatically.
       </p>
     </header>
 
     <section class="digest-item">
-      <h2>OpenAI 论文：GPT-5.6 Sol Ultra 证明图论&quot;循环双覆盖猜想&quot; <span>95</span></h2>
+      <h2>OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想 <span>92</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>大模型</code> <code>AI研究</code> <code>数学证明</code> <code>重大突破</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0">阅读原文</a></li>
+        <li>Tags: <code>大模型</code> <code>模型发布</code> <code>AI研究</code> <code>智能体</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户 <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>智能体</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史 <span>75</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>隐私</code> <code>公司动态</code> <code>产品发布</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun <span>75</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI编程</code> <code>模型应用</code> <code>公司动态</code> <code>大模型</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
@@ -29,21 +62,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>OpenAI 发布 GPT-5.6 系列医疗评估结果 <span>80</span></h2>
+      <h2>彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句&quot;哈哈&quot;成窃密关键 <span>72</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>医疗AI</code> <code>评测</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发 <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>政策监管</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>政策监管</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrgzykqg00jabid4acp6zpjm">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -51,76 +73,21 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型 <span>80</span></h2>
+      <h2>b9970 <span>70</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>具身智能</code> <code>模型发布</code> <code>机器人</code> <code>大模型</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc">阅读原文</a></li>
+        <li>Tags: <code>推理优化</code> <code>开源生态</code> <code>模型架构</code></li>
+        <li>Source: <code>GitHub Release - llama.cpp</code> | <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b9970">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
+      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘 <span>80</span></h2>
+      <h2>纳德拉提出&quot;反向信息悖论&quot;：企业使用AI时需保护自身知识 <span>70</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>智能体</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Tool-Making and Self-Evolving LLM Agents in Low-Latency Systems <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>智能体</code> <code>推理优化</code> <code>模型部署</code> <code>研究</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.08010">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>大模型</code> <code>推理优化</code> <code>RL训练</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.07976">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>智能体</code> <code>多智能体</code> <code>搜索</code> <code>模型研究</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.08662">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>大模型</code> <code>模型训练</code> <code>推理优化</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.08393">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Efficient Safety Alignment of Language Models via Latent Personality Traits <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>模型对齐</code> <code>对抗训练</code> <code>效率优化</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.07918">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>产业动态</code> <code>知识产权</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -128,10 +95,43 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing <span>80</span></h2>
+      <h2>苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划 <span>70</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>多模态智能体</code> <code>长期记忆</code> <code>推理优化</code> <code>模型发布</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.08497">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>政策监管</code> <code>AI安全</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>b9977 <span>65</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>推理优化</code> <code>开源生态</code> <code>模型服务</code></li>
+        <li>Source: <code>GitHub Release - llama.cpp</code> | <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b9977">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Codex 移除5小时限制，GPT 5.6 Sol 效率提升 <span>65</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>产品更新</code> <code>大模型</code> <code>模型效率</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Mindwalk：在代码库 3D 地图上回放编码代理会话 <span>65</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>智能体</code> <code>开源生态</code> <code>工具发布</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
     </section>
@@ -139,12 +139,12 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Collective Intelligence with Foundation Models <span>80</span></h2>
+      <h2>OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论 <span>65</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>多智能体</code> <code>推理优化</code> <code>AI安全</code> <code>研究论文</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.07729">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>政策监管</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
 
   </article>
