@@ -8,53 +8,20 @@ author_profile: true
   <article class="daily-digest p-card" aria-label="Daily AI/ML digest">
     <header class="daily-digest-header">
       <p class="lab-kicker">AI_ML</p>
-      <h1>2026-07-13</h1>
+      <h1>2026-07-14</h1>
       <blockquote>
-        今日 AI/ML 热点快读：公司动态、AI安全、大模型、智能体、政策监管、开源生态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
+        今日 AI/ML 热点快读：模型发布、大模型、推理优化、开源生态、芯片算力、公司动态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
       </blockquote>
       <p class="digest-source-note">
-        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260713">Develata AI_ML 2026-07-13</a>. Each item links back to its original source. This page updates automatically.
+        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260714">Develata AI_ML 2026-07-14</a>. Each item links back to its original source. This page updates automatically.
       </p>
     </header>
 
     <section class="digest-item">
-      <h2>OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想 <span>92</span></h2>
+      <h2>Meta 宣布扩建路易斯安那州数据中心至 5GW，总投资超 500 亿美元 <span>88</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>大模型</code> <code>模型发布</code> <code>AI研究</code> <code>智能体</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户 <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>智能体</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史 <span>75</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>隐私</code> <code>公司动态</code> <code>产品发布</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun <span>75</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI编程</code> <code>模型应用</code> <code>公司动态</code> <code>大模型</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62">阅读原文</a></li>
+        <li>Tags: <code>芯片算力</code> <code>基础设施</code> <code>公司动态</code> <code>AI基础设施</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrj36yri059qbilk1n6jhqn1">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
@@ -62,65 +29,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句&quot;哈哈&quot;成窃密关键 <span>72</span></h2>
+      <h2>黄仁勋：英伟达季度收入逼近千亿美元，Rubin Ultra 架构未延期 <span>88</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>政策监管</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrgzykqg00jabid4acp6zpjm">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>b9970 <span>70</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>推理优化</code> <code>开源生态</code> <code>模型架构</code></li>
-        <li>Source: <code>GitHub Release - llama.cpp</code> | <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b9970">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>纳德拉提出&quot;反向信息悖论&quot;：企业使用AI时需保护自身知识 <span>70</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>产业动态</code> <code>知识产权</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划 <span>70</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>政策监管</code> <code>AI安全</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>b9977 <span>65</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>推理优化</code> <code>开源生态</code> <code>模型服务</code></li>
-        <li>Source: <code>GitHub Release - llama.cpp</code> | <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b9977">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Codex 移除5小时限制，GPT 5.6 Sol 效率提升 <span>65</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>产品更新</code> <code>大模型</code> <code>模型效率</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>芯片算力</code> <code>算力基础设施</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrijw1sy00j6bi0jshweyv4l">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
@@ -128,23 +40,111 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Mindwalk：在代码库 3D 地图上回放编码代理会话 <span>65</span></h2>
+      <h2>腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍 <span>86</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>智能体</code> <code>开源生态</code> <code>工具发布</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem">阅读原文</a></li>
+        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>推理优化</code> <code>多模态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论 <span>65</span></h2>
+      <h2>Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>政策监管</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y">阅读原文</a></li>
+        <li>Tags: <code>RAG</code> <code>AI安全</code> <code>模型评估</code> <code>临床AI</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.09349">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>A Sovereign, Open-Source Foundation Model for German and English <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>大模型</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.09424">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>REAL: REtrieval-reAsoning and Logic-constructed Attention Behaviors for Long-Context KV Cache Compression <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>推理优化</code> <code>KV缓存压缩</code> <code>长上下文</code> <code>模型优化</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2508.15806">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>大模型</code> <code>推理评测</code> <code>长上下文</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.09328">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Mach-Mind-4-Flash Technical Report <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>模型发布</code> <code>训练方法</code> <code>推理优化</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.09375">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Neural Collapse Is Forbidden: Information Floors in Language Models <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>研究发布</code> <code>大模型</code> <code>理论解释</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.09487">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 偏理论内容适合补齐判断框架，重点看它解释了哪些经验现象，以及能否指导新实验。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先 <span>82</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>大模型</code> <code>推理优化</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Beyond Black-Box Obfuscation: Mechanistic Analysis and Defense of White-Box Monitors <span>82</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>大模型</code> <code>模型发布</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2505.14300">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Seedream 5.0 Pro 测评：图像编辑门槛爆降 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>多模态</code> <code>产品发布</code> <code>图像生成</code> <code>字节跳动</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmrj2yiav054pbilkyf6ufbw2">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
     </section>
 
   </article>
