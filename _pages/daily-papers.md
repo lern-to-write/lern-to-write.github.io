@@ -8,64 +8,20 @@ author_profile: true
   <article class="daily-digest p-card" aria-label="Daily AI/ML digest">
     <header class="daily-digest-header">
       <p class="lab-kicker">AI_ML</p>
-      <h1>2026-07-29</h1>
+      <h1>2026-07-30</h1>
       <blockquote>
-        今日 AI/ML 热点快读：大模型、模型发布、推理优化、开源生态、智能体、多模态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
+        今日 AI/ML 热点快读：大模型、推理优化、智能体、AI安全、模型发布、公司动态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
       </blockquote>
       <p class="digest-source-note">
-        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260729">Develata AI_ML 2026-07-29</a>. Each item links back to its original source. This page updates automatically.
+        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260730">Develata AI_ML 2026-07-30</a>. Each item links back to its original source. This page updates automatically.
       </p>
     </header>
 
     <section class="digest-item">
-      <h2>Kimi Linear：一种表现力强且高效的注意力架构 <span>85</span></h2>
+      <h2>OpenAI 发布 GPT-5.6 模型家族：Sol、Terra 与 Luna <span>90</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>推理优化</code> <code>开源生态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放 <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>大模型</code> <code>智能体</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Tokengeist: Multi-Turn Attribution Tracing in Agentic Conversations <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型研究</code> <code>推理分析</code> <code>智能体对话</code> <code>开源生态</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.22610">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Kimi K3: Open Frontier Intelligence <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>大模型</code> <code>多模态</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.24653">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>LEDOM: Reverse Language Model <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>推理优化</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2507.01335">阅读原文</a></li>
+        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>OpenAI</code> <code>推理优化</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms6i9q2n044erohzw2w8750m">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
     </section>
@@ -73,43 +29,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Seesaw: Accelerating Training by Balancing Learning Rate and Batch Size Scheduling <span>82</span></h2>
+      <h2>OpenAI 失控 AI 智能体不止攻击了 Hugging Face，还入侵了多家公司 <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>训练优化</code> <code>大模型</code> <code>推理优化</code></li>
-        <li>Source: <code>arXiv Statistics - Machine Learning</code> | <a href="https://arxiv.org/abs/2510.14717">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Amortized Bayesian Causal Discovery of Extended Factor Graphs <span>82</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>因果发现</code> <code>贝叶斯方法</code> <code>研究</code> <code>单细胞</code></li>
-        <li>Source: <code>arXiv Statistics - Machine Learning</code> | <a href="https://arxiv.org/abs/2607.22934">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Tailored untruths: How personalisation challenges LLM safeguards <span>82</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>大模型</code> <code>研究进展</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2510.12993">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>AgentOmnia: Scaling Agentic Models for Full-Scenario Applications <span>82</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>智能体</code> <code>大模型</code> <code>模型发布</code> <code>应用</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.23124">阅读原文</a></li>
+        <li>Tags: <code>AI安全</code> <code>公司动态</code> <code>智能体</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms6271f315rtrobkq6zgvphh">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
     </section>
@@ -117,10 +40,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Masked Distillation: Internalizing the Chain-of-Thought in Language Models <span>82</span></h2>
+      <h2>GLIDE: Guided Layerwise Hybrid Attention for Efficient LLM Inference <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>知识蒸馏</code> <code>推理优化</code> <code>大模型</code> <code>研究</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.22629">阅读原文</a></li>
+        <li>Tags: <code>推理优化</code> <code>大模型</code> <code>LLM</code> <code>注意力机制</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.24788">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
     </section>
@@ -128,23 +51,100 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding <span>82</span></h2>
+      <h2>Physics of Language Models: Part 4.1, Architecture Design and the Magic of Canon Layers <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>多模态</code> <code>医疗AI</code> <code>研究突破</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.24743">阅读原文</a></li>
+        <li>Tags: <code>大模型</code> <code>模型架构</code> <code>推理优化</code> <code>研究进展</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2512.17351">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
+      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>Andrew Ng 创办 LearnVector，用 AI 实现一对一学习 <span>80</span></h2>
+      <h2>HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI教育</code> <code>产品发布</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms54eet30038roehcs33wqca">阅读原文</a></li>
+        <li>Tags: <code>智能体</code> <code>基准测试</code> <code>大模型</code> <code>AI安全</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.25398">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>CAST: Game Solvers as Turn-Level Teachers for LLM Agents <span>85</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>智能体</code> <code>训练方法</code> <code>大模型</code> <code>强化学习</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2607.25308">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Beyond Factual Accuracy: Evaluating Global Reasoning Integrity in RAG Systems with LogicScore <span>82</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI评估</code> <code>RAG</code> <code>推理优化</code> <code>LLM</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2601.15050">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>算力价格未来可能上涨 10 倍以上 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>芯片算力</code> <code>产业动态</code> <code>成本趋势</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms69xwp11ej8robk4upl33jq">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>OpenAI 为学术研究者免费提供前沿模型 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>公司动态</code> <code>模型发布</code> <code>大模型</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms6cw5ha02sgrotzfmlr8p11">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>How GPT-5.6 fuses frontier intelligence with frontier efficiency <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>推理优化</code> <code>智能体</code></li>
+        <li>Source: <code>OpenAI News</code> | <a href="https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Claude Opus 5 在模拟售货机任务中展现欺骗与背叛，创下新纪录 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>智能体</code> <code>模型行为</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cms6g4nn502errohzoxo9al2o">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Controllable LLM Reasoning via Sparse Autoencoder-Based Steering <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>推理优化</code> <code>模型可解释性</code> <code>AI安全</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2601.03595">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
     </section>
 
   </article>
