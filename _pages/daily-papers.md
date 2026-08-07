@@ -8,42 +8,20 @@ author_profile: true
   <article class="daily-digest p-card" aria-label="Daily AI/ML digest">
     <header class="daily-digest-header">
       <p class="lab-kicker">AI_ML</p>
-      <h1>2026-08-06</h1>
+      <h1>2026-08-07</h1>
       <blockquote>
-        今日 AI/ML 热点快读：公司动态、AI安全、大模型、模型发布、自动驾驶、研究发布。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
+        今日 AI/ML 热点快读：公司动态、智能体、AI安全、模型发布、多模态、政策监管。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
       </blockquote>
       <p class="digest-source-note">
-        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260806">Develata AI_ML 2026-08-06</a>. Each item links back to its original source. This page updates automatically.
+        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260807">Develata AI_ML 2026-08-07</a>. Each item links back to its original source. This page updates automatically.
       </p>
     </header>
 
     <section class="digest-item">
-      <h2>为什么传奇的埃尔德什问题正被人工智能攻克 <span>95</span></h2>
+      <h2>NVIDIA Cosmos 3：开放世界模型如何推动物理 AI 前沿 <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型突破</code> <code>AI数学</code> <code>OpenAI</code> <code>研究进展</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsgbawl0001iro5qajirh4qh">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>SpaceX 宣布 AI 算力上太空，独家采用 Nvidia Vera Rubin <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>芯片算力</code> <code>公司动态</code> <code>AI基础设施</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsg7u0dp00s1roremmr20cb1">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>字节 Seed 发布 SeedRealtime 音视频全双工大模型，走向全模态自然交互 <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>多模态</code> <code>产品发布</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsfkn6cf03ciroch6tfynepy">阅读原文</a></li>
+        <li>Tags: <code>模型发布</code> <code>物理AI</code> <code>NVIDIA</code> <code>多模态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshjdgsn0gf5ronkj2dwsbwh">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
     </section>
@@ -51,21 +29,43 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型 <span>85</span></h2>
+      <h2>千问全网首发公测，全新 Wan3.0 来了！ <span>82</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>开源生态</code> <code>自动驾驶</code> <code>NVIDIA</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsfu19g30eg5rochm0d4q3po">阅读原文</a></li>
+        <li>Tags: <code>模型发布</code> <code>视频生成</code> <code>千问</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshjzc390h6cronkkgtujtis">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 开源生态信号值得跟进，重点看权重许可、复现实验、推理成本和社区可用性。</blockquote>
+      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>Jeff Dean 宣布离开谷歌，创办 DiscoLoop AI <span>82</span></h2>
+      <h2>Qwen-Image-3.0 发布：高分辨率低至 0.03 美元 <span>82</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>AI人才</code> <code>初创公司</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsghv9m1066ero5qffm5675t">阅读原文</a></li>
+        <li>Tags: <code>模型发布</code> <code>图像生成</code> <code>多模态</code> <code>成本优化</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsh5bwo400rjro280qm4x4is">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>科学家首次用AI制造新病毒 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>研究进展</code> <code>政策监管</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshx88tn0u50ronkhe4eiunz">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>微软首次披露OpenAI贡献七成AI收入 <span>80</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>公司动态</code> <code>大模型</code> <code>产业格局</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshmizyd0k71ronkfu9jy9lr">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
@@ -73,10 +73,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>AI Security Leaderboard: Methodology, Results and Minimal Standard <span>82</span></h2>
+      <h2>Google 大规模 AI 组织调整背后的混乱政治 <span>80</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>模型评测</code> <code>研究发布</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2608.03070">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>人才流动</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshkd62s0hgfronku3c71unr">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -84,54 +84,21 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Demis Hassabis 转任 Google DeepMind 主席与 Alphabet 首席科学家 <span>80</span></h2>
+      <h2>OpenAI 披露智能体集群秘密协作事件 <span>80</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>大模型</code> <code>AI安全</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsga8g7n01dxro3psolcouz4">阅读原文</a></li>
+        <li>Tags: <code>AI安全</code> <code>智能体</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsgo604p0bbbro5qz9hydvx6">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>Google DeepMind CEO 德米斯·哈萨比斯即将卸任 <span>80</span></h2>
+      <h2>Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users <span>78</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>公司动态</code> <code>AI安全</code> <code>大模型</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsgcdhyh019uro5q5uhc9tnd">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控 <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>评测</code> <code>大模型</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>AcceptMoE: Commitment-Weighted Self-Sizing Verifier Expert Sets for Efficient MoE Speculative Decoding <span>80</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>推理优化</code> <code>模型推理</code> <code>MoE</code> <code>投机解码</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2608.02989">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>华为谈自动驾驶系统强制性国家标准发布，引望国内首批完成 L3 车型准入试点验证 <span>78</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>政策监管</code> <code>自动驾驶</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsfzhw1u009grodljbfrauos">阅读原文</a></li>
+        <li>Tags: <code>大模型</code> <code>产品发布</code> <code>公司动态</code></li>
+        <li>Source: <code>OpenAI News</code> | <a href="https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
@@ -139,12 +106,45 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>The Tell-Tale Trace: Detecting Reasoning Failures in LLMs Using Chain-of-Thought Dynamics <span>78</span></h2>
+      <h2>Agent Plugins 1.0.0 发布：谷歌、亚马逊、微软等支持的统一智能体插件规范 <span>76</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>推理优化</code> <code>大模型</code> <code>AI安全</code> <code>研究发布</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2608.03291">阅读原文</a></li>
+        <li>Tags: <code>智能体</code> <code>开源生态</code> <code>行业标准</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmshra4es0oycronk0wcvjv03">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移 <span>76</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>智能体</code> <code>研究</code> <code>模型优化</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>美国上诉法院推翻禁令，Perplexity AI 购物智能体重返 Amazon <span>75</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>政策监管</code> <code>智能体</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsfyb5yy0js6roch27nbq7s2">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>英国AISI测试发现OpenAI与Anthropic的AI智能体伪造在线身份实施攻击 <span>75</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>智能体</code> <code>公司动态</code> <code>测试</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.virxact.com/items/cmsg95knx00nwrop48sl860bq">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
     </section>
 
   </article>
