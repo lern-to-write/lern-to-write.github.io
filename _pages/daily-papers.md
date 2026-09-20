@@ -8,31 +8,20 @@ author_profile: true
   <article class="daily-digest p-card" aria-label="Daily AI/ML digest">
     <header class="daily-digest-header">
       <p class="lab-kicker">AI_ML</p>
-      <h1>2026-09-19</h1>
+      <h1>2026-09-20</h1>
       <blockquote>
-        今日 AI/ML 热点快读：AI安全、模型发布、公司动态、推理优化、政策监管、开源生态。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
+        今日 AI/ML 热点快读：AI安全、公司动态、大模型、智能体、融资上市、政策监管。本页每天自动从公开 daily feed 提取标题、分数、标签和原文链接，再生成本站自己的 brief。
       </blockquote>
       <p class="digest-source-note">
-        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260919">Develata AI_ML 2026-09-19</a>. Each item links back to its original source. This page updates automatically.
+        Seed feed: <a href="https://develata.me/news/AI_ML/2026/20260920">Develata AI_ML 2026-09-20</a>. Each item links back to its original source. This page updates automatically.
       </p>
     </header>
 
     <section class="digest-item">
-      <h2>DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression <span>88</span></h2>
+      <h2>WSJ 报道：Gemini 在 Irregular 网络安全评测中越出测试环境并入侵三家公司 <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>推理优化</code> <code>开源生态</code> <code>多模态</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.19969">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩 <span>85</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>政策监管</code> <code>AI安全</code> <code>公司动态</code> <code>版权</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu74yfca0qjfrowkn49efvcw">阅读原文</a></li>
+        <li>Tags: <code>AI安全</code> <code>公司动态</code> <code>大模型</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7zc3h30zcqrogr2dx8w8w6">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -40,10 +29,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop <span>85</span></h2>
+      <h2>谷歌披露 Gemini 在安全测试中自主入侵三家真实公司并自行终止 <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>政策监管</code> <code>AI安全</code> <code>公司动态</code> <code>版权</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu62wp5j08tkrofj60s4kfwv">阅读原文</a></li>
+        <li>Tags: <code>AI安全</code> <code>大模型</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7l5wy60hj3rogr5i76b082">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -51,10 +40,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>研究团队用 Claude Opus 5 入侵 OpenAI，获 6500 美元漏洞赏金 <span>82</span></h2>
+      <h2>Anthropic 计划将 IPO 推迟至 11 月，估值约 2 万亿美元 <span>85</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>模型能力</code> <code>公司动态</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu71pa810n45rowkag436ea3">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>融资上市</code> <code>AI安全</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7nb3bm0jugrogroyv3fm5h">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -62,10 +51,10 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号 <span>82</span></h2>
+      <h2>纽约时报版权诉讼披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取 <span>78</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>漏洞利用</code> <code>OpenAI</code> <code>供应链安全</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu6idvti04i9ro0fktczvi9g">阅读原文</a></li>
+        <li>Tags: <code>政策监管</code> <code>AI安全</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7l5wy60hj2rogr88fr2vkk">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
     </section>
@@ -73,65 +62,21 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元 <span>78</span></h2>
+      <h2>FT 报道 OpenAI 预计 2030 年前累计现金消耗约 $278B <span>72</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>公司动态</code> <code>模型评估</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7emdec07qmrogrh8tfpg5n">阅读原文</a></li>
+        <li>Tags: <code>公司动态</code> <code>算力芯片</code> <code>产业趋势</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu7mv3mi0j8brogr1ktcfhb6">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+      <blockquote><strong>[Why read]</strong> 适合快速判断今天 AI/ML 方向的新信号，先看问题设定、方法差异和是否能转化成自己的实验或产品想法。</blockquote>
     </section>
 
     <hr>
 
     <section class="digest-item">
-      <h2>Partnering with Accenture on embedded evaluation <span>78</span></h2>
+      <h2>Benchmarking LLM Inference at Scale with AIPerf <span>72</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>AI安全</code> <code>公司动态</code> <code>政策监管</code></li>
-        <li>Source: <code>Anthropic News</code> | <a href="https://www.anthropic.com/news/accenture-embedded-evaluation">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 <span>78</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>实时翻译</code> <code>多模态</code> <code>API</code></li>
-        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu74vaqy0qeerowkch23r6nd">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>JEPA-Anything: Learning Predictive Models across Different Worlds <span>78</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>世界模型</code> <code>AI研究</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.20800">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Compass-v3: Scaling Domain-Specific LLMs for Multilingual E-Commerce in Southeast Asia <span>78</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>大模型</code> <code>电商</code> <code>多语言</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2509.09121">阅读原文</a></li>
-      </ul>
-      <blockquote><strong>[Why read]</strong> 新模型发布适合快速扫能力边界，重点看上下文、推理效率、训练基础设施和生态影响。</blockquote>
-    </section>
-
-    <hr>
-
-    <section class="digest-item">
-      <h2>Reflective Recovery: A Self-Supervised Method for Reasoning by Learning from Mistakes <span>78</span></h2>
-      <ul class="digest-meta">
-        <li>Tags: <code>推理优化</code> <code>大模型</code> <code>研究突破</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.19156">阅读原文</a></li>
+        <li>Tags: <code>推理优化</code> <code>工具发布</code> <code>NVIDIA</code> <code>基准测试</code></li>
+        <li>Source: <code>NVIDIA Technical Blog - Generative AI</code> | <a href="https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf">阅读原文</a></li>
       </ul>
       <blockquote><strong>[Why read]</strong> 推理效率和 inference-time scaling 继续升温，重点看质量收益、延迟成本和稳定性。</blockquote>
     </section>
@@ -139,12 +84,67 @@ author_profile: true
     <hr>
 
     <section class="digest-item">
-      <h2>Design of the IBM Granite 5.0 TurboCTC ASR Model <span>78</span></h2>
+      <h2>逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS <span>72</span></h2>
       <ul class="digest-meta">
-        <li>Tags: <code>模型发布</code> <code>语音识别</code> <code>开源生态</code> <code>推理优化</code></li>
-        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.20104">阅读原文</a></li>
+        <li>Tags: <code>AI安全</code> <code>隐私风险</code> <code>AI编程</code> <code>公司动态</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu6y9sjz0jbyrowkh7tus28l">阅读原文</a></li>
       </ul>
-      <blockquote><strong>[Why read]</strong> 语音交互正在从 demo 走向可配置产品，重点看实时性、稳定性、评测指标和接入成本。</blockquote>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Trail of Bits 用 Agent 为 Miden zkVM 审计自建 LSP、反编译器和 Lean 形式化证明 <span>72</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>智能体</code> <code>区块链</code></li>
+        <li>Source: <code>AI HOT 精选</code> | <a href="https://aihot.news/items/cmu6w30lt0dnhrowkh7qwiped">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Uni-LaDiR: Latent Diffusion Unifies Multimodal Reasoning <span>72</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>多模态</code> <code>模型发布</code> <code>研究进展</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.19878">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 多模态能力仍是应用落地的关键变量，重点看视觉 grounding、幻觉控制和偏好对齐。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Geopolitical Divisions Across Languages in Large Language Models <span>72</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>AI安全</code> <code>大模型</code> <code>研究发布</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.20005">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 安全与对齐类内容适合放进长期跟踪列表，重点看失败模式、评测设置和缓解手段。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>AutoData: Agentic Search for Pre-training Data Selection <span>72</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>数据选择</code> <code>智能体</code> <code>预训练</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.19754">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
+    </section>
+
+    <hr>
+
+    <section class="digest-item">
+      <h2>Don&#x27;t Mask the Environment: Observation Supervision Changes How Agents Explore Under RL <span>72</span></h2>
+      <ul class="digest-meta">
+        <li>Tags: <code>智能体</code> <code>训练方法</code> <code>研究</code></li>
+        <li>Source: <code>arXiv Computation and Language</code> | <a href="https://arxiv.org/abs/2609.20715">阅读原文</a></li>
+      </ul>
+      <blockquote><strong>[Why read]</strong> 适合关注 agent 产品化、工具调用、路由和执行闭环的人，先看它怎样影响成本、评测和真实工作流。</blockquote>
     </section>
 
   </article>
